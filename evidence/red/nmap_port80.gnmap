@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Wed Sep  9 18:48:35 2026 as: /usr/lib/nmap/nmap --privileged -Pn -sV -p 80 -oA evidence/red/nmap_port80 100.70.250.33
+Host: 100.70.250.33 (cachyos-diego.tail7f8f58.ts.net)	Status: Up
+Host: 100.70.250.33 (cachyos-diego.tail7f8f58.ts.net)	Ports: 80/open/tcp//http//nginx 1.30.4/
+# Nmap done at Wed Sep  9 18:48:43 2026 -- 1 IP address (1 host up) scanned in 7.81 seconds

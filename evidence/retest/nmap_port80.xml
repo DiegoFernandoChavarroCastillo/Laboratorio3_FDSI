@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.99 scan initiated Wed Sep  9 20:10:04 2026 as: /usr/lib/nmap/nmap -&#45;privileged -Pn -sV -p 80 -oA evidence/retest/nmap_port80 100.70.250.33 -->
+<nmaprun scanner="nmap" args="/usr/lib/nmap/nmap -&#45;privileged -Pn -sV -p 80 -oA evidence/retest/nmap_port80 100.70.250.33" start="1789002604" startstr="Wed Sep  9 20:10:04 2026" version="7.99" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1789002604" endtime="1789002612"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="100.70.250.33" addrtype="ipv4"/>
+<hostnames>
+<hostname name="cachyos-diego.tail7f8f58.ts.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="nginx" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx</cpe></service></port>
+</ports>
+<times srtt="249013" rttvar="249013" to="1245065"/>
+</host>
+<runstats><finished time="1789002612" timestr="Wed Sep  9 20:10:12 2026" summary="Nmap done at Wed Sep  9 20:10:12 2026; 1 IP address (1 host up) scanned in 8.11 seconds" elapsed="8.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

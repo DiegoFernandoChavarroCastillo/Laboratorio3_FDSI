@@ -47,7 +47,8 @@ ALERTS = [
 
 ACTIONS = []
 
-# Modelos de datos para recibir peticiones estructuradas
+# Modelo interno completo (se mantiene igual; es lo que vive en memoria
+# y lo que recibe el POST, simulando la ingesta real de Falcon)
 class Alert(BaseModel):
     id: str
     severity: str
@@ -59,6 +60,19 @@ class Alert(BaseModel):
     analyst_email: str
     status: str
 
+# NUEVO (Fase E, Paso 16): modelo público reducido.
+# Excluye agent_id, internal_ip y analyst_email -- el hallazgo de
+# Information Disclosure (flujo F8 del DFD) detectado por Red Team
+# en la Fase C. FastAPI filtra automaticamente estos campos al
+# serializar la respuesta, sin tocar la logica interna.
+class AlertPublic(BaseModel):
+    id: str
+    severity: str
+    tactic: str
+    technique: str
+    hostname: str
+    status: str
+
 class Action(BaseModel):
     alert_id: str
     action_type: str
@@ -66,16 +80,21 @@ class Action(BaseModel):
 
 # Endpoints de la API
 
-@app.get("/api/alerts", response_model=List[Alert])
+@app.get("/api/alerts", response_model=List[AlertPublic])
 def get_alerts():
-    """Consulta todas las alertas activas."""
+    """Consulta todas las alertas activas (respuesta reducida, sin PII/infra)."""
     return ALERTS
 
-@app.post("/api/alerts", response_model=Alert)
+@app.post("/api/alerts", response_model=AlertPublic)
 def create_alert(alert: Alert):
-    """Simula la recepción de una nueva alerta desde Falcon."""
+    """Simula la recepción de una nueva alerta desde Falcon.
+
+    Acepta el objeto Alert completo (como llegaría de Falcon), pero
+    responde con el modelo público reducido para no reflejar de vuelta
+    los datos sensibles que el cliente acaba de enviar.
+    """
     ALERTS.append(alert.model_dump())
-    return alert
+    return alert.model_dump()
 
 @app.get("/api/actions", response_model=List[Action])
 def get_actions():

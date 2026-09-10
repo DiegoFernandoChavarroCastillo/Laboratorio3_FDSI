@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 10 Sep 2026 00:45:57 GMT
+Content-Type: application/json
+Content-Length: 723
+Connection: keep-alive
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Referrer-Policy: no-referrer
+
+[{"id":"ALRT-LAB-0001","severity":"high","tactic":"Credential Access","technique":"T1003","hostname":"WEB-LAB-01","agent_id":"aaaaaaaa-0000-0000-0000-000000000001","internal_ip":"10.10.10.11","analyst_email":"analyst1@lab.invalid","status":"new"},{"id":"ALRT-LAB-0002","severity":"medium","tactic":"Discovery","technique":"T1046","hostname":"API-LAB-01","agent_id":"aaaaaaaa-0000-0000-0000-000000000002","internal_ip":"10.10.10.12","analyst_email":"analyst2@lab.invalid","status":"new"},{"id":"ALRT-LAB-0003","severity":"low","tactic":"Execution","technique":"T1059","hostname":"DB-LAB-01","agent_id":"aaaaaaaa-0000-0000-0000-000000000003","internal_ip":"10.10.10.13","analyst_email":"analyst1@lab.invalid","status":"new"}]

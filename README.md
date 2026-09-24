@@ -6,6 +6,17 @@ Prototipo de API vulnerable sin autenticación publicado sobre HTTP para la simu
 
 ---
 
+## 📑 Documentos de este laboratorio
+
+| Documento | Contenido | Rama |
+| :--- | :--- | :--- |
+| **`README.md`** (este archivo) | **Parte I** — Construcción de la línea base insegura, reconocimiento Red Team, detección Blue Team, hardening inicial y retest. Fases A–F de la guía. | `main` (tag `lab-3`) |
+| **[`mejoras.md`](mejoras.md)** | **Parte II** — Segundo ciclo de corrección: mitigaciones dirigidas a las cuatro hipótesis STRIDE que quedaron abiertas tras la Parte I, con pruebas y evidencias. | `Mejoras` |
+
+> **Parte II — Mejoras y mitigaciones de seguridad.** Las hipótesis H1–H4 del modelo STRIDE quedaron parcialmente abiertas al cierre de la Parte I. El documento **[`mejoras.md`](mejoras.md)** documenta seis mejoras (M1–M6) aplicadas sobre esa línea base, cada una con su hipótesis asociada, el cambio de código o configuración, el comando de verificación y la evidencia capturada en `docs/Mejoras/`.
+
+---
+
 ## 🏗️ Arquitectura del Sistema
 
 La solución utiliza una arquitectura de Proxy Inverso donde **Nginx** escucha en el puerto `80` (HTTP) y reenvía el tráfico mediante `proxy_pass` hacia el servicio en segundo plano de **FastAPI** corriendo en el puerto `8000`.
@@ -217,7 +228,8 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 │   ├── FaseC/             # Reconocimiento, ZAP y captura de red
 │   ├── FaseD/             # Telemetría y detección
 │   ├── FaseE/             # Hardening aplicado
-│   └── FaseF/             # Retest y comparación
+│   ├── FaseF/             # Retest y comparación
+│   └── Mejoras/           # Parte II — evidencias de las mitigaciones M0–M6
 ├── evidence/              # Evidencias técnicas (salidas crudas)
 │   ├── red/               # Nmap, curl, reporte ZAP
 │   ├── blue/              # Logs, PCAPs, reglas de detección
@@ -230,6 +242,7 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 ├── main.py                # Código fuente de FastAPI (CrowdStrike Mock)
 ├── requirements.txt
 ├── risk-register.md
+├── mejoras.md             # Parte II — mitigaciones STRIDE (rama Mejoras)
 └── README.md              # Documentación principal del proyecto
 ```
 
@@ -807,3 +820,18 @@ Los riesgos pendientes no son deuda accidental sino insumo planificado para la s
 | `/public-inventory.txt` expuesto | Depuración o restricción del recurso estático |
 
 La solución es acumulativa: el Laboratorio 4 parte de este mismo repositorio, etiquetado como `lab-3`, y añade las capas de seguridad sin reconstruir el prototipo.
+
+---
+
+## ➡️ Continuación: Parte II
+
+Los riesgos listados arriba no se dejaron intactos. La **Parte II del laboratorio**, documentada en **[`mejoras.md`](mejoras.md)** y desarrollada en la rama `Mejoras`, aplica un segundo ciclo de corrección sobre esta misma línea base:
+
+- **M1** — Proyección pública de datos y validación estricta de entrada (H1, H4)
+- **M2** — Atribución en el registro de acciones (H3)
+- **M3** — Correlación por `request_id` entre Nginx y FastAPI (H3)
+- **M4** — Cabecera CSP y cierre de la superficie documental (H2)
+- **M5** — Depuración del inventario público (H1)
+- **M6** — Limitación de tasa y regla de detección recalibrada
+
+El tag `lab-3` se conserva intacto sobre `main` para que la entrega evaluada sea comparable contra el resultado de las mejoras.

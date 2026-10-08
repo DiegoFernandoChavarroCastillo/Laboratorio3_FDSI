@@ -5,7 +5,7 @@
 **Docente:** Fabián Eduardo Sierra Sánchez
 **Ruta:** alternativa local (CTF de ingeniería inversa, sin publicar servicios)
 
-> **Estado del documento:** avance parcial. Cubre **0. Preparación** y **1. Baseline forense**. Los niveles siguientes se agregarán a medida que se completen.
+> **Estado del documento:** avance parcial. Cubre **0. Preparación**, **1. Baseline forense** y **2. Level 1**. Los niveles siguientes se agregarán a medida que se completen.
 
 ---
 
@@ -15,7 +15,7 @@
 | :--- | :--- | :--- |
 | [0. Preparación](#0-preparación) | Entorno, herramientas y estructura de evidencias | ✅ Completado |
 | [1. Baseline forense](#1-baseline-forense) | `file`, `sha256sum`, `readelf -h` sobre los tres binarios | ✅ Completado |
-| 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG → `level1.md` | ⏳ Pendiente |
+| [2. Level 1 — Recon](#2-level-1--recon-strings-are-evidence) | `strings`, `objdump`, primera FLAG → detalle en [`level1.md`](evidence/reverse/level1.md) | ✅ Completado |
 | 3. Level 2 — Ghidra | Reconstrucción de la función de validación | ⏳ Pendiente |
 | 4. Confirmación con GDB | Validación dinámica de la hipótesis | ⏳ Pendiente |
 | 5. Boss Level — Stripped | Análisis sin símbolos | ⏳ Pendiente |
@@ -271,11 +271,36 @@ Salida en texto de todos los comandos: [`evidence/reverse/baseline.txt`](evidenc
 
 ---
 
+## 2. Level 1 — Recon: "Strings are evidence"
+
+> 📄 **Documento completo:** [`evidence/reverse/level1.md`](evidence/reverse/level1.md). Contiene las capturas `2.1` a `2.4`, el desensamblado comentado, el pseudocódigo reconstruido y la lección de desarrollo seguro.
+
+**Resultado:** ✅ `FLAG{strings_are_evidence}`, obtenida sin código fuente y sin modificar el binario.
+
+| Captura | Comando | Resultado |
+| :--- | :--- | :--- |
+| [`2.1`](evidence/reverse/screenshots/2.1.jpeg) | `chmod +x crackme_level1`, `./crackme_level1`, `./crackme_level1 prueba` | Mensaje de uso y `Access denied.` |
+| [`2.2`](evidence/reverse/screenshots/2.2.jpeg) | `strings -n 5 crackme_level1 \| less` | `strcmp`, mensajes y `REDTEAM-101` |
+| [`2.3`](evidence/reverse/screenshots/2.3.jpeg) | `objdump -d -M intel crackme_level1 \| less` | `strcmp(argv[1], password)` en `main` |
+| [`2.4`](evidence/reverse/screenshots/2.4.jpeg) | `./crackme_level1 REDTEAM-101` | `Access granted.` + FLAG |
+
+### Resumen para la sustentación
+
+| Pregunta | Respuesta |
+| :--- | :--- |
+| **1. ¿Qué observamos?** | El programa recibe la clave por `argv[1]` y responde `Access denied.` sin más detalle. `strings -n 5` mostró la importación de `strcmp`, los mensajes `Access granted.` / `Access denied.` y una cadena aislada que nunca se imprime: **`REDTEAM-101`**. No había ninguna cadena `FLAG{…}`. |
+| **2. ¿Qué hipótesis formulamos?** | **H-L1:** `main` compara `argv[1]` con `REDTEAM-101` mediante `strcmp` y, si coinciden, llama a `print_flag`, que construye la bandera en tiempo de ejecución (de ahí la importación de `putchar`). |
+| **3. ¿Qué función o condición encontramos?** | Con `objdump`, en `main` (`0x4011d8`): `strcmp(argv[1], password)`, con `password` apuntando a `.rodata:0x402004` = `"REDTEAM-101"`. Un único `test eax,eax` / `jne` decide entre la denegación (`return 2`) y `print_flag()` (`return 0`). |
+| **4. ¿Cómo lo confirmamos?** | `./crackme_level1 REDTEAM-101` → `Access granted.` + `FLAG{strings_are_evidence}`. El desensamblado de `print_flag` explica por qué la FLAG no aparecía en `strings`: está cifrada con **XOR `0x5a`** y guardada como valores inmediatos dentro de las instrucciones. |
+| **5. ¿Qué enseñanza de desarrollo seguro obtuvimos?** | Todo lo que se compila dentro de un binario es público para quien lo tenga. Una contraseña literal se extrae con `strings`, y ofuscar con XOR no protege si la clave viaja en el mismo archivo. Los secretos no van en el cliente: se valida en el servidor o contra un hash con sal. |
+
+---
+
 ## ⏭️ Próximos pasos
 
 - [x] Preparación y baseline forense (capturas `1.1` a `1.7`, [`baseline.txt`](evidence/reverse/baseline.txt)).
-- [ ] **Level 1:** ejecutar con datos falsos, `strings -n 5`, `objdump -d -M intel` → `level1.md` (capturas `2.x`).
+- [x] **Level 1:** ejecutar con datos falsos, `strings -n 5`, `objdump -d -M intel` → [`level1.md`](evidence/reverse/level1.md) (capturas `2.1` a `2.4`).
 - [ ] **Level 2:** Ghidra (proyecto Non-Shared), localizar la validación desde `main` → `level2.md`.
 - [ ] **GDB:** confirmar clave fallida y válida → `gdb.md`.
 - [ ] **Boss Level:** repetir sobre `crackme_level2_stripped`.
-- [ ] Tag `lab-reverse-v1`.
+- [ ] Tag `lab04`.

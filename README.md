@@ -12,7 +12,7 @@ Prototipo de API vulnerable sin autenticación publicado sobre HTTP para la simu
 | :--- | :--- | :--- |
 | **`README.md`** (este archivo) | **Parte I** — Construcción de la línea base insegura, reconocimiento Red Team, detección Blue Team, hardening inicial y retest. Fases A–F de la guía. | `main` (tag `lab-3`) |
 | **[`mejoras.md`](mejoras.md)** | **Parte II** — Segundo ciclo de corrección: mitigaciones dirigidas a las cuatro hipótesis STRIDE que quedaron abiertas tras la Parte I, con pruebas y evidencias. | `Mejoras` |
-| **[`reverse-analysis.md`](reverse-analysis.md)** | **Laboratorio 4 — Parte 2** — Reverse Engineering Challenge (ruta local): baseline forense, Level 1 (Recon), Level 2 (Ghidra), confirmación con GDB y Boss Level (binario stripped). *En curso.* | — (tag previsto `lab-reverse-v1`) |
+| **[`reverse-analysis.md`](reverse-analysis.md)** | **Laboratorio 4 — Parte 2** — Reverse Engineering Challenge (ruta local): baseline forense, Level 1 (Recon), Level 2 (Ghidra), confirmación con GDB y Boss Level (binario stripped). *En curso.* | — (tag `lab04`) |
 
 > **Parte II — Mejoras y mitigaciones de seguridad.** Las hipótesis H1–H4 del modelo STRIDE quedaron parcialmente abiertas al cierre de la Parte I. El documento **[`mejoras.md`](mejoras.md)** documenta seis mejoras (M1–M6) aplicadas sobre esa línea base, cada una con su hipótesis asociada, el cambio de código o configuración, el comando de verificación y la evidencia capturada en `docs/Mejoras/`.
 
@@ -239,7 +239,7 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 │   ├── retest/            # Pruebas posteriores al Hardening
 │   └── reverse/           # Lab 4 Parte 2 — CTF de ingeniería inversa
 │       ├── baseline.txt   # file, sha256sum, readelf
-│       ├── level1.md
+│       ├── level1.md      # Level 1 — Recon (strings, objdump)
 │       ├── level2.md
 │       ├── gdb.md
 │       └── screenshots/   # Capturas de cada comando
@@ -856,7 +856,7 @@ Como ruta alternativa del Laboratorio 4, el equipo desarrolla un **CTF local de 
 | :--- | :--- | :--- |
 | 0. Preparación | Entorno Kali x86-64, binutils, GDB, Ghidra; estructura `evidence/reverse/` | ✅ |
 | 1. Baseline forense | `file`, `sha256sum` (3/3 hashes verificados), `readelf -h` | ✅ |
-| 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG | ⏳ |
+| 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG — [`level1.md`](evidence/reverse/level1.md) | ✅ |
 | 3. Level 2 — Ghidra | Reconstrucción de la función de validación | ⏳ |
 | 4. GDB | Confirmación dinámica | ⏳ |
 | 5. Boss Level | Binario sin símbolos | ⏳ |

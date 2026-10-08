@@ -1,0 +1,317 @@
+================================================================
+ FDSI — Laboratorio 4 Parte 2 — Boss Level (binario stripped)
+ Salida cruda de los comandos de boss.md
+ Generado: 2026-10-08T07:43:43Z   Equipo: Linux 6.18.44-fc-v80 x86_64
+================================================================
+
+==============================================================
+## 1. Identidad del binario
+==============================================================
+
+$ sha256sum crackme_level2_stripped
+c8e638741272a87ee3b30fe8878898c1aa977e6a879a1ec0b271034b5bb9aed3  crackme_level2_stripped
+
+$ file crackme_level2_stripped
+crackme_level2_stripped: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=df25a1fa020d404f3512421bfcf8c89b417e8554, for GNU/Linux 3.2.0, stripped
+
+==============================================================
+## 2. Qué desapareció al hacer strip
+==============================================================
+
+$ nm crackme_level2_stripped
+nm: crackme_level2_stripped: no symbols
+
+# Secciones: level2 (con símbolos) vs stripped
+
+$ readelf -S -W 'crackme_level2'  | grep -c -E '^ +\[ *[0-9]+\]'
+36
+
+$ readelf -S -W 'crackme_level2_stripped'  | grep -c -E '^ +\[ *[0-9]+\]'
+28
+
+$ diff <(readelf -S -W 'crackme_level2' | sed -n 's/^ *\[ *[0-9]*\] \(\.[^ ]*\).*/\1/p') <(readelf -S -W 'crackme_level2_stripped' | sed -n 's/^ *\[ *[0-9]*\] \(\.[^ ]*\).*/\1/p')
+27,34d26
+< .debug_aranges
+< .debug_info
+< .debug_abbrev
+< .debug_line
+< .debug_str
+< .debug_line_str
+< .symtab
+< .strtab
+
+# strings que existían con símbolos y ya no están (marcadas con <)
+
+$ diff <(strings -n 5 'crackme_level2' | sort -u) <(strings -n 5 'crackme_level2_stripped' | sort -u) | grep -E '^<' | grep -E 'validate_key|reveal_flag|expected|transformed|score|candidate|crackme_level2\.c|reverse_fsi_lab|GNU C17|frame_dummy|deregister_tm_clones'
+< /mnt/data/reverse_fsi_lab
+< /mnt/data/reverse_fsi_lab/crackme_level2.c
+< GNU C17 14.2.0 -mtune=generic -march=x86-64 -g -O0 -fno-inline -fasynchronous-unwind-tables
+< __frame_dummy_init_array_entry
+< candidate
+< crackme_level2.c
+< deregister_tm_clones
+< expected
+< expected.0
+< frame_dummy
+< reveal_flag
+< score
+< transformed
+< validate_key
+
+# strings que SIGUEN en el stripped (mensajes y compilador)
+
+$ strings -n 5 'crackme_level2_stripped' | grep -E 'FDSI|Hint|Uso|License|Invalid|GCC:'
+=== FDSI CrackMe Level 2 ===
+Hint: static + dynamic analysis.
+Uso: %s <license-key>
+License accepted.
+Invalid license.
+GCC: (Debian 14.2.0-19) 14.2.0
+
+# Lo que NO cambia: .text y .rodata byte a byte
+.text: IDENTICO (663 bytes)
+.rodata: IDENTICO (161 bytes)
+
+# Lo que SOBREVIVE: importaciones dinámicas (.dynsym)
+
+$ nm -D crackme_level2_stripped
+                 w __gmon_start__
+                 U __libc_start_main@GLIBC_2.34
+                 U printf@GLIBC_2.2.5
+                 U putchar@GLIBC_2.2.5
+                 U puts@GLIBC_2.2.5
+                 U strlen@GLIBC_2.2.5
+
+==============================================================
+## 3. Del punto de entrada a main (flujo de control)
+==============================================================
+
+$ readelf -h 'crackme_level2_stripped' | grep -E 'Type|Entry'
+  Type:                              EXEC (Executable file)
+  Entry point address:               0x401070
+
+$ objdump -d -M intel --start-address=0x401070 --stop-address=0x401092 crackme_level2_stripped
+
+crackme_level2_stripped:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000401070 <.text>:
+  401070:	31 ed                	xor    ebp,ebp
+  401072:	49 89 d1             	mov    r9,rdx
+  401075:	5e                   	pop    rsi
+  401076:	48 89 e2             	mov    rdx,rsp
+  401079:	48 83 e4 f0          	and    rsp,0xfffffffffffffff0
+  40107d:	50                   	push   rax
+  40107e:	54                   	push   rsp
+  40107f:	45 31 c0             	xor    r8d,r8d
+  401082:	31 c9                	xor    ecx,ecx
+  401084:	48 c7 c7 67 12 40 00 	mov    rdi,0x401267
+  40108b:	ff 15 47 2f 00 00    	call   QWORD PTR [rip+0x2f47]        # 403fd8 <printf@plt+0x2f78>
+  401091:	f4                   	hlt
+
+==============================================================
+## 4. Referencias desde las cadenas hacia el código (datos -> código)
+==============================================================
+
+$ strings -t x -n 5 'crackme_level2_stripped' | grep -E 'FDSI|Hint|Uso|License|Invalid'
+   2010 === FDSI CrackMe Level 2 ===
+   2030 Hint: static + dynamic analysis.
+   2051 Uso: %s <license-key>
+   2068 License accepted.
+   207a Invalid license.
+
+$ readelf -S -W 'crackme_level2_stripped' | grep -E '\.rodata'
+  [15] .rodata           PROGBITS        0000000000402000 002000 0000a1 00   A  0   0 16
+
+# .rodata: offset 0x2000 <-> dirección 0x402000 (no PIE) => 0x207a -> 0x40207a
+
+$ objdump -d -M intel 'crackme_level2_stripped' | grep -nE '# (402068|40207a)'
+217:  4012d6:	48 8d 05 8b 0d 00 00 	lea    rax,[rip+0xd8b]        # 402068 <printf@plt+0x1008>
+223:  4012f1:	48 8d 05 82 0d 00 00 	lea    rax,[rip+0xd82]        # 40207a <printf@plt+0x101a>
+
+$ objdump -d -M intel --start-address=0x4012bf --stop-address=0x401307 crackme_level2_stripped
+
+crackme_level2_stripped:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000004012bf <.text+0x24f>:
+  4012bf:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  4012c3:	48 83 c0 08          	add    rax,0x8
+  4012c7:	48 8b 00             	mov    rax,QWORD PTR [rax]
+  4012ca:	48 89 c7             	mov    rdi,rax
+  4012cd:	e8 84 fe ff ff       	call   401156 <printf@plt+0xf6>
+  4012d2:	85 c0                	test   eax,eax
+  4012d4:	74 1b                	je     4012f1 <printf@plt+0x291>
+  4012d6:	48 8d 05 8b 0d 00 00 	lea    rax,[rip+0xd8b]        # 402068 <printf@plt+0x1008>
+  4012dd:	48 89 c7             	mov    rdi,rax
+  4012e0:	e8 5b fd ff ff       	call   401040 <puts@plt>
+  4012e5:	e8 09 ff ff ff       	call   4011f3 <printf@plt+0x193>
+  4012ea:	b8 00 00 00 00       	mov    eax,0x0
+  4012ef:	eb 14                	jmp    401305 <printf@plt+0x2a5>
+  4012f1:	48 8d 05 82 0d 00 00 	lea    rax,[rip+0xd82]        # 40207a <printf@plt+0x101a>
+  4012f8:	48 89 c7             	mov    rdi,rax
+  4012fb:	e8 40 fd ff ff       	call   401040 <puts@plt>
+  401300:	b8 03 00 00 00       	mov    eax,0x3
+  401305:	c9                   	leave
+  401306:	c3                   	ret
+
+==============================================================
+## 5. Referencias por comportamiento: quién llama a cada función de libc
+==============================================================
+
+$ objdump -d -M intel -j .plt 'crackme_level2_stripped' | grep -E '^[0-9a-f]+ <'
+0000000000401020 <putchar@plt-0x10>:
+0000000000401030 <putchar@plt>:
+0000000000401040 <puts@plt>:
+0000000000401050 <strlen@plt>:
+0000000000401060 <printf@plt>:
+
+$ objdump -d -M intel 'crackme_level2_stripped' | grep -E 'call +(401030|401040|401050|401060)'
+  401171:	e8 da fe ff ff       	call   401050 <strlen@plt>
+  401249:	e8 e2 fd ff ff       	call   401030 <putchar@plt>
+  40125f:	e8 cc fd ff ff       	call   401030 <putchar@plt>
+  401280:	e8 bb fd ff ff       	call   401040 <puts@plt>
+  40128f:	e8 ac fd ff ff       	call   401040 <puts@plt>
+  4012b3:	e8 a8 fd ff ff       	call   401060 <printf@plt>
+  4012e0:	e8 5b fd ff ff       	call   401040 <puts@plt>
+  4012fb:	e8 40 fd ff ff       	call   401040 <puts@plt>
+
+==============================================================
+## 6. La función de validación sin nombre (0x401156 - 0x4011f2)
+==============================================================
+
+$ objdump -d -M intel --start-address=0x401156 --stop-address=0x4011f3 crackme_level2_stripped
+
+crackme_level2_stripped:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+0000000000401156 <.text+0xe6>:
+  401156:	55                   	push   rbp
+  401157:	48 89 e5             	mov    rbp,rsp
+  40115a:	48 83 ec 30          	sub    rsp,0x30
+  40115e:	48 89 7d d8          	mov    QWORD PTR [rbp-0x28],rdi
+  401162:	48 c7 45 e8 11 00 00 	mov    QWORD PTR [rbp-0x18],0x11
+  401169:	00 
+  40116a:	48 8b 45 d8          	mov    rax,QWORD PTR [rbp-0x28]
+  40116e:	48 89 c7             	mov    rdi,rax
+  401171:	e8 da fe ff ff       	call   401050 <strlen@plt>
+  401176:	48 39 45 e8          	cmp    QWORD PTR [rbp-0x18],rax
+  40117a:	74 07                	je     401183 <printf@plt+0x123>
+  40117c:	b8 00 00 00 00       	mov    eax,0x0
+  401181:	eb 6e                	jmp    4011f1 <printf@plt+0x191>
+  401183:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  40118a:	48 c7 45 f0 00 00 00 	mov    QWORD PTR [rbp-0x10],0x0
+  401191:	00 
+  401192:	eb 49                	jmp    4011dd <printf@plt+0x17d>
+  401194:	48 8b 55 d8          	mov    rdx,QWORD PTR [rbp-0x28]
+  401198:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  40119c:	48 01 d0             	add    rax,rdx
+  40119f:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+  4011a2:	89 c1                	mov    ecx,eax
+  4011a4:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  4011a8:	83 e0 03             	and    eax,0x3
+  4011ab:	48 89 c2             	mov    rdx,rax
+  4011ae:	48 8d 05 d6 0e 00 00 	lea    rax,[rip+0xed6]        # 40208b <printf@plt+0x102b>
+  4011b5:	0f b6 04 02          	movzx  eax,BYTE PTR [rdx+rax*1]
+  4011b9:	31 c8                	xor    eax,ecx
+  4011bb:	88 45 e7             	mov    BYTE PTR [rbp-0x19],al
+  4011be:	48 8d 15 cb 0e 00 00 	lea    rdx,[rip+0xecb]        # 402090 <printf@plt+0x1030>
+  4011c5:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  4011c9:	48 01 d0             	add    rax,rdx
+  4011cc:	0f b6 00             	movzx  eax,BYTE PTR [rax]
+  4011cf:	32 45 e7             	xor    al,BYTE PTR [rbp-0x19]
+  4011d2:	0f b6 c0             	movzx  eax,al
+  4011d5:	09 45 fc             	or     DWORD PTR [rbp-0x4],eax
+  4011d8:	48 83 45 f0 01       	add    QWORD PTR [rbp-0x10],0x1
+  4011dd:	48 8b 45 f0          	mov    rax,QWORD PTR [rbp-0x10]
+  4011e1:	48 3b 45 e8          	cmp    rax,QWORD PTR [rbp-0x18]
+  4011e5:	72 ad                	jb     401194 <printf@plt+0x134>
+  4011e7:	83 7d fc 00          	cmp    DWORD PTR [rbp-0x4],0x0
+  4011eb:	0f 94 c0             	sete   al
+  4011ee:	0f b6 c0             	movzx  eax,al
+  4011f1:	c9                   	leave
+  4011f2:	c3                   	ret
+
+# Datos que usa (k en 0x40208b, expected en 0x402090)
+
+$ objdump -s -j .rodata --start-address=0x40208b --stop-address=0x4020a1 crackme_level2_stripped
+
+crackme_level2_stripped:     file format elf64-x86-64
+
+Contents of section .rodata:
+ 40208b 23 51176a00 65154423 0e03523c 660344 #Q.j.e.D#..R<f.D
+ 40209b 2f 0e632758 15                       /.c'X.          
+
+==============================================================
+## 7. GDB sobre el stripped
+==============================================================
+
+# Sin símbolos no se puede poner un breakpoint por nombre:
+
+$ gdb -nx -batch -ex break validate_key crackme_level2_stripped
+Function "validate_key" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) [answered N; input not from terminal]
+
+# GDB sólo conoce los stubs PLT (info functions):
+
+$ gdb -nx -batch -ex info functions crackme_level2_stripped
+All defined functions:
+
+Non-debugging symbols:
+0x0000000000401030  putchar@plt
+0x0000000000401040  puts@plt
+0x0000000000401050  strlen@plt
+0x0000000000401060  printf@plt
+
+# Breakpoint por dirección, instrucciones en rip y clave en rdi (sesión de boss.md §3):
+
+$ gdb -nx -batch -ex set disassembly-flavor intel -ex break *0x401162 -ex run FDSI-REVERSE-2025 -ex x/6i $pc -ex x/s $rdi crackme_level2_stripped
+Breakpoint 1 at 0x401162
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, 0x0000000000401162 in ?? ()
+=> 0x401162:	mov    QWORD PTR [rbp-0x18],0x11
+   0x40116a:	mov    rax,QWORD PTR [rbp-0x28]
+   0x40116e:	mov    rdi,rax
+   0x401171:	call   0x401050 <strlen@plt>
+   0x401176:	cmp    QWORD PTR [rbp-0x18],rax
+   0x40117a:	je     0x401183
+0x7fffffff9351:	"FDSI-REVERSE-2025"
+
+---------------- clave: AAAA ----------------
+[bp 0x401162] entrada a la validacion   rdi -> "AAAA"
+[bp 0x401181] puerta de longitud FALLA (strlen != 17)
+[bp 0x4011f1] retorno de la funcion     eax = 0
+[bp 0x4012d2] main: test eax,eax        eax = 0
+=== FDSI CrackMe Level 2 ===
+Hint: static + dynamic analysis.
+Invalid license.
+[Inferior 1 (process 274) exited with code 03]
+
+---------------- clave: FDSI-REVERSE-2025 ----------------
+[bp 0x401162] entrada a la validacion   rdi -> "FDSI-REVERSE-2025"
+[bp 0x4011e7] fin del bucle             score = 0x3
+[bp 0x4011f1] retorno de la funcion     eax = 0
+[bp 0x4012d2] main: test eax,eax        eax = 0
+=== FDSI CrackMe Level 2 ===
+Hint: static + dynamic analysis.
+Invalid license.
+[Inferior 1 (process 282) exited with code 03]
+
+---------------- clave: FDSI-REVERSE-2026 ----------------
+[bp 0x401162] entrada a la validacion   rdi -> "FDSI-REVERSE-2026"
+[bp 0x4011e7] fin del bucle             score = 0x0
+[bp 0x4011f1] retorno de la funcion     eax = 1
+[bp 0x4012d2] main: test eax,eax        eax = 1
+=== FDSI CrackMe Level 2 ===
+Hint: static + dynamic analysis.
+License accepted.
+FLAG{ghidra_plus_gdb}
+[Inferior 1 (process 290) exited normally]

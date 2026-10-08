@@ -12,7 +12,7 @@ Prototipo de API vulnerable sin autenticación publicado sobre HTTP para la simu
 | :--- | :--- | :--- |
 | **`README.md`** (este archivo) | **Parte I** — Construcción de la línea base insegura, reconocimiento Red Team, detección Blue Team, hardening inicial y retest. Fases A–F de la guía. | `main` (tag `lab-3`) |
 | **[`mejoras.md`](mejoras.md)** | **Parte II** — Segundo ciclo de corrección: mitigaciones dirigidas a las cuatro hipótesis STRIDE que quedaron abiertas tras la Parte I, con pruebas y evidencias. | `Mejoras` |
-| **[`reverse-analysis.md`](reverse-analysis.md)** | **Laboratorio 4 — Parte 2** — Reverse Engineering Challenge (ruta local): baseline forense, Level 1 (Recon), Level 2 (Ghidra), confirmación con GDB y Boss Level (binario stripped). *En curso.* | — (tag `lab04`) |
+| **[`reverse-analysis.md`](reverse-analysis.md)** | **Laboratorio 4 — Parte 2** — Reverse Engineering Challenge (ruta local): baseline forense, Level 1 (Recon), Level 2 (Ghidra), confirmación con GDB, Boss Level (binario stripped), preguntas de análisis y guion de sustentación. | — (tag `lab-reverse-v1`) |
 
 > **Parte II — Mejoras y mitigaciones de seguridad.** Las hipótesis H1–H4 del modelo STRIDE quedaron parcialmente abiertas al cierre de la Parte I. El documento **[`mejoras.md`](mejoras.md)** documenta seis mejoras (M1–M6) aplicadas sobre esa línea base, cada una con su hipótesis asociada, el cambio de código o configuración, el comando de verificación y la evidencia capturada en `docs/Mejoras/`.
 
@@ -241,7 +241,10 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 │       ├── baseline.txt   # file, sha256sum, readelf
 │       ├── level1.md      # Level 1 — Recon (strings, objdump)
 │       ├── level2.md      # Level 2 — Ghidra (validate_key)
-│       ├── gdb.md
+│       ├── gdb.md         # Confirmación dinámica con GDB (con símbolos)
+│       ├── boss.md        # Boss Level — binario stripped
+│       ├── boss-evidence.sh   # Reproduce los comandos del Boss Level
+│       ├── boss-output.txt    # Salida cruda generada por el script
 │       └── screenshots/   # Capturas de cada comando
 ├── nginx/
 │   ├── nginx-before-hardening.conf
@@ -858,7 +861,35 @@ Como ruta alternativa del Laboratorio 4, el equipo desarrolla un **CTF local de 
 | 1. Baseline forense | `file`, `sha256sum` (3/3 hashes verificados), `readelf -h` | ✅ |
 | 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG — [`level1.md`](evidence/reverse/level1.md) | ✅ |
 | 3. Level 2 — Ghidra | Reconstrucción de la función de validación — [`level2.md`](evidence/reverse/level2.md) | ✅ |
-| 4. GDB | Confirmación dinámica | ⏳ |
-| 5. Boss Level | Binario sin símbolos | ⏳ |
+| 4. GDB | Confirmación dinámica con símbolos — [`gdb.md`](evidence/reverse/gdb.md) | ✅ |
+| 5. Boss Level | Binario sin símbolos: qué desaparece con `strip` y cómo se recupera la validación por flujo, referencias y GDB — [`boss.md`](evidence/reverse/boss.md) | ✅ |
+| 6. Preguntas de análisis y sustentación | Las siete preguntas de la guía y el guion de 3 minutos — [`reverse-analysis.md`](reverse-analysis.md) §6–7 | ✅ |
+
+### Resultados
+
+| Nivel | Binario | Clave | FLAG | Mecanismo |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 — Recon | `crackme_level1` | `REDTEAM-101` | `FLAG{strings_are_evidence}` | `strcmp` contra un literal visible con `strings` |
+| 2 — Ghidra + GDB | `crackme_level2` | `FDSI-REVERSE-2026` | `FLAG{ghidra_plus_gdb}` | Longitud 17 y `candidate[i] ^ k[i & 3] == expected[i]`; el XOR se invierte |
+| Boss — Stripped | `crackme_level2_stripped` | `FDSI-REVERSE-2026` | `FLAG{ghidra_plus_gdb}` | Mismo código sin nombres: la validación (`0x401156`) se halla desde `_start`, las cadenas y `strlen` |
+
+**Idea central del laboratorio:** todo lo que se compila dentro de un binario es público para quien lo tenga. Ofuscar (XOR) o quitar símbolos (*strip*) sube el esfuerzo del análisis, pero no protege un secreto; lo que lo protege es no embeberlo (validación en servidor, hash lento con sal o licencias firmadas).
+
+### Reproducibilidad del Boss Level
+
+Con los tres binarios originales en una carpeta (SHA-256 verificados en [`baseline.txt`](evidence/reverse/baseline.txt)):
+
+```bash
+bash evidence/reverse/boss-evidence.sh crackme_level2 crackme_level2_stripped   # genera boss-output.txt
+```
+
+### Etiquetado de la entrega
+
+```bash
+git add .
+git commit -m "lab4-parte2: reverse engineering CTF (level1, level2, gdb, boss)"
+git tag lab-reverse-v1
+git push && git push origin lab-reverse-v1
+```
 
 El objetivo no es solo obtener cada FLAG, sino poder explicar **qué se observó, qué hipótesis se formuló, qué función o condición se encontró, cómo se confirmó y qué enseñanza de desarrollo seguro deja**.

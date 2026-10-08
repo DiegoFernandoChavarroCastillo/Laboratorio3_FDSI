@@ -12,8 +12,11 @@ Prototipo de API vulnerable sin autenticación publicado sobre HTTP para la simu
 | :--- | :--- | :--- |
 | **`README.md`** (este archivo) | **Parte I** — Construcción de la línea base insegura, reconocimiento Red Team, detección Blue Team, hardening inicial y retest. Fases A–F de la guía. | `main` (tag `lab-3`) |
 | **[`mejoras.md`](mejoras.md)** | **Parte II** — Segundo ciclo de corrección: mitigaciones dirigidas a las cuatro hipótesis STRIDE que quedaron abiertas tras la Parte I, con pruebas y evidencias. | `Mejoras` |
+| **[`reverse-analysis.md`](reverse-analysis.md)** | **Laboratorio 4 — Parte 2** — Reverse Engineering Challenge (ruta local): baseline forense, Level 1 (Recon), Level 2 (Ghidra), confirmación con GDB y Boss Level (binario stripped). *En curso.* | — (tag previsto `lab-reverse-v1`) |
 
 > **Parte II — Mejoras y mitigaciones de seguridad.** Las hipótesis H1–H4 del modelo STRIDE quedaron parcialmente abiertas al cierre de la Parte I. El documento **[`mejoras.md`](mejoras.md)** documenta seis mejoras (M1–M6) aplicadas sobre esa línea base, cada una con su hipótesis asociada, el cambio de código o configuración, el comando de verificación y la evidencia capturada en `docs/Mejoras/`.
+
+> **Laboratorio 4 — Parte 2: Reverse Engineering Challenge.** Ruta alternativa completamente local: en lugar de publicar un servicio, se analizan tres binarios ELF x86-64 compilados en C (`crackme_level1`, `crackme_level2`, `crackme_level2_stripped`) sin acceso al código fuente, usando `file`, `sha256sum`, `strings`, `readelf`, `objdump`, Ghidra y GDB. El documento **[`reverse-analysis.md`](reverse-analysis.md)** recoge el análisis consolidado; las evidencias están en `evidence/reverse/`.
 
 ---
 
@@ -233,7 +236,13 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 ├── evidence/              # Evidencias técnicas (salidas crudas)
 │   ├── red/               # Nmap, curl, reporte ZAP
 │   ├── blue/              # Logs, PCAPs, reglas de detección
-│   └── retest/            # Pruebas posteriores al Hardening
+│   ├── retest/            # Pruebas posteriores al Hardening
+│   └── reverse/           # Lab 4 Parte 2 — CTF de ingeniería inversa
+│       ├── baseline.txt   # file, sha256sum, readelf
+│       ├── level1.md
+│       ├── level2.md
+│       ├── gdb.md
+│       └── screenshots/   # Capturas de cada comando
 ├── nginx/
 │   ├── nginx-before-hardening.conf
 │   └── nginx-after-hardening.conf
@@ -243,6 +252,7 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 ├── requirements.txt
 ├── risk-register.md
 ├── mejoras.md             # Parte II — mitigaciones STRIDE (rama Mejoras)
+├── reverse-analysis.md    # Lab 4 Parte 2 — Reverse Engineering Challenge
 └── README.md              # Documentación principal del proyecto
 ```
 
@@ -835,3 +845,20 @@ Los riesgos listados arriba no se dejaron intactos. La **Parte II del laboratori
 - **M6** — Limitación de tasa y regla de detección recalibrada
 
 El tag `lab-3` se conserva intacto sobre `main` para que la entrega evaluada sea comparable contra el resultado de las mejoras.
+
+---
+
+## ➡️ Laboratorio 4 — Parte 2: Reverse Engineering Challenge
+
+Como ruta alternativa del Laboratorio 4, el equipo desarrolla un **CTF local de ingeniería inversa** documentado en **[`reverse-analysis.md`](reverse-analysis.md)**. No requiere Nginx, Tailscale, UFW ni el API: la infraestructura descrita arriba queda en reposo.
+
+| Fase | Contenido | Estado |
+| :--- | :--- | :--- |
+| 0. Preparación | Entorno Kali x86-64, binutils, GDB, Ghidra; estructura `evidence/reverse/` | ✅ |
+| 1. Baseline forense | `file`, `sha256sum` (3/3 hashes verificados), `readelf -h` | ✅ |
+| 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG | ⏳ |
+| 3. Level 2 — Ghidra | Reconstrucción de la función de validación | ⏳ |
+| 4. GDB | Confirmación dinámica | ⏳ |
+| 5. Boss Level | Binario sin símbolos | ⏳ |
+
+El objetivo no es solo obtener cada FLAG, sino poder explicar **qué se observó, qué hipótesis se formuló, qué función o condición se encontró, cómo se confirmó y qué enseñanza de desarrollo seguro deja**.

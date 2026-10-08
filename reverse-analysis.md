@@ -5,7 +5,7 @@
 **Docente:** Fabián Eduardo Sierra Sánchez
 **Ruta:** alternativa local (CTF de ingeniería inversa, sin publicar servicios)
 
-> **Estado del documento:** avance parcial. Cubre **0. Preparación**, **1. Baseline forense** y **2. Level 1**. Los niveles siguientes se agregarán a medida que se completen.
+> **Estado del documento:** avance parcial. Cubre **0. Preparación**, **1. Baseline forense**, **2. Level 1** y **3. Level 2**. GDB y el Boss Level se agregarán a medida que se completen.
 
 ---
 
@@ -16,7 +16,7 @@
 | [0. Preparación](#0-preparación) | Entorno, herramientas y estructura de evidencias | ✅ Completado |
 | [1. Baseline forense](#1-baseline-forense) | `file`, `sha256sum`, `readelf -h` sobre los tres binarios | ✅ Completado |
 | [2. Level 1 — Recon](#2-level-1--recon-strings-are-evidence) | `strings`, `objdump`, primera FLAG → detalle en [`level1.md`](evidence/reverse/level1.md) | ✅ Completado |
-| 3. Level 2 — Ghidra | Reconstrucción de la función de validación | ⏳ Pendiente |
+| [3. Level 2 — Ghidra](#3-level-2--ghidra-reconstruir-la-validación) | Reconstrucción de la función de validación → detalle en [`level2.md`](evidence/reverse/level2.md) | ✅ Completado |
 | 4. Confirmación con GDB | Validación dinámica de la hipótesis | ⏳ Pendiente |
 | 5. Boss Level — Stripped | Análisis sin símbolos | ⏳ Pendiente |
 
@@ -296,11 +296,42 @@ Salida en texto de todos los comandos: [`evidence/reverse/baseline.txt`](evidenc
 
 ---
 
+## 3. Level 2 — Ghidra: reconstruir la validación
+
+> 📄 **Documento completo:** [`evidence/reverse/level2.md`](evidence/reverse/level2.md). Contiene las capturas `3.1` a `3.9`, el análisis de `main` y `validate_key`, el pseudocódigo propio, la tabla de reconstrucción byte a byte y la lección de desarrollo seguro.
+
+**Resultado:** ✅ clave `FDSI-REVERSE-2026` → `FLAG{ghidra_plus_gdb}`.
+
+| Captura | Contenido | Resultado |
+| :--- | :--- | :--- |
+| [`3.1`](evidence/reverse/screenshots/3.1.jpeg) | `strings -n 5 crackme_level2` | Sin clave en claro; ya no se importa `strcmp`, sí `strlen` |
+| [`3.2`](evidence/reverse/screenshots/3.2.jpeg) | `objdump -s -j .rodata crackme_level2` | 21 bytes no imprimibles tras los mensajes |
+| [`3.3`](evidence/reverse/screenshots/3.3.jpeg) | Ghidra: resumen de importación | x86-64 LE, gcc, base `0x400000`, mismo SHA-256 |
+| [`3.4`](evidence/reverse/screenshots/3.4.jpeg) | Ghidra: `main` | La decisión depende de `validate_key(argv[1])` |
+| [`3.5`](evidence/reverse/screenshots/3.5.jpeg) | Ghidra: `validate_key` | Longitud exacta `0x11` = 17 |
+| [`3.6`](evidence/reverse/screenshots/3.6.jpeg) | Ghidra: detalle del bucle | `candidate[i] ^ k[i & 3]` comparado con `expected[i]` |
+| [`3.7`](evidence/reverse/screenshots/3.7.jpeg) | Ghidra: `.rodata` | `k` = `23 51 17 6a`, `expected` = 17 bytes |
+| [`3.8`](evidence/reverse/screenshots/3.8.jpeg) | Script Python | `expected[i] ^ k[i % 4]` → `FDSI-REVERSE-2026` |
+| [`3.9`](evidence/reverse/screenshots/3.9.jpeg) | `./crackme_level2 FDSI-REVERSE-2026` | `License accepted.` + FLAG |
+
+### Resumen para la sustentación
+
+| Pregunta | Respuesta |
+| :--- | :--- |
+| **1. ¿Qué observamos?** | `strings` ya no mostraba ninguna clave y el binario dejó de importar `strcmp`; en cambio importa `strlen`. En `.rodata`, después de los mensajes, aparecían 21 bytes no imprimibles. La pista del programa decía `static + dynamic analysis`. |
+| **2. ¿Qué hipótesis formulamos?** | La clave no se guarda en claro: se compara contra datos **transformados** guardados en `.rodata`. Si la transformación es reversible, la clave se puede reconstruir a partir de esos datos sin fuerza bruta. |
+| **3. ¿Qué función o condición encontramos?** | En Ghidra, `main` delega todo en `validate_key(argv[1])`. Esa función exige `strlen == 0x11` (17) y, para cada byte, comprueba `candidate[i] ^ k[i & 3] == expected[i]`, con `k` = 4 bytes reutilizados cíclicamente. Acumula las diferencias con `OR` y devuelve `score == 0`. |
+| **4. ¿Cómo lo confirmamos?** | Como XOR es su propia inversa, `candidate[i] = expected[i] ^ k[i % 4]`. Un script de Python dio `FDSI-REVERSE-2026`, y el binario la aceptó: `License accepted.` + `FLAG{ghidra_plus_gdb}`. La confirmación paso a paso con GDB va en `gdb.md`. |
+| **5. ¿Qué enseñanza de desarrollo seguro obtuvimos?** | Ocultar la clave con XOR no la protege: si el binario puede validarla solo, contiene todo lo necesario para recuperarla. Lo correcto es validar en un servidor, comparar contra un hash de un solo sentido o verificar licencias firmadas con clave pública. |
+
+---
+
 ## ⏭️ Próximos pasos
 
 - [x] Preparación y baseline forense (capturas `1.1` a `1.7`, [`baseline.txt`](evidence/reverse/baseline.txt)).
 - [x] **Level 1:** ejecutar con datos falsos, `strings -n 5`, `objdump -d -M intel` → [`level1.md`](evidence/reverse/level1.md) (capturas `2.1` a `2.4`).
-- [ ] **Level 2:** Ghidra (proyecto Non-Shared), localizar la validación desde `main` → `level2.md`.
+- [x] **Level 2:** Ghidra (proyecto Non-Shared), localizar la validación desde `main` → [`level2.md`](evidence/reverse/level2.md) (capturas `3.1` a `3.9`).
+- [ ] Captura `3.10`: decompilador de `validate_key` con renombres y comentarios propios (último punto del checklist del nivel 2).
 - [ ] **GDB:** confirmar clave fallida y válida → `gdb.md`.
 - [ ] **Boss Level:** repetir sobre `crackme_level2_stripped`.
 - [ ] Tag `lab04`.

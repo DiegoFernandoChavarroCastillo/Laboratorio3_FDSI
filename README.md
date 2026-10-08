@@ -240,7 +240,7 @@ El DFD se mantiene también como fuente versionable en `diagrams/dfd-lab3.puml` 
 │   └── reverse/           # Lab 4 Parte 2 — CTF de ingeniería inversa
 │       ├── baseline.txt   # file, sha256sum, readelf
 │       ├── level1.md      # Level 1 — Recon (strings, objdump)
-│       ├── level2.md
+│       ├── level2.md      # Level 2 — Ghidra (validate_key)
 │       ├── gdb.md
 │       └── screenshots/   # Capturas de cada comando
 ├── nginx/
@@ -857,7 +857,7 @@ Como ruta alternativa del Laboratorio 4, el equipo desarrolla un **CTF local de 
 | 0. Preparación | Entorno Kali x86-64, binutils, GDB, Ghidra; estructura `evidence/reverse/` | ✅ |
 | 1. Baseline forense | `file`, `sha256sum` (3/3 hashes verificados), `readelf -h` | ✅ |
 | 2. Level 1 — Recon | `strings`, `objdump`, primera FLAG — [`level1.md`](evidence/reverse/level1.md) | ✅ |
-| 3. Level 2 — Ghidra | Reconstrucción de la función de validación | ⏳ |
+| 3. Level 2 — Ghidra | Reconstrucción de la función de validación — [`level2.md`](evidence/reverse/level2.md) | ✅ |
 | 4. GDB | Confirmación dinámica | ⏳ |
 | 5. Boss Level | Binario sin símbolos | ⏳ |
 

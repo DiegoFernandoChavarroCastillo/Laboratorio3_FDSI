@@ -1,0 +1,265 @@
+Gitleaks (secret scanning)	Set up job	﻿2026-10-21T22:48:00.5478263Z Current runner version: '2.338.0'
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5506077Z ##[group]Runner Image Provisioner
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5506968Z Hosted Compute Agent
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5507913Z Version: 20261015.610
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5508690Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5509422Z Build Date: 2026-10-14T17:06:54Z
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5510185Z Worker ID: {eab06491-a1df-40fc-bece-a76a35bb29ee}
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5510929Z Region: eastus
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5511512Z Cloud: Azure
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5512099Z ##[endgroup]
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5513623Z ##[group]Operating System
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5514437Z Ubuntu
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5514963Z 26.04.1
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5515456Z LTS
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5516067Z ##[endgroup]
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5516628Z ##[group]Runner Image
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5517271Z Image: ubuntu-26.04
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5518286Z Version: 20261018.168.1
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5519379Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261018.168/images/ubuntu/Ubuntu2604-Readme.md
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5521819Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261018.168
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5522867Z ##[endgroup]
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5524087Z ##[group]GITHUB_TOKEN Permissions
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5526497Z Contents: read
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5527129Z Metadata: read
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5527904Z PullRequests: read
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5528765Z ##[endgroup]
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5531076Z Secret source: Actions
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5532156Z Cache mode: write
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5533141Z Prepare workflow directory
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5877397Z Prepare all required actions
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.5926389Z Getting action download info
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.7881287Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:00.8905574Z Download action repository 'gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e' (SHA:e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e)
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:01.0230962Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Gitleaks (secret scanning)	Set up job	2026-10-21T22:48:01.1896530Z Complete job name: Gitleaks (secret scanning)
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:01.2695277Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2696406Z with:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2696846Z   fetch-depth: 0
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2697313Z   persist-credentials: false
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2698210Z   repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2702202Z   token: ***
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2702641Z   ssh-strict: true
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2703082Z   ssh-user: git
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2703502Z   clean: true
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2703941Z   sparse-checkout-cone-mode: true
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2704477Z   fetch-tags: false
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2704917Z   show-progress: true
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2705362Z   lfs: false
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2705768Z   submodules: false
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2706249Z   set-safe-directory: true
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2706760Z   allow-unsafe-pr-checkout: false
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.2707564Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3734152Z Syncing repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3737453Z ##[group]Getting Git version info
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3738786Z Working directory is '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3740336Z [command]/usr/bin/git version
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3767861Z git version 2.55.0
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3791481Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3802870Z Temporarily overriding HOME='/home/runner/work/_temp/8b445b72-7275-4b01-9123-1d8ab64bc61d' before making global git config changes
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3805169Z Adding repository directory to the temporary git global config as a safe directory
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3809047Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3869289Z Deleting the contents of '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3872452Z ##[group]Determining repository object format
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3873916Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3875158Z ##[group]Initializing the repository
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3879904Z [command]/usr/bin/git init /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.3998387Z hint: Using 'master' as the name for the initial branch. This default branch name
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4000492Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4002685Z hint: to use in all of your new repositories, which will suppress this warning,
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4004099Z hint: call:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4004911Z hint:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4007276Z hint: 	git config --global init.defaultBranch <name>
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4008817Z hint:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4009946Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4011704Z hint: 'development'. The just-created branch can be renamed via this command:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4013296Z hint:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4014151Z hint: 	git branch -m <name>
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4015077Z hint:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4016255Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4018747Z Initialized empty Git repository in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4022736Z [command]/usr/bin/git remote add origin https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4066217Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4067567Z ##[group]Disabling automatic garbage collection
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4070786Z [command]/usr/bin/git config --local gc.auto 0
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4109796Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4111122Z ##[group]Setting up auth
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4112147Z Removing SSH command configuration
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4117849Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4156753Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4627958Z Removing HTTP extra header
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4634302Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4673512Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4961239Z Removing includeIf entries pointing to credentials config files
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.4966943Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5003719Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5326602Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5372004Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path /home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5410565Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5449300Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5486743Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5523516Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5525196Z ##[group]Fetching the repository
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5532808Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/* +refs/tags/*:refs/tags/*
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0882615Z From https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0886560Z  * [new branch]      Mejoras        -> origin/Mejoras
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0889036Z  * [new branch]      appsec-lab5    -> origin/appsec-lab5
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0891508Z  * [new branch]      lab04          -> origin/lab04
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0893632Z  * [new branch]      main           -> origin/main
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0895765Z  * [new tag]         lab-reverse-v1 -> lab-reverse-v1
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0901554Z [command]/usr/bin/git branch --list --remote origin/appsec-lab5
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0923380Z   origin/appsec-lab5
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0932781Z [command]/usr/bin/git rev-parse refs/remotes/origin/appsec-lab5
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0957490Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0963621Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0965796Z ##[group]Determining the checkout info
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0968679Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.0970328Z [command]/usr/bin/git sparse-checkout disable
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1370529Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1408849Z ##[group]Checking out the ref
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1411927Z [command]/usr/bin/git checkout --progress --force -B appsec-lab5 refs/remotes/origin/appsec-lab5
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1858567Z Switched to a new branch 'appsec-lab5'
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1861181Z branch 'appsec-lab5' set up to track 'origin/appsec-lab5'.
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1872317Z ##[endgroup]
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1923051Z [command]/usr/bin/git log -1 --format=%H
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1951753Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1963506Z ##[group]Removing auth
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1965568Z Removing SSH command configuration
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.1968868Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2004959Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2279387Z Removing HTTP extra header
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2282499Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2315638Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2586254Z Removing includeIf entries pointing to credentials config files
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2590497Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2617280Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2622472Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2626893Z includeif.gitdir:/github/workspace/.git.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2630683Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2638872Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2657061Z /home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2668341Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-16f05ed3\-3a77\-4aa0\-9142\-5b2b00986b64\.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2707318Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2732555Z /home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2742826Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-16f05ed3\-3a77\-4aa0\-9142\-5b2b00986b64\.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2785838Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2811128Z /github/runner_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2821252Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-16f05ed3\-3a77\-4aa0\-9142\-5b2b00986b64\.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2854733Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2878509Z /github/runner_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2890052Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-16f05ed3\-3a77\-4aa0\-9142\-5b2b00986b64\.config
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.2931058Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.3212329Z Removing credentials config '/home/runner/work/_temp/git-credentials-16f05ed3-3a77-4aa0-9142-5b2b00986b64.config'
+Gitleaks (secret scanning)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.3224232Z ##[endgroup]
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	﻿2026-10-21T22:48:03.3440722Z ##[group]Run gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.3441310Z env:
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.3443967Z   GITHUB_TOKEN: ***
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.3444315Z   GITLEAKS_ENABLE_COMMENTS: false
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.3444675Z ##[endgroup]
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.5204959Z (node:2487) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.5206519Z (Use `node --trace-deprecation ...` to show where the warning was created)
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.5334595Z (node:2487) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.7524492Z [DiegoFernandoChavarroCastillo] is an individual user. No license key is required.
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.7526302Z gitleaks version: 8.24.3
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.7527446Z Version to install: 8.24.3 (target directory: /tmp/gitleaks-8.24.3)
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.7969693Z Downloading gitleaks from https://github.com/zricethezav/gitleaks/releases/download/v8.24.3/gitleaks_8.24.3_linux_x64.tar.gz
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.8987184Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /tmp/gitleaks-8.24.3 -f /tmp/gitleaks.tmp
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:03.9830668Z [command]/usr/bin/tar --posix -cf cache.tzst --exclude cache.tzst -P -C /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI --files-from manifest.txt --use-compress-program zstdmt
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.2905155Z Sent 5712908 of 5712908 (100.0%), 38.1 MBs/sec
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.4025425Z event type: push
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.4026988Z gitleaks cmd: gitleaks detect --redact -v --exit-code=2 --report-format=sarif --report-path=results.sarif --log-level=debug --log-opts=-1
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.4044226Z [command]/tmp/gitleaks-8.24.3/gitleaks detect --redact -v --exit-code=2 --report-format=sarif --report-path=results.sarif --log-level=debug --log-opts=-1
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6872792Z 
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6873496Z     ○
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6874205Z     │╲
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6874555Z     │ ○
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6874953Z     ○ ░
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6875347Z     ░    gitleaks
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6875595Z 
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6876177Z ^[[90m10:48PM^[[0m DBG using github.com/wasilibs/go-re2 regex engine
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.6889312Z ^[[90m10:48PM^[[0m DBG no gitleaks config found in path .gitleaks.toml, using default gitleaks config
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8283519Z ^[[90m10:48PM^[[0m DBG executing: /usr/bin/git -C . log -p -U0 -1
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8328226Z ^[[90m10:48PM^[[0m DBG SCM platform parsed from host ^[[36mhost=^[[0mgithub.com ^[[36mplatform=^[[0mgithub
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8420555Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1m1 commits scanned.^[[0m
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8421791Z ^[[90m10:48PM^[[0m DBG Note: this number might be smaller than expected due to commits with no additions
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8422753Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~18817 bytes (18.82 KB) in 155ms^[[0m
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8423448Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1mno leaks found^[[0m
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8470768Z Artifact name is valid!
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:04.8471398Z Root directory input is valid!
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.0351705Z Beginning upload of artifact content to blob storage
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.0914375Z Uploaded bytes 6800
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.1093401Z Finished uploading artifact content to blob storage!
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.1094699Z SHA256 digest of uploaded artifact zip is 3a8289d44897cc72ea2c7e2c153dc6f4c5689cc2e0640ef0aa4c44c2eb7e9b9b
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.1096323Z Finalizing artifact upload
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.3786750Z Artifact gitleaks-results.sarif.zip successfully finalized. Artifact ID 12387442802
+Gitleaks (secret scanning)	Deteccion de secretos (accion oficial, commits del evento)	2026-10-21T22:48:05.3801779Z ✅ No leaks detected
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	﻿2026-10-21T22:48:05.3982346Z ##[group]Run mkdir -p gitleaks
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3982699Z ^[[36;1mmkdir -p gitleaks^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3982956Z ^[[36;1mset +e^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3983376Z ^[[36;1mdocker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:v8.30.1 \^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3983887Z ^[[36;1m  git /repo --redact --no-banner --verbose \^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3984353Z ^[[36;1m  --report-format json --report-path /repo/gitleaks/gitleaks-historial.json^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3984788Z ^[[36;1mcode=$?^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3985121Z ^[[36;1mecho "gitleaks exit code: $code (1 = se encontraron secretos)"^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.3985543Z ^[[36;1mexit $code^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.4140557Z shell: /usr/bin/bash -e {0}
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.4140914Z ##[endgroup]
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.5326424Z Unable to find image 'ghcr.io/gitleaks/gitleaks:v8.30.1' locally
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.7168432Z v8.30.1: Pulling from gitleaks/gitleaks
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.8138287Z a43ab0c74cc4: Pulling fs layer
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.8141583Z 61fdfd7c0175: Pulling fs layer
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.8141897Z d92b655ae8e2: Pulling fs layer
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.8142569Z d49a2dee86fb: Pulling fs layer
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.9368473Z a43ab0c74cc4: Download complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:05.9374619Z d49a2dee86fb: Download complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.0368856Z 61fdfd7c0175: Download complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.0384633Z d92b655ae8e2: Download complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.0398515Z cc89e3f50cd2: Download complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.0399469Z d49a2dee86fb: Pull complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.2423347Z d92b655ae8e2: Pull complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.2830737Z a43ab0c74cc4: Pull complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.2841114Z 61fdfd7c0175: Pull complete
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.2842091Z Digest: sha256:c00b6bd0aeb3071cbcb79009cb16a60dd9e0a7c60e2be9ab65d25e6bc8abbb7f
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.2843168Z Status: Downloaded newer image for ghcr.io/gitleaks/gitleaks:v8.30.1
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.8250978Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1m12 commits scanned.^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.8251573Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1mscanned ~335843 bytes (335.84 KB) in 159ms^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.8252088Z ^[[90m10:48PM^[[0m ^[[32mINF^[[0m ^[[1mno leaks found^[[0m
+Gitleaks (secret scanning)	Escaneo de TODO el historial (CLI, salida redactada)	2026-10-21T22:48:06.9391567Z gitleaks exit code: 0 (1 = se encontraron secretos)
+Gitleaks (secret scanning)	Publicar evidencia	﻿2026-10-21T22:48:06.9465661Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9466116Z with:
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9466330Z   name: resultado-gitleaks
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9466580Z   path: gitleaks/
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9466809Z   if-no-files-found: warn
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9467060Z   compression-level: 6
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9467463Z   overwrite: false
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9468071Z   include-hidden-files: false
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9468338Z   archive: true
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:06.9468546Z ##[endgroup]
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.0933223Z With the provided path, there will be 1 file uploaded
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.0934239Z Artifact name is valid!
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.0934779Z Root directory input is valid!
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.2820420Z Uploading artifact: resultado-gitleaks.zip
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.2863223Z Beginning upload of artifact content to blob storage
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.3613307Z Uploaded bytes 165
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.3769965Z Finished uploading artifact content to blob storage!
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.3771350Z SHA256 digest of uploaded artifact is 569b307e1842ecd97bdab0b155f92469a0e27608b57e1aacc74e1293088c28e5
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.3772304Z Finalizing artifact upload
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.6253673Z Artifact resultado-gitleaks successfully finalized. Artifact ID 12388315180
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.6255200Z Artifact resultado-gitleaks has been successfully uploaded! Final size is 165 bytes. Artifact ID is 12388315180
+Gitleaks (secret scanning)	Publicar evidencia	2026-10-21T22:48:07.6259615Z Artifact download URL: https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI/actions/runs/39689070788/artifacts/12388315180
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:07.6461855Z Post job cleanup.
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7324868Z [command]/usr/bin/git version
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7388788Z git version 2.55.0
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7424452Z Temporarily overriding HOME='/home/runner/work/_temp/c10da187-3ff6-46ef-be48-97d723656586' before making global git config changes
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7425829Z Adding repository directory to the temporary git global config as a safe directory
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7430150Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7469351Z Removing SSH command configuration
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7476065Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7519693Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7831355Z Removing HTTP extra header
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7837018Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.7880839Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.8202392Z Removing includeIf entries pointing to credentials config files
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.8210962Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Gitleaks (secret scanning)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:07.8252092Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Gitleaks (secret scanning)	Complete job	﻿2026-10-21T22:48:07.8724719Z Cleaning up orphan processes

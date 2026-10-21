@@ -1,0 +1,672 @@
+Semgrep (SAST)	Set up job	﻿2026-10-21T22:48:00.3840447Z Current runner version: '2.338.0'
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3864109Z ##[group]Runner Image Provisioner
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3864980Z Hosted Compute Agent
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3865516Z Version: 20261015.610
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3866158Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3866864Z Build Date: 2026-10-14T17:06:54Z
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3867559Z Worker ID: {dd4d4cb4-5be0-44a2-be4f-6d039e49980b}
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3868275Z Region: centralus
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3868786Z Cloud: Azure
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3869321Z ##[endgroup]
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3870801Z ##[group]Operating System
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3871496Z Ubuntu
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3871992Z 26.04.1
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3872474Z LTS
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3872974Z ##[endgroup]
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3873510Z ##[group]Runner Image
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3874103Z Image: ubuntu-26.04
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3874641Z Version: 20261018.168.1
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3875618Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261018.168/images/ubuntu/Ubuntu2604-Readme.md
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3877204Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261018.168
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3878430Z ##[endgroup]
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3879604Z ##[group]GITHUB_TOKEN Permissions
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3881910Z Contents: read
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3882512Z Metadata: read
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3883087Z SecurityEvents: write
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3883700Z ##[endgroup]
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3885623Z Secret source: Actions
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3886518Z Cache mode: write
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.3887184Z Prepare workflow directory
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.4204578Z Prepare all required actions
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.4251671Z Getting action download info
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.7013173Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.7859544Z Download action repository 'actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+Semgrep (SAST)	Set up job	2026-10-21T22:48:00.8675960Z Download action repository 'github/codeql-action@9b3254085494b55a0f7c4c2b3d2d52cc712ce370' (SHA:9b3254085494b55a0f7c4c2b3d2d52cc712ce370)
+Semgrep (SAST)	Set up job	2026-10-21T22:48:01.3643470Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Semgrep (SAST)	Set up job	2026-10-21T22:48:01.5145894Z Complete job name: Semgrep (SAST)
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:01.5846134Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5847255Z with:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5847888Z   persist-credentials: false
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5848664Z   repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5853517Z   token: ***
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5854124Z   ssh-strict: true
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5854668Z   ssh-user: git
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5855216Z   clean: true
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5855762Z   sparse-checkout-cone-mode: true
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5856375Z   fetch-depth: 1
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5856966Z   fetch-tags: false
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5857552Z   show-progress: true
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5858157Z   lfs: false
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5858687Z   submodules: false
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5859231Z   set-safe-directory: true
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5859903Z   allow-unsafe-pr-checkout: false
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.5860941Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6860496Z Syncing repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6863195Z ##[group]Getting Git version info
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6864398Z Working directory is '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6866024Z [command]/usr/bin/git version
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6866988Z git version 2.55.0
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6887677Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6896049Z Temporarily overriding HOME='/home/runner/work/_temp/952e8c76-e125-4e4b-89fb-7a3290364550' before making global git config changes
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6899120Z Adding repository directory to the temporary git global config as a safe directory
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6902165Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6962555Z Deleting the contents of '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6965015Z ##[group]Determining repository object format
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6966500Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6968504Z ##[group]Initializing the repository
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6974329Z [command]/usr/bin/git init /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7140677Z hint: Using 'master' as the name for the initial branch. This default branch name
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7142662Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7144404Z hint: to use in all of your new repositories, which will suppress this warning,
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7145877Z hint: call:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7146914Z hint:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7148147Z hint: 	git config --global init.defaultBranch <name>
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7149506Z hint:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7150877Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7152668Z hint: 'development'. The just-created branch can be renamed via this command:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7154128Z hint:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7155270Z hint: 	git branch -m <name>
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7156369Z hint:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7157706Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7159743Z Initialized empty Git repository in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7167365Z [command]/usr/bin/git remote add origin https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7215096Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7216817Z ##[group]Disabling automatic garbage collection
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7218316Z [command]/usr/bin/git config --local gc.auto 0
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7249796Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7252059Z ##[group]Setting up auth
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7253423Z Removing SSH command configuration
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7254992Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7282940Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7668215Z Removing HTTP extra header
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7672626Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7703665Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7916254Z Removing includeIf entries pointing to credentials config files
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7920935Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7949703Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8164600Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8196345Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path /home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8225837Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8259267Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8295084Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8327646Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8329143Z ##[group]Fetching the repository
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8334983Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f8bf3615adc37ee0e4f61e5d652d0e6389ede543:refs/remotes/origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7538876Z From https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7542590Z  * [new ref]         f8bf3615adc37ee0e4f61e5d652d0e6389ede543 -> origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7551254Z [command]/usr/bin/git branch --list --remote origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7575537Z   origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7583148Z [command]/usr/bin/git rev-parse refs/remotes/origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7603346Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7608368Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7610969Z ##[group]Determining the checkout info
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7613752Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7615391Z [command]/usr/bin/git sparse-checkout disable
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7666967Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7697187Z ##[group]Checking out the ref
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7700352Z [command]/usr/bin/git checkout --progress --force -B appsec-lab5 refs/remotes/origin/appsec-lab5
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8221972Z Switched to a new branch 'appsec-lab5'
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8224813Z branch 'appsec-lab5' set up to track 'origin/appsec-lab5'.
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8232556Z ##[endgroup]
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8275423Z [command]/usr/bin/git log -1 --format=%H
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8296379Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8305032Z ##[group]Removing auth
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8306723Z Removing SSH command configuration
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8309562Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8335979Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8551634Z Removing HTTP extra header
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8554763Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8581221Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8788724Z Removing includeIf entries pointing to credentials config files
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8792226Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8814117Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8817771Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8821015Z includeif.gitdir:/github/workspace/.git.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8823036Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8828067Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8840406Z /home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8850173Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-151ba72b\-ea80\-4bf4\-ac9c\-e17886ec0423\.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8882415Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8900491Z /home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8912312Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-151ba72b\-ea80\-4bf4\-ac9c\-e17886ec0423\.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8946151Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8974753Z /github/runner_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8982474Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-151ba72b\-ea80\-4bf4\-ac9c\-e17886ec0423\.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9007455Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9026847Z /github/runner_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9033917Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-151ba72b\-ea80\-4bf4\-ac9c\-e17886ec0423\.config
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9063561Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9273252Z Removing credentials config '/home/runner/work/_temp/git-credentials-151ba72b-ea80-4bf4-ac9c-e17886ec0423.config'
+Semgrep (SAST)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9282320Z ##[endgroup]
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	﻿2026-10-21T22:48:02.9638521Z ##[group]Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9640238Z with:
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9641346Z   python-version: 3.12
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9642411Z   check-latest: false
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9651568Z   token: ***
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9652565Z   update-environment: true
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9653715Z   allow-prereleases: false
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9654850Z   freethreaded: false
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:02.9655886Z ##[endgroup]
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.0773252Z ##[group]Installed versions
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.0877739Z Successfully set up CPython (3.12.15)
+Semgrep (SAST)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.0880150Z ##[endgroup]
+Semgrep (SAST)	Instalar Semgrep (version fijada)	﻿2026-10-21T22:48:03.1065065Z ##[group]Run python -m pip install semgrep==1.182.0
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1066951Z ^[[36;1mpython -m pip install semgrep==1.182.0^[[0m
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1274399Z shell: /usr/bin/bash -e {0}
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1275633Z env:
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1276819Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1278682Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1280469Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1282442Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1284085Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1285719Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.1287233Z ##[endgroup]
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:03.9836476Z Collecting semgrep==1.182.0
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.0509966Z   Downloading semgrep-1.182.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl.metadata (22 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.0753605Z Collecting attrs>=21.3 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.0912532Z   Downloading attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1108010Z Collecting boltons~=21.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1260444Z   Downloading boltons-21.0.0-py2.py3-none-any.whl.metadata (1.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1436880Z Collecting click-option-group~=0.5 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1592025Z   Downloading click_option_group-0.5.9-py3-none-any.whl.metadata (5.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1801266Z Collecting click~=8.4.2 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.1954539Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.2166975Z Collecting colorama~=0.4.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.2444414Z   Downloading colorama-0.4.6-py2.py3-none-any.whl.metadata (17 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.2639818Z Collecting exceptiongroup~=1.2.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.2795440Z   Downloading exceptiongroup-1.2.2-py3-none-any.whl.metadata (6.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.2990130Z Collecting glom>=23.3 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.3143112Z   Downloading glom-25.12.0-py3-none-any.whl.metadata (5.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.3389339Z Collecting jsonschema~=4.25.1 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.3638335Z   Downloading jsonschema-4.25.1-py3-none-any.whl.metadata (7.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.3868327Z Collecting mcp==1.29.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.4030304Z   Downloading mcp-1.29.0-py3-none-any.whl.metadata (9.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.4275063Z Collecting opentelemetry-api~=1.37.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.4427181Z   Downloading opentelemetry_api-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.4663495Z Collecting opentelemetry-sdk~=1.37.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.4818241Z   Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl.metadata (1.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5022759Z Collecting opentelemetry-exporter-otlp-proto-http~=1.37.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5187746Z   Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5420032Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5574703Z   Downloading opentelemetry_instrumentation_requests-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5773588Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.5927219Z   Downloading opentelemetry_instrumentation_threading-0.66b1-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.6175023Z Collecting packaging>=21.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.6342950Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.6590804Z Collecting peewee~=3.14 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.6750210Z   Downloading peewee-3.19.0-py3-none-any.whl.metadata (7.0 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.7095904Z Collecting pyjwt<3,>=2.15.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.7251517Z   Downloading pyjwt-2.15.1-py3-none-any.whl.metadata (3.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.7514134Z Collecting requests~=2.22 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.7667052Z   Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.7979567Z Collecting rich>=13.5.2 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.8141293Z   Downloading rich-15.0.0-py3-none-any.whl.metadata (18 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.9155026Z Collecting ruamel.yaml>=0.18.15 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.9312756Z   Downloading ruamel_yaml-0.19.1-py3-none-any.whl.metadata (16 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.9676402Z Collecting ruamel.yaml.clib==0.2.15 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:04.9855758Z   Downloading ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (3.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.0058492Z Collecting semantic-version~=2.10.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.0214914Z   Downloading semantic_version-2.10.0-py2.py3-none-any.whl.metadata (9.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.0523443Z Collecting tomli~=2.4.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.0678454Z   Downloading tomli-2.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (10 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.0896346Z Collecting typing-extensions~=4.2 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.1054222Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.1299471Z Collecting urllib3~=2.0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.1456857Z   Downloading urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.1661493Z Collecting wcmatch~=8.3 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.1814381Z   Downloading wcmatch-8.5.2-py3-none-any.whl.metadata (4.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2035451Z Collecting anyio>=4.5 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2187546Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2366352Z Collecting httpx-sse>=0.4 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2518994Z   Downloading httpx_sse-0.4.3-py3-none-any.whl.metadata (9.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2742088Z Collecting httpx<1.0.0,>=0.27.1 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.2898833Z   Downloading httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.3110736Z Collecting pydantic-settings>=2.5.2 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.3263928Z   Downloading pydantic_settings-2.16.1-py3-none-any.whl.metadata (4.0 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.4105683Z Collecting pydantic<3.0.0,>=2.11.0 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.4261309Z   Downloading pydantic-2.14.1-py3-none-any.whl.metadata (133 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.4707926Z Collecting python-multipart>=0.0.9 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.4860016Z   Downloading python_multipart-0.0.32-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.5099778Z Collecting sse-starlette>=1.6.1 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.5254895Z   Downloading sse_starlette-3.5.0-py3-none-any.whl.metadata (15 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.5536258Z Collecting starlette>=0.27 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.5691157Z   Downloading starlette-1.9.0-py3-none-any.whl.metadata (6.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.6039313Z Collecting typing-inspection>=0.4.1 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.6201175Z   Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.6478528Z Collecting uvicorn>=0.31.1 (from mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.6631075Z   Downloading uvicorn-0.54.0-py3-none-any.whl.metadata (6.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.6904036Z Collecting certifi (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7073358Z   Downloading certifi-2026.10.19-py3-none-any.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7273306Z Collecting httpcore==1.* (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7425201Z   Downloading httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7634795Z Collecting idna (from httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7786030Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.7975315Z Collecting h11>=0.16 (from httpcore==1.*->httpx<1.0.0,>=0.27.1->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.8132603Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.8329466Z Collecting jsonschema-specifications>=2023.03.6 (from jsonschema~=4.25.1->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.8482651Z   Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl.metadata (2.9 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.8727210Z Collecting referencing>=0.28.4 (from jsonschema~=4.25.1->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:05.8884976Z   Downloading referencing-0.37.0-py3-none-any.whl.metadata (2.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.1151765Z Collecting rpds-py>=0.7.1 (from jsonschema~=4.25.1->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.1310397Z   Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.1591640Z Collecting importlib-metadata<8.8.0,>=6.0 (from opentelemetry-api~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.1747872Z   Downloading importlib_metadata-8.7.1-py3-none-any.whl.metadata (4.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.1989068Z Collecting zipp>=3.20 (from importlib-metadata<8.8.0,>=6.0->opentelemetry-api~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.2145091Z   Downloading zipp-4.1.2-py3-none-any.whl.metadata (3.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.2388461Z Collecting googleapis-common-protos~=1.52 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.2543394Z   Downloading googleapis_common_protos-1.75.5-py3-none-any.whl.metadata (8.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.3003092Z Collecting opentelemetry-exporter-otlp-proto-common==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.3160414Z   Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl.metadata (1.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.3370179Z Collecting opentelemetry-proto==1.37.0 (from opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.3549106Z   Downloading opentelemetry_proto-1.37.0-py3-none-any.whl.metadata (2.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.4731886Z Collecting protobuf<7.0,>=5.0 (from opentelemetry-proto==1.37.0->opentelemetry-exporter-otlp-proto-http~=1.37.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.4895968Z   Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl.metadata (593 bytes)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.5184382Z Collecting opentelemetry-instrumentation==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.5337852Z   Downloading opentelemetry_instrumentation-0.66b1-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.5576357Z Collecting opentelemetry-semantic-conventions==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.5735829Z   Downloading opentelemetry_semantic_conventions-0.66b1-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.5942500Z Collecting opentelemetry-util-http==0.66b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.6096430Z   Downloading opentelemetry_util_http-0.66b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9067196Z Collecting wrapt<3.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.66b1->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9230729Z   Downloading wrapt-2.5.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (7.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9284656Z INFO: pip is looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9295289Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9450207Z   Downloading opentelemetry_instrumentation_requests-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9495509Z Collecting opentelemetry-instrumentation==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9649051Z   Downloading opentelemetry_instrumentation-0.66b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9698962Z Collecting opentelemetry-semantic-conventions==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9855415Z   Downloading opentelemetry_semantic_conventions-0.66b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:06.9984212Z Collecting opentelemetry-util-http==0.66b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0136073Z   Downloading opentelemetry_util_http-0.66b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0189891Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0343805Z   Downloading opentelemetry_instrumentation_requests-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0388844Z Collecting opentelemetry-instrumentation==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0542821Z   Downloading opentelemetry_instrumentation-0.65b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0584791Z Collecting opentelemetry-semantic-conventions==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0736699Z   Downloading opentelemetry_semantic_conventions-0.65b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0776928Z Collecting opentelemetry-util-http==0.65b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0928743Z   Downloading opentelemetry_util_http-0.65b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.0979103Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1137304Z   Downloading opentelemetry_instrumentation_requests-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1180468Z Collecting opentelemetry-instrumentation==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1333239Z   Downloading opentelemetry_instrumentation-0.64b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1377402Z Collecting opentelemetry-semantic-conventions==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1531981Z   Downloading opentelemetry_semantic_conventions-0.64b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1571710Z Collecting opentelemetry-util-http==0.64b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1727603Z   Downloading opentelemetry_util_http-0.64b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.1973893Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2126601Z   Downloading opentelemetry_instrumentation_requests-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2171215Z Collecting opentelemetry-instrumentation==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2323446Z   Downloading opentelemetry_instrumentation-0.63b1-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2365021Z Collecting opentelemetry-semantic-conventions==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2515838Z   Downloading opentelemetry_semantic_conventions-0.63b1-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2553981Z Collecting opentelemetry-util-http==0.63b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2704911Z   Downloading opentelemetry_util_http-0.63b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2753604Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2904967Z   Downloading opentelemetry_instrumentation_requests-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.2949622Z Collecting opentelemetry-instrumentation==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3099801Z   Downloading opentelemetry_instrumentation-0.63b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3140311Z Collecting opentelemetry-semantic-conventions==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3292905Z   Downloading opentelemetry_semantic_conventions-0.63b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3331362Z Collecting opentelemetry-util-http==0.63b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3524984Z   Downloading opentelemetry_util_http-0.63b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3572835Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3723913Z   Downloading opentelemetry_instrumentation_requests-0.62b1-py3-none-any.whl.metadata (2.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3773554Z Collecting opentelemetry-instrumentation==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.3957224Z   Downloading opentelemetry_instrumentation-0.62b1-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.4002235Z Collecting opentelemetry-semantic-conventions==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.4153181Z   Downloading opentelemetry_semantic_conventions-0.62b1-py3-none-any.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.4990987Z Collecting opentelemetry-util-http==0.62b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5153905Z   Downloading opentelemetry_util_http-0.62b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5201727Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5359815Z   Downloading opentelemetry_instrumentation_requests-0.62b0-py3-none-any.whl.metadata (2.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5403924Z Collecting opentelemetry-instrumentation==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5557596Z   Downloading opentelemetry_instrumentation-0.62b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5599307Z Collecting opentelemetry-semantic-conventions==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5752608Z   Downloading opentelemetry_semantic_conventions-0.62b0-py3-none-any.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5790335Z Collecting opentelemetry-util-http==0.62b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5941447Z   Downloading opentelemetry_util_http-0.62b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5984123Z INFO: pip is still looking at multiple versions of opentelemetry-semantic-conventions to determine which version is compatible with other requirements. This could take a while.
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.5992071Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6146910Z   Downloading opentelemetry_instrumentation_requests-0.61b0-py3-none-any.whl.metadata (2.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6190531Z Collecting opentelemetry-instrumentation==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6344875Z   Downloading opentelemetry_instrumentation-0.61b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6388706Z Collecting opentelemetry-semantic-conventions==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6546668Z   Downloading opentelemetry_semantic_conventions-0.61b0-py3-none-any.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6587929Z Collecting opentelemetry-util-http==0.61b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6745343Z   Downloading opentelemetry_util_http-0.61b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6790844Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6950482Z   Downloading opentelemetry_instrumentation_requests-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.6994591Z Collecting opentelemetry-instrumentation==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7146165Z   Downloading opentelemetry_instrumentation-0.60b1-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7187229Z Collecting opentelemetry-semantic-conventions==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7347229Z   Downloading opentelemetry_semantic_conventions-0.60b1-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7386139Z Collecting opentelemetry-util-http==0.60b1 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7542021Z   Downloading opentelemetry_util_http-0.60b1-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7588103Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7738320Z   Downloading opentelemetry_instrumentation_requests-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7780884Z Collecting opentelemetry-instrumentation==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7935268Z   Downloading opentelemetry_instrumentation-0.60b0-py3-none-any.whl.metadata (7.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.7977457Z Collecting opentelemetry-semantic-conventions==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8127706Z   Downloading opentelemetry_semantic_conventions-0.60b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8165606Z Collecting opentelemetry-util-http==0.60b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8318141Z   Downloading opentelemetry_util_http-0.60b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8366434Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8521730Z   Downloading opentelemetry_instrumentation_requests-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8682670Z Collecting opentelemetry-instrumentation==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8836047Z   Downloading opentelemetry_instrumentation-0.59b0-py3-none-any.whl.metadata (7.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.8878184Z Collecting opentelemetry-semantic-conventions==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9030523Z   Downloading opentelemetry_semantic_conventions-0.59b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9070480Z Collecting opentelemetry-util-http==0.59b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9224664Z   Downloading opentelemetry_util_http-0.59b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9273613Z Collecting opentelemetry-instrumentation-requests~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9425006Z   Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9469519Z Collecting opentelemetry-instrumentation==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9620227Z   Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl.metadata (7.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9663656Z Collecting opentelemetry-semantic-conventions==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9816367Z   Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl.metadata (2.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:07.9854483Z Collecting opentelemetry-util-http==0.58b0 (from opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0007411Z   Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl.metadata (2.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0084502Z Collecting wrapt<2.0.0,>=1.0.0 (from opentelemetry-instrumentation==0.58b0->opentelemetry-instrumentation-requests~=0.58b0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0239022Z   Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0290183Z INFO: pip is looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0295588Z Collecting opentelemetry-instrumentation-threading~=0.58b0 (from semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0447698Z   Downloading opentelemetry_instrumentation_threading-0.66b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0639318Z   Downloading opentelemetry_instrumentation_threading-0.65b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.0837159Z   Downloading opentelemetry_instrumentation_threading-0.64b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1138389Z   Downloading opentelemetry_instrumentation_threading-0.63b1-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1331202Z   Downloading opentelemetry_instrumentation_threading-0.63b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1531759Z   Downloading opentelemetry_instrumentation_threading-0.62b1-py3-none-any.whl.metadata (2.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1725076Z   Downloading opentelemetry_instrumentation_threading-0.62b0-py3-none-any.whl.metadata (2.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1764552Z INFO: pip is still looking at multiple versions of opentelemetry-instrumentation-threading to determine which version is compatible with other requirements. This could take a while.
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.1924118Z   Downloading opentelemetry_instrumentation_threading-0.61b0-py3-none-any.whl.metadata (2.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.2121177Z   Downloading opentelemetry_instrumentation_threading-0.60b1-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.2314489Z   Downloading opentelemetry_instrumentation_threading-0.60b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.2504393Z   Downloading opentelemetry_instrumentation_threading-0.59b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.2695478Z   Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl.metadata (2.1 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.2888451Z Collecting annotated-types>=0.6.0 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.3042827Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.8507776Z Collecting pydantic-core==2.50.1 (from pydantic<3.0.0,>=2.11.0->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:08.8678785Z   Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.0182096Z Collecting cryptography>=3.4.0 (from pyjwt[crypto]<3,>=2.15.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.0337514Z   Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl.metadata (4.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.1344988Z Collecting charset_normalizer<4,>=2 (from requests~=2.22->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.1506779Z   Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (46 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.1802595Z Collecting bracex>=2.1.1 (from wcmatch~=8.3->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.1957469Z   Downloading bracex-3.1-py3-none-any.whl.metadata (3.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.2859393Z Collecting cffi>=2.0.0 (from cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3019444Z   Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3208929Z Collecting pycparser (from cffi>=2.0.0->cryptography>=3.4.0->pyjwt[crypto]<3,>=2.15.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3360337Z   Downloading pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3559039Z Collecting face>=20.1.1 (from glom>=23.3->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3711040Z   Downloading face-26.0.1-py3-none-any.whl.metadata (1.8 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.3978857Z Collecting python-dotenv>=1.2.2 (from pydantic-settings>=2.5.2->mcp==1.29.0->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.4131326Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.4398811Z Collecting markdown-it-py>=2.2.0 (from rich>=13.5.2->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.4553722Z   Downloading markdown_it_py-4.2.0-py3-none-any.whl.metadata (7.4 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.4962137Z Collecting pygments<3.0.0,>=2.13.0 (from rich>=13.5.2->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.5128370Z   Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.5305702Z Collecting mdurl~=0.1 (from markdown-it-py>=2.2.0->rich>=13.5.2->semgrep==1.182.0)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.5479725Z   Downloading mdurl-0.1.2-py3-none-any.whl.metadata (1.6 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:09.5781339Z Downloading semgrep-1.182.0-cp310.cp311.cp312.cp313.cp314.py310.py311.py312.py313.py314-none-manylinux_2_34_x86_64.whl (71.8 MB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.2507791Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.8/71.8 MB 109.2 MB/s  0:00:00
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.2682620Z Downloading mcp-1.29.0-py3-none-any.whl (223 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.2882206Z Downloading ruamel_yaml_clib-0.2.15-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (788 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.2945680Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 788.2/788.2 kB 135.9 MB/s  0:00:00
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.3116808Z Downloading boltons-21.0.0-py2.py3-none-any.whl (193 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.3300394Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.3479636Z Downloading click_option_group-0.5.9-py3-none-any.whl (11 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.3657571Z Downloading colorama-0.4.6-py2.py3-none-any.whl (25 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.3984239Z Downloading exceptiongroup-1.2.2-py3-none-any.whl (16 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.4162774Z Downloading httpx-0.28.1-py3-none-any.whl (73 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.4346388Z Downloading httpcore-1.0.9-py3-none-any.whl (78 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.4527383Z Downloading jsonschema-4.25.1-py3-none-any.whl (90 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.4706610Z Downloading opentelemetry_api-1.37.0-py3-none-any.whl (65 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.4888083Z Downloading importlib_metadata-8.7.1-py3-none-any.whl (27 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5066821Z Downloading opentelemetry_exporter_otlp_proto_http-1.37.0-py3-none-any.whl (19 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5245208Z Downloading opentelemetry_exporter_otlp_proto_common-1.37.0-py3-none-any.whl (18 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5425667Z Downloading opentelemetry_proto-1.37.0-py3-none-any.whl (72 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5607246Z Downloading googleapis_common_protos-1.75.5-py3-none-any.whl (307 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5792633Z Downloading opentelemetry_instrumentation_requests-0.58b0-py3-none-any.whl (12 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.5973946Z Downloading opentelemetry_semantic_conventions-0.58b0-py3-none-any.whl (207 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.6193341Z Downloading opentelemetry_instrumentation-0.58b0-py3-none-any.whl (33 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.6376270Z Downloading opentelemetry_util_http-0.58b0-py3-none-any.whl (7.7 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.6556335Z Downloading opentelemetry_instrumentation_threading-0.58b0-py3-none-any.whl (9.3 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.6730743Z Downloading opentelemetry_sdk-1.37.0-py3-none-any.whl (131 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.6910807Z Downloading peewee-3.19.0-py3-none-any.whl (411 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7125575Z Downloading protobuf-6.33.6-cp39-abi3-manylinux2014_x86_64.whl (323 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7310843Z Downloading pydantic-2.14.1-py3-none-any.whl (488 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7497610Z Downloading pydantic_core-2.50.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.2 MB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7640770Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.2/2.2 MB 157.6 MB/s  0:00:00
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7796740Z Downloading pyjwt-2.15.1-py3-none-any.whl (33 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.7975466Z Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.8153014Z Downloading charset_normalizer-3.5.2-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (257 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.8496607Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.8673145Z Downloading semantic_version-2.10.0-py2.py3-none-any.whl (15 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.8847466Z Downloading tomli-2.4.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (253 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9026843Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9201750Z Downloading urllib3-2.8.0-py3-none-any.whl (135 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9381235Z Downloading wcmatch-8.5.2-py3-none-any.whl (39 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9560215Z Downloading wrapt-1.17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (88 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9739236Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:10.9911976Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.0090704Z Downloading attrs-26.1.0-py3-none-any.whl (67 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.0268652Z Downloading bracex-3.1-py3-none-any.whl (11 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.0440794Z Downloading certifi-2026.10.19-py3-none-any.whl (136 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.0617768Z Downloading cryptography-50.0.2-cp311-abi3-manylinux_2_34_x86_64.whl (4.8 MB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.0949727Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.8/4.8 MB 146.2 MB/s  0:00:00
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.1108854Z Downloading cffi-2.1.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (221 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.1381774Z Downloading glom-25.12.0-py3-none-any.whl (103 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.1591791Z Downloading face-26.0.1-py3-none-any.whl (57 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.1881278Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.2089045Z Downloading httpx_sse-0.4.3-py3-none-any.whl (9.0 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.2290801Z Downloading jsonschema_specifications-2025.9.1-py3-none-any.whl (18 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.2491899Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.3289064Z Downloading pydantic_settings-2.16.1-py3-none-any.whl (80 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.3589824Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.3987414Z Downloading python_multipart-0.0.32-py3-none-any.whl (30 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.4307905Z Downloading referencing-0.37.0-py3-none-any.whl (26 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.4789753Z Downloading rich-15.0.0-py3-none-any.whl (310 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.5284397Z Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.5561774Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 39.2 MB/s  0:00:00
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.5718951Z Downloading markdown_it_py-4.2.0-py3-none-any.whl (91 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.5917468Z Downloading mdurl-0.1.2-py3-none-any.whl (10.0 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.6099128Z Downloading rpds_py-2026.9.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (371 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.6286905Z Downloading ruamel_yaml-0.19.1-py3-none-any.whl (118 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.8282816Z Downloading sse_starlette-3.5.0-py3-none-any.whl (17 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.8463560Z Downloading starlette-1.9.0-py3-none-any.whl (80 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.8643346Z Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.8818440Z Downloading uvicorn-0.54.0-py3-none-any.whl (87 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.9002117Z Downloading zipp-4.1.2-py3-none-any.whl (10 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:11.9177971Z Downloading pycparser-3.11-py3-none-any.whl (51 kB)
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:12.2720375Z Installing collected packages: peewee, boltons, zipp, wrapt, urllib3, typing-extensions, tomli, semantic-version, ruamel.yaml.clib, ruamel.yaml, rpds-py, python-multipart, python-dotenv, pyjwt, pygments, pycparser, protobuf, packaging, opentelemetry-util-http, mdurl, idna, httpx-sse, h11, face, exceptiongroup, colorama, click, charset_normalizer, certifi, bracex, attrs, annotated-types, wcmatch, uvicorn, typing-inspection, requests, referencing, pydantic-core, opentelemetry-proto, markdown-it-py, importlib-metadata, httpcore, googleapis-common-protos, glom, click-option-group, cffi, anyio, starlette, rich, pydantic, opentelemetry-exporter-otlp-proto-common, opentelemetry-api, jsonschema-specifications, httpx, cryptography, sse-starlette, pydantic-settings, opentelemetry-semantic-conventions, jsonschema, opentelemetry-sdk, opentelemetry-instrumentation, mcp, opentelemetry-instrumentation-threading, opentelemetry-instrumentation-requests, opentelemetry-exporter-otlp-proto-http, semgrep
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:17.2548540Z 
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:17.2595709Z Successfully installed annotated-types-0.8.0 anyio-4.15.1 attrs-26.1.0 boltons-21.0.0 bracex-3.1 certifi-2026.10.19 cffi-2.1.1 charset_normalizer-3.5.2 click-8.4.2 click-option-group-0.5.9 colorama-0.4.6 cryptography-50.0.2 exceptiongroup-1.2.2 face-26.0.1 glom-25.12.0 googleapis-common-protos-1.75.5 h11-0.16.0 httpcore-1.0.9 httpx-0.28.1 httpx-sse-0.4.3 idna-3.20 importlib-metadata-8.7.1 jsonschema-4.25.1 jsonschema-specifications-2025.9.1 markdown-it-py-4.2.0 mcp-1.29.0 mdurl-0.1.2 opentelemetry-api-1.37.0 opentelemetry-exporter-otlp-proto-common-1.37.0 opentelemetry-exporter-otlp-proto-http-1.37.0 opentelemetry-instrumentation-0.58b0 opentelemetry-instrumentation-requests-0.58b0 opentelemetry-instrumentation-threading-0.58b0 opentelemetry-proto-1.37.0 opentelemetry-sdk-1.37.0 opentelemetry-semantic-conventions-0.58b0 opentelemetry-util-http-0.58b0 packaging-26.3 peewee-3.19.0 protobuf-6.33.6 pycparser-3.11 pydantic-2.14.1 pydantic-core-2.50.1 pydantic-settings-2.16.1 pygments-2.21.0 pyjwt-2.15.1 python-dotenv-1.2.4 python-multipart-0.0.32 referencing-0.37.0 requests-2.34.2 rich-15.0.0 rpds-py-2026.9.1 ruamel.yaml-0.19.1 ruamel.yaml.clib-0.2.15 semantic-version-2.10.0 semgrep-1.182.0 sse-starlette-3.5.0 starlette-1.9.0 tomli-2.4.1 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 uvicorn-0.54.0 wcmatch-8.5.2 wrapt-1.17.3 zipp-4.1.2
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:17.2602802Z 
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:17.2603252Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+Semgrep (SAST)	Instalar Semgrep (version fijada)	2026-10-21T22:48:17.2604201Z [notice] To update, run: pip install --upgrade pip
+Semgrep (SAST)	Analisis con reglas comunitarias	﻿2026-10-21T22:48:17.4311113Z ##[group]Run semgrep scan \
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4311614Z ^[[36;1msemgrep scan \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4311963Z ^[[36;1m  --config p/python \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4312388Z ^[[36;1m  --config p/owasp-top-ten \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4312777Z ^[[36;1m  --config p/security-audit \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4313182Z ^[[36;1m  --config p/secrets \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4313584Z ^[[36;1m  --metrics=off \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4313976Z ^[[36;1m  --exclude Kit_Integracion_AppSec_GitHub_FSI \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4314487Z ^[[36;1m  --sarif-output=semgrep.sarif \^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4314910Z ^[[36;1m  --json-output=semgrep.json^[[0m
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4354912Z shell: /usr/bin/bash -e {0}
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4355314Z env:
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4355759Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4356293Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4356781Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4357343Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4357816Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4358276Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:17.4358668Z ##[endgroup]
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3693112Z                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3694291Z                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3695001Z ┌─────────────┐
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3695333Z │ Scan Status │
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3695801Z └─────────────┘
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3696488Z   Scanning 40 files tracked by git with 729 Code rules:
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3781552Z                                                                                                                         
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3782499Z   Language      Rules   Files          Origin      Rules                                                                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3783654Z  ─────────────────────────────        ───────────────────                                                               
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3784664Z   <multilang>      61      27          Community     729                                                                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3785322Z   yaml             25       4                                                                                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3785968Z   python          198       3                                                                                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3786573Z   bash              1       2                                                                                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3787080Z   html              1       1                                                                                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:22.3787593Z                                                                                                                         
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9216177Z                    
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9216663Z                    
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9217392Z ┌─────────────────┐
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9217725Z │ 3 Code Findings │
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9218066Z └─────────────────┘
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9218461Z                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9218853Z     .github/dependabot.yml
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9219590Z     ❯❱ package_managers.dependabot.dependabot-missing-cooldown.dependabot-missing-cooldown
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9220225Z           ❰❰ Blocking ❱❱
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9220949Z           This Dependabot configuration does not set a cooldown period. Newly published packages can be     
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9222004Z           malicious or unstable. Add a `cooldown` block with `default-days: 7` to each `package-ecosystem`  
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9222679Z           entry under `updates` to wait 7 days before proposing updates to newly published package versions.
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9223415Z           Reference: https://docs.github.com/en/code-security/dependabot/dependabot-version-                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9224234Z           updates/configuration-options-for-the-dependabot.yml-file#cooldown                                
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9225019Z           Details: https://sg.run/5WvGK                                                                     
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9225556Z                                                                                                             
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9226258Z             4┆ - package-ecosystem: "pip"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9226664Z             5┆   directory: "/"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9227037Z             6┆   schedule:
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9227432Z             7┆     interval: "weekly"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9227943Z             8┆   open-pull-requests-limit: 5
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9228404Z             ⋮┆----------------------------------------
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9228853Z            12┆ - package-ecosystem: "github-actions"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9229270Z            13┆   directory: "/"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9229627Z            14┆   schedule:
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9229998Z            15┆     interval: "weekly"
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9230426Z            16┆   open-pull-requests-limit: 5
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9230950Z                                      
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9231360Z     evidence/mejoras/nginx-antes.conf
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9231896Z     ❯❱ generic.nginx.security.request-host-used.request-host-used
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9232367Z           ❰❰ Blocking ❱❱
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9232866Z           '$http_host' and '$host' variables may contain a malicious value from attacker controlled 'Host'
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9233533Z           request header. Use an explicitly configured host value or a allow list for validation.         
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9234188Z           Details: https://sg.run/4x3Z                                                                    
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9234688Z                                                                                                           
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9236278Z           103┆ proxy_set_header Host $host;
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9236560Z 
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9236728Z                 
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9236999Z                 
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9237346Z ┌──────────────┐
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9237650Z │ Scan Summary │
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9237955Z └──────────────┘
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9238933Z ✅ Scan completed successfully.
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9239333Z  • Findings: 3 (3 blocking)
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9239681Z  • Rules run: 286
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9239998Z  • Targets scanned: 40
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9240370Z  • Parsed lines: ~100.0%
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9241086Z  • Scan skipped: 
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9241442Z    ◦ Files larger than  files 1.0 MB: 1
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9242342Z  • Scan was limited to files tracked by git
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9242906Z  • For a detailed list of skipped files and lines, run semgrep with the --verbose flag
+Semgrep (SAST)	Analisis con reglas comunitarias	2026-10-21T22:48:23.9243376Z Ran 286 rules on 40 files: 3 findings.
+Semgrep (SAST)	Subir SARIF a Code scanning	﻿2026-10-21T22:48:24.1875638Z ##[group]Run github/codeql-action/upload-sarif@9b3254085494b55a0f7c4c2b3d2d52cc712ce370
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1876211Z with:
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1876504Z   sarif_file: semgrep.sarif
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1876809Z   category: semgrep
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1877222Z   checkout_path: /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1880179Z   token: ***
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1880502Z   matrix: null
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1881075Z   wait-for-processing: true
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1881382Z env:
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1881745Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1882226Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1882885Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1883344Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1883805Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1884283Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.1884786Z ##[endgroup]
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:24.4563312Z Job run UUID is 97ff9b35-71ec-4864-8ff4-f48bc04ff06f.
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:25.2612308Z Post-processing sarif files: ["semgrep.sarif"]
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:25.2697701Z Validating semgrep.sarif
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:25.4428799Z Adding fingerprints to SARIF file. See https://docs.github.com/en/code-security/reference/code-scanning/sarif-support-for-code-scanning#data-for-preventing-duplicated-alerts for more information.
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:25.4609578Z ##[group]Uploading code scanning results
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:25.4943096Z Uploading results
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:26.0114536Z Successfully uploaded results
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:26.0115619Z ##[endgroup]
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:26.0119759Z ##[group]Waiting for processing to finish
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:31.2641959Z Analysis upload status is complete.
+Semgrep (SAST)	Subir SARIF a Code scanning	2026-10-21T22:48:31.2643289Z ##[endgroup]
+Semgrep (SAST)	Publicar evidencia	﻿2026-10-21T22:48:31.6830302Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6831378Z with:
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6831714Z   name: resultado-semgrep
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6832052Z   path: semgrep.sarif
+Semgrep (SAST)	Publicar evidencia	semgrep.json
+Semgrep (SAST)	Publicar evidencia	
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6832401Z   if-no-files-found: warn
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6832816Z   compression-level: 6
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6833115Z   overwrite: false
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6833434Z   include-hidden-files: false
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6833743Z   archive: true
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6834032Z env:
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6834393Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6834878Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6835378Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6835835Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6836322Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6836798Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6837343Z   CODEQL_ACTION_JOB_RUN_UUID: 97ff9b35-71ec-4864-8ff4-f48bc04ff06f
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6837798Z   CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6838166Z   CODEQL_ACTION_FEATURE_SANDWICH: false
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6838548Z   CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6838918Z   CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6839270Z   CODEQL_ACTION_VERSION: 4.39.1
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6839713Z   CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/seguridad-estatica.yml:sast
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6840242Z   CODEQL_WORKFLOW_STARTED_AT: 2026-10-21T22:48:24.455Z
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6841123Z   CODEQL_UPLOAD_SARIF_SEMGREP__SEMGREP_OSS: CODEQL_UPLOAD_SARIF_SEMGREP__SEMGREP_OSS
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.6841620Z ##[endgroup]
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.8179368Z Multiple search paths detected. Calculating the least common ancestor of all paths
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.8182496Z The least common ancestor is /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI. This will be the root directory of the artifact
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.8183717Z With the provided path, there will be 2 files uploaded
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.8185099Z Artifact name is valid!
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:31.8186091Z Root directory input is valid!
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.0572221Z Uploading artifact: resultado-semgrep.zip
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.0605775Z Beginning upload of artifact content to blob storage
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.3381257Z Uploaded bytes 139589
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.3747730Z Finished uploading artifact content to blob storage!
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.3748902Z SHA256 digest of uploaded artifact is 1ec1a20654e7759404b8ae04fec9ca5762932180795a338a91c4f04a8cdb26f0
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.3750313Z Finalizing artifact upload
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.7030263Z Artifact resultado-semgrep successfully finalized. Artifact ID 12388405358
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.7031603Z Artifact resultado-semgrep has been successfully uploaded! Final size is 139589 bytes. Artifact ID is 12388405358
+Semgrep (SAST)	Publicar evidencia	2026-10-21T22:48:32.7034225Z Artifact download URL: https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI/actions/runs/39689070788/artifacts/12388405358
+Semgrep (SAST)	Post Subir SARIF a Code scanning	﻿2026-10-21T22:48:32.7190303Z Post job cleanup.
+Semgrep (SAST)	Post Subir SARIF a Code scanning	2026-10-21T22:48:32.9971210Z ##[group]Uploading combined SARIF debug artifact
+Semgrep (SAST)	Post Subir SARIF a Code scanning	2026-10-21T22:48:32.9972623Z ##[endgroup]
+Semgrep (SAST)	Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	﻿2026-10-21T22:48:33.0122753Z Post job cleanup.
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:33.1516084Z Post job cleanup.
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2443467Z [command]/usr/bin/git version
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2493070Z git version 2.55.0
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2524844Z Temporarily overriding HOME='/home/runner/work/_temp/964b063f-442e-4de1-8d36-18537e5f5de1' before making global git config changes
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2526389Z Adding repository directory to the temporary git global config as a safe directory
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2531482Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2561761Z Removing SSH command configuration
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2568056Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2599448Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2834050Z Removing HTTP extra header
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2838434Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.2868798Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.3117747Z Removing includeIf entries pointing to credentials config files
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.3123164Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Semgrep (SAST)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:33.3152535Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Semgrep (SAST)	Complete job	﻿2026-10-21T22:48:33.3504596Z Cleaning up orphan processes

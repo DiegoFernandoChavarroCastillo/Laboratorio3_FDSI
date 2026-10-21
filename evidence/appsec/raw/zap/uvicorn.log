@@ -1,0 +1,20 @@
+INFO:     Started server process [2608]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-10-21 22:48:09,696 | INFO | rid=local-a9e134a1c6b0 src=127.0.0.1 method=GET path=/api/health status=200
+INFO:     127.0.0.1:54044 - "GET /api/health HTTP/1.1" 200 OK
+2026-10-21 22:48:55,701 | INFO | rid=local-511f43104c2b src=127.0.0.1 method=GET path=/api/alerts status=200
+INFO:     127.0.0.1:47224 - "GET /api/alerts HTTP/1.1" 200 OK
+2026-10-21 22:48:55,718 | INFO | rid=local-73c51561f487 src=127.0.0.1 method=GET path=/ status=404
+INFO:     127.0.0.1:47224 - "GET / HTTP/1.1" 404 Not Found
+2026-10-21 22:48:55,750 | INFO | rid=local-7f8b2c4bdd05 src=127.0.0.1 method=GET path=/ status=404
+INFO:     127.0.0.1:47224 - "GET / HTTP/1.1" 404 Not Found
+2026-10-21 22:48:55,755 | INFO | rid=local-48efcefeab4f src=127.0.0.1 method=GET path=/robots.txt status=404
+INFO:     127.0.0.1:47236 - "GET /robots.txt HTTP/1.1" 404 Not Found
+2026-10-21 22:48:55,756 | INFO | rid=local-759b561b1663 src=127.0.0.1 method=GET path=/sitemap.xml status=404
+INFO:     127.0.0.1:47224 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+2026-10-21 22:48:55,757 | INFO | rid=local-6cd41e0d4c56 src=127.0.0.1 method=GET path=/api status=404
+INFO:     127.0.0.1:47248 - "GET /api HTTP/1.1" 404 Not Found
+2026-10-21 22:48:55,762 | INFO | rid=local-8c056eed5701 src=127.0.0.1 method=GET path=/api/alerts status=200
+INFO:     127.0.0.1:47236 - "GET /api/alerts HTTP/1.1" 200 OK

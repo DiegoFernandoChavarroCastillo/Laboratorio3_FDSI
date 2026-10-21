@@ -1,0 +1,493 @@
+ZAP baseline (informativo)	Set up job	﻿2026-10-21T22:48:01.0587464Z Current runner version: '2.338.0'
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0611417Z ##[group]Runner Image Provisioner
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0612325Z Hosted Compute Agent
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0613150Z Version: 20261012.601
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0613873Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0614641Z Build Date: 2026-10-12T17:48:21Z
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0615396Z Worker ID: {8288aa08-79cb-422f-a9c9-b9bd3fdd5ae8}
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0616380Z Region: westcentralus
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0617063Z Cloud: Azure
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0617617Z ##[endgroup]
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0619084Z ##[group]Operating System
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0619794Z Ubuntu
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0620313Z 26.04.1
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0620877Z LTS
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0621393Z ##[endgroup]
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0621926Z ##[group]Runner Image
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0622649Z Image: ubuntu-26.04
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0623272Z Version: 20261012.163.1
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0624385Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261012.163/images/ubuntu/Ubuntu2604-Readme.md
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0626602Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261012.163
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0627754Z ##[endgroup]
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0628810Z ##[group]GITHUB_TOKEN Permissions
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0630719Z Contents: read
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0631334Z Metadata: read
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0632015Z ##[endgroup]
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0633980Z Secret source: Actions
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0635019Z Cache mode: write
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.0636174Z Prepare workflow directory
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.1035242Z Prepare all required actions
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.1082310Z Getting action download info
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.3785690Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.4932081Z Download action repository 'actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97' (SHA:5fda3b95a4ea91299a34e894583c3862153e4b97)
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:01.5882087Z Download action repository 'actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+ZAP baseline (informativo)	Set up job	2026-10-21T22:48:02.2119399Z Complete job name: ZAP baseline (informativo)
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:02.3000470Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3001628Z with:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3002128Z   persist-credentials: false
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3002864Z   repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3007548Z   token: ***
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3008030Z   ssh-strict: true
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3008507Z   ssh-user: git
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3008952Z   clean: true
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3009434Z   sparse-checkout-cone-mode: true
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3009991Z   fetch-depth: 1
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3010454Z   fetch-tags: false
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3010928Z   show-progress: true
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3011402Z   lfs: false
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3011854Z   submodules: false
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3012341Z   set-safe-directory: true
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3012909Z   allow-unsafe-pr-checkout: false
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3013784Z env:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3014302Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.3014913Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4049241Z Syncing repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4052414Z ##[group]Getting Git version info
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4054024Z Working directory is '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4056359Z [command]/usr/bin/git version
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4057365Z git version 2.55.0
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4080605Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4091274Z Temporarily overriding HOME='/home/runner/work/_temp/3677dff7-08ad-4945-8a15-6e4a7d157ba3' before making global git config changes
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4094070Z Adding repository directory to the temporary git global config as a safe directory
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4097740Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4153062Z Deleting the contents of '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4156083Z ##[group]Determining repository object format
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4157891Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4159602Z ##[group]Initializing the repository
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4162181Z [command]/usr/bin/git init /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4277368Z hint: Using 'master' as the name for the initial branch. This default branch name
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4279805Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4281690Z hint: to use in all of your new repositories, which will suppress this warning,
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4283138Z hint: call:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4283972Z hint:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4284986Z hint: 	git config --global init.defaultBranch <name>
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4286568Z hint:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4288029Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4290155Z hint: 'development'. The just-created branch can be renamed via this command:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4291988Z hint:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4292918Z hint: 	git branch -m <name>
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4294172Z hint:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4295340Z hint: Disable this message with "git config set advice.defaultBranchName false"
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4297663Z Initialized empty Git repository in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4303530Z [command]/usr/bin/git remote add origin https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4352586Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4354100Z ##[group]Disabling automatic garbage collection
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4356047Z [command]/usr/bin/git config --local gc.auto 0
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4392223Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4394140Z ##[group]Setting up auth
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4395234Z Removing SSH command configuration
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4396991Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4432145Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4855963Z Removing HTTP extra header
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4861577Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.4898513Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5161238Z Removing includeIf entries pointing to credentials config files
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5166790Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5202110Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5468462Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5505799Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path /home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5556977Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5591515Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5622722Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5653952Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5655373Z ##[group]Fetching the repository
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.5659990Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f8bf3615adc37ee0e4f61e5d652d0e6389ede543:refs/remotes/origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6598343Z From https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6602083Z  * [new ref]         f8bf3615adc37ee0e4f61e5d652d0e6389ede543 -> origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6611688Z [command]/usr/bin/git branch --list --remote origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6641888Z   origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6652033Z [command]/usr/bin/git rev-parse refs/remotes/origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6679433Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6689851Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6692224Z ##[group]Determining the checkout info
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6694829Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6696646Z [command]/usr/bin/git sparse-checkout disable
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6746648Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6781180Z ##[group]Checking out the ref
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.6784987Z [command]/usr/bin/git checkout --progress --force -B appsec-lab5 refs/remotes/origin/appsec-lab5
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7229583Z Switched to a new branch 'appsec-lab5'
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7232321Z branch 'appsec-lab5' set up to track 'origin/appsec-lab5'.
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7242385Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7288484Z [command]/usr/bin/git log -1 --format=%H
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7316001Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7326991Z ##[group]Removing auth
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7329103Z Removing SSH command configuration
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7332265Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7367743Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7634231Z Removing HTTP extra header
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7638486Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7673901Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7936869Z Removing includeIf entries pointing to credentials config files
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7940313Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7967831Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7971916Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7974682Z includeif.gitdir:/github/workspace/.git.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7977173Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.7981939Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8004070Z /home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8016535Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-d51e6559\-a09c\-4dac\-9048\-ae90a98175d9\.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8053593Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8081373Z /home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8092531Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-d51e6559\-a09c\-4dac\-9048\-ae90a98175d9\.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8125783Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8150239Z /github/runner_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8168523Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-d51e6559\-a09c\-4dac\-9048\-ae90a98175d9\.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8194589Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8218889Z /github/runner_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8228661Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-d51e6559\-a09c\-4dac\-9048\-ae90a98175d9\.config
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8262001Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8525786Z Removing credentials config '/home/runner/work/_temp/git-credentials-d51e6559-a09c-4dac-9048-ae90a98175d9.config'
+ZAP baseline (informativo)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:03.8533449Z ##[endgroup]
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	﻿2026-10-21T22:48:03.8847355Z ##[group]Run python3 - <<'PYV'
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8848616Z ^[[36;1mpython3 - <<'PYV'^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8849759Z ^[[36;1mimport os, sys, urllib.parse^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8851196Z ^[[36;1mu = urllib.parse.urlparse(os.environ["TARGET"])^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8852907Z ^[[36;1mif u.hostname not in ("127.0.0.1", "localhost", "::1"):^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8854798Z ^[[36;1m    sys.exit(f"Destino no permitido: {u.hostname}. Solo loopback.")^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8857095Z ^[[36;1mprint("Destino autorizado (app propia en el runner):", u.hostname)^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.8858802Z ^[[36;1mPYV^[[0m
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.9032238Z shell: /usr/bin/bash -e {0}
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.9033337Z env:
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.9034253Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.9035670Z ##[endgroup]
+ZAP baseline (informativo)	Validar destino autorizado (solo loopback)	2026-10-21T22:48:03.9330662Z Destino autorizado (app propia en el runner): 127.0.0.1
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	﻿2026-10-21T22:48:03.9566237Z ##[group]Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9567927Z with:
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9568760Z   python-version: 3.12
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9569733Z   check-latest: false
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9580061Z   token: ***
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9580972Z   update-environment: true
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9582021Z   allow-prereleases: false
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9583040Z   freethreaded: false
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9583976Z env:
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9584902Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:03.9586231Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:04.0777669Z ##[group]Installed versions
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:04.0873391Z Successfully set up CPython (3.12.15)
+ZAP baseline (informativo)	Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	2026-10-21T22:48:04.0876501Z ##[endgroup]
+ZAP baseline (informativo)	Instalar dependencias de la app	﻿2026-10-21T22:48:04.1048286Z ##[group]Run python -m pip install -r requirements.txt
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1049838Z ^[[36;1mpython -m pip install -r requirements.txt^[[0m
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1162443Z shell: /usr/bin/bash -e {0}
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1163537Z env:
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1164432Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1166167Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1167952Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1169701Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1171280Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1172878Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1174471Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.1176286Z ##[endgroup]
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:04.9876394Z Collecting fastapi==0.115.6 (from -r requirements.txt (line 1))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.0578089Z   Downloading fastapi-0.115.6-py3-none-any.whl.metadata (27 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.1066447Z Collecting uvicorn==0.32.1 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.1262599Z   Downloading uvicorn-0.32.1-py3-none-any.whl.metadata (6.6 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.2641157Z Collecting pydantic==2.10.4 (from -r requirements.txt (line 3))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.2843538Z   Downloading pydantic-2.10.4-py3-none-any.whl.metadata (29 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.3280125Z Collecting starlette<0.42.0,>=0.40.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.3472375Z   Downloading starlette-0.41.3-py3-none-any.whl.metadata (6.0 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.3802156Z Collecting typing-extensions>=4.8.0 (from fastapi==0.115.6->-r requirements.txt (line 1))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.3998331Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.4281218Z Collecting annotated-types>=0.6.0 (from pydantic==2.10.4->-r requirements.txt (line 3))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:05.4482231Z   Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.1322287Z Collecting pydantic-core==2.27.2 (from pydantic==2.10.4->-r requirements.txt (line 3))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.1517390Z   Downloading pydantic_core-2.27.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.1851265Z Collecting click>=7.0 (from uvicorn==0.32.1->uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.2042469Z   Downloading click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.2310433Z Collecting h11>=0.8 (from uvicorn==0.32.1->uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.2501696Z   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.3005154Z Collecting httptools>=0.6.3 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.3196238Z   Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.3564314Z Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.3757092Z   Downloading python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.4304957Z Collecting pyyaml>=5.1 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.4495300Z   Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.5020519Z Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.5213181Z   Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.6071086Z Collecting watchfiles>=0.13 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.6264328Z   Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.7514748Z Collecting websockets>=10.4 (from uvicorn[standard]==0.32.1->-r requirements.txt (line 2))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.7707197Z   Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.8038920Z Collecting anyio<5,>=3.4.0 (from starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.8230117Z   Downloading anyio-4.15.1-py3-none-any.whl.metadata (4.7 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.8554135Z Collecting idna>=2.8 (from anyio<5,>=3.4.0->starlette<0.42.0,>=0.40.0->fastapi==0.115.6->-r requirements.txt (line 1))
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.8745697Z   Downloading idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.9061267Z Downloading fastapi-0.115.6-py3-none-any.whl (94 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.9512903Z Downloading pydantic-2.10.4-py3-none-any.whl (431 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:06.9977708Z Downloading uvicorn-0.32.1-py3-none-any.whl (63 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.0188260Z Downloading pydantic_core-2.27.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.0 MB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.0607694Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 47.1 MB/s  0:00:00
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.0800543Z Downloading starlette-0.41.3-py3-none-any.whl (73 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1010406Z Downloading anyio-4.15.1-py3-none-any.whl (132 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1230120Z Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1446166Z Downloading click-8.5.0-py3-none-any.whl (125 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1662889Z Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1878892Z Downloading httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.1931944Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 552.8/552.8 kB 105.8 MB/s  0:00:00
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.2123450Z Downloading idna-3.20-py3-none-any.whl (69 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.2333765Z Downloading python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.2550870Z Downloading pyyaml-6.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (807 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.2608260Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 807.9/807.9 kB 152.4 MB/s  0:00:00
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.2797302Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.3009960Z Downloading uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.3318480Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 149.1 MB/s  0:00:00
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.3516586Z Downloading watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.3740867Z Downloading websockets-17.3-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (225 kB)
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:07.4796266Z Installing collected packages: websockets, uvloop, typing-extensions, pyyaml, python-dotenv, idna, httptools, h11, click, annotated-types, uvicorn, pydantic-core, anyio, watchfiles, starlette, pydantic, fastapi
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:08.5669584Z 
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:08.5692320Z Successfully installed annotated-types-0.8.0 anyio-4.15.1 click-8.5.0 fastapi-0.115.6 h11-0.16.0 httptools-0.9.0 idna-3.20 pydantic-2.10.4 pydantic-core-2.27.2 python-dotenv-1.2.4 pyyaml-6.0.3 starlette-0.41.3 typing-extensions-4.16.0 uvicorn-0.32.1 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.3
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:08.5701221Z 
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:08.5701599Z [notice] A new release of pip is available: 26.2.1 -> 26.2.2
+ZAP baseline (informativo)	Instalar dependencias de la app	2026-10-21T22:48:08.5702270Z [notice] To update, run: pip install --upgrade pip
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	﻿2026-10-21T22:48:08.6480683Z ##[group]Run nohup uvicorn main:app --host 127.0.0.1 --port 8000 > uvicorn.log 2>&1 &
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6481313Z ^[[36;1mnohup uvicorn main:app --host 127.0.0.1 --port 8000 > uvicorn.log 2>&1 &^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6481737Z ^[[36;1mfor i in $(seq 1 30); do^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6482288Z ^[[36;1m  if curl -fsS http://127.0.0.1:8000/api/health; then echo; echo "App arriba"; exit 0; fi^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6482750Z ^[[36;1m  sleep 1^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6482964Z ^[[36;1mdone^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6483274Z ^[[36;1mecho "La app no respondio en /api/health"; cat uvicorn.log; exit 1^[[0m
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6542693Z shell: /usr/bin/bash -e {0}
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6542945Z env:
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6543173Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6543557Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6543990Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6544420Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6544867Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6545251Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6546089Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6546423Z ##[endgroup]
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:08.6745825Z curl: (7) Failed to connect to 127.0.0.1 port 8000 after 0 ms: Could not connect to server
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:09.6980732Z {"status":"ok","version":"0.2.0-mejoras"}
+ZAP baseline (informativo)	Levantar la app (uvicorn main:app)	2026-10-21T22:48:09.6981493Z App arriba
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	﻿2026-10-21T22:48:09.7013841Z ##[group]Run mkdir -p reports && chmod 777 reports
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7014261Z ^[[36;1mmkdir -p reports && chmod 777 reports^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7014544Z ^[[36;1mset +e^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7014849Z ^[[36;1mdocker run --rm --network host -v "$PWD/reports:/zap/wrk:rw" \^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7015245Z ^[[36;1m  ghcr.io/zaproxy/zaproxy:2.17.0 \^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7015904Z ^[[36;1m  zap-baseline.py -t "$TARGET" -m 1 -I \^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7016304Z ^[[36;1m    -r zap-report.html -J zap-report.json -w zap-report.md^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7016798Z ^[[36;1mecho "ZAP exit code: $? (0=ok, 1=FAIL, 2=WARN, 3=error)" | tee reports/zap-exit-code.txt^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7017230Z ^[[36;1mexit 0^[[0m
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7075075Z shell: /usr/bin/bash -e {0}
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7075328Z env:
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7075695Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7076063Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7076510Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7076980Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7077363Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7077752Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7078137Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.7078469Z ##[endgroup]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:09.8123273Z Unable to find image 'ghcr.io/zaproxy/zaproxy:2.17.0' locally
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.4315746Z 2.17.0: Pulling from zaproxy/zaproxy
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7184118Z 7fd1ebe418b5: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7184699Z 0c17ff7adc71: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7185209Z d3038001055e: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7185983Z 2e6105c01fc9: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7186495Z 0ef1ca173a7b: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7187016Z 89f012bd645e: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7187508Z 2fb23d76aead: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7188078Z 4ed9378c10f4: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7188575Z 7adab2a5dcfc: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7189296Z 9d01fe60c226: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7190020Z 39705de290eb: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7190719Z 4f4fb700ef54: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7191009Z 09b0a5cdac1e: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7191276Z fc80a6f93cf7: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7191585Z f1ac78ddb45c: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7192019Z 0fa604202654: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7192451Z 06e32d6b0abf: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7192895Z 5c272ebfde7a: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7193230Z 2b2a520c8110: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.7193460Z 676dca3b2823: Pulling fs layer
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.8171806Z 4f4fb700ef54: Already exists
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.9159571Z 0c17ff7adc71: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:10.9163014Z 2e6105c01fc9: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0154397Z d3038001055e: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0156530Z 0ef1ca173a7b: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0159978Z 39705de290eb: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0163860Z 09b0a5cdac1e: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0165357Z 89f012bd645e: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0168678Z 4ed9378c10f4: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0172523Z 7adab2a5dcfc: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0175255Z 06e32d6b0abf: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0180530Z f1ac78ddb45c: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0184880Z 2fb23d76aead: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0189266Z 9d01fe60c226: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.0191379Z 0fa604202654: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.3186231Z 2b2a520c8110: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.3199220Z 7fd1ebe418b5: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:11.4173709Z fc80a6f93cf7: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:12.6483813Z 7fd1ebe418b5: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:14.8160640Z 676dca3b2823: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:15.6159863Z 5c272ebfde7a: Download complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:25.2383751Z 5c272ebfde7a: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.2361994Z 2b2a520c8110: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.3170632Z 0c17ff7adc71: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.4184507Z 0ef1ca173a7b: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.4270056Z f1ac78ddb45c: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.6171674Z 4f4fb700ef54: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:27.8263719Z 06e32d6b0abf: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.5328246Z 676dca3b2823: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6160251Z 2e6105c01fc9: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6170563Z d3038001055e: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6222457Z 89f012bd645e: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6245535Z 7adab2a5dcfc: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6305967Z fc80a6f93cf7: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6714783Z 39705de290eb: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6729574Z 09b0a5cdac1e: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6739231Z 4ed9378c10f4: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6759414Z 2fb23d76aead: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6769855Z 9d01fe60c226: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6790034Z 0fa604202654: Pull complete
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6790943Z Digest: sha256:5ccfff9a411743ab2615136a2edd7416bec9ce41572fa94e935df38c14adb2b6
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:48:29.6791878Z Status: Downloaded newer image for ghcr.io/zaproxy/zaproxy:2.17.0
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6500086Z Using the Automation Framework
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6502495Z Total of 6 URLs
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6503018Z PASS: Vulnerable JS Library (Powered by Retire.js) [10003]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6503587Z PASS: In Page Banner Information Leak [10009]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6504067Z PASS: Cookie No HttpOnly Flag [10010]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6504483Z PASS: Cookie Without Secure Flag [10011]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6504988Z PASS: Re-examine Cache-control Directives [10015]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6505783Z PASS: Cross-Domain JavaScript Source File Inclusion [10017]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6506332Z PASS: Content-Type Header Missing [10019]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6506765Z PASS: Anti-clickjacking Header [10020]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6507270Z PASS: Information Disclosure - Debug Error Messages [10023]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6507940Z PASS: Information Disclosure - Sensitive Information in URL [10024]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6508708Z PASS: Information Disclosure - Sensitive Information in HTTP Referrer Header [10025]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6509388Z PASS: HTTP Parameter Override [10026]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6509885Z PASS: Information Disclosure - Suspicious Comments [10027]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6510400Z PASS: Off-site Redirect [10028]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6510795Z PASS: Cookie Poisoning [10029]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6511203Z PASS: User Controllable Charset [10030]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6511767Z PASS: User Controllable HTML Element Attribute (Potential XSS) [10031]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6512355Z PASS: Viewstate [10032]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6512702Z PASS: Directory Browsing [10033]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6513176Z PASS: Heartbleed OpenSSL Vulnerability (Indicative) [10034]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6513737Z PASS: Strict-Transport-Security Header [10035]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6514257Z PASS: HTTP Server Response Header [10036]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6514979Z PASS: Server Leaks Information via "X-Powered-By" HTTP Response Header Field(s) [10037]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6515990Z PASS: Content Security Policy (CSP) Header Not Set [10038]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6516611Z PASS: X-Backend-Server Header Information Leak [10039]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6517183Z PASS: Secure Pages Include Mixed Content [10040]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6517789Z PASS: HTTP to HTTPS Insecure Transition in Form Post [10041]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6518424Z PASS: HTTPS to HTTP Insecure Transition in Form Post [10042]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6519033Z PASS: User Controllable JavaScript Event (XSS) [10043]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6520047Z PASS: Big Redirect Detected (Potential Sensitive Information Leak) [10044]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6520679Z PASS: Retrieved from Cache [10050]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6521233Z PASS: X-ChromeLogger-Data (XCOLD) Header Information Leak [10052]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6521860Z PASS: Cookie without SameSite Attribute [10054]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6522344Z PASS: CSP [10055]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6522960Z PASS: X-Debug-Token Information Leak [10056]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6523431Z PASS: Username Hash Found [10057]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6523908Z PASS: X-AspNet-Version Response Header [10061]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6524410Z PASS: PII Disclosure [10062]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6524858Z PASS: Permissions Policy Header Not Set [10063]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6525357Z PASS: Timestamp Disclosure [10096]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6526177Z PASS: Hash Disclosure [10097]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6526689Z PASS: Cross-Domain Misconfiguration [10098]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6527261Z PASS: Source Code Disclosure [10099]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6527805Z PASS: Weak Authentication Method [10105]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6528268Z PASS: Reverse Tabnabbing [10108]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6528705Z PASS: Modern Web Application [10109]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6529193Z PASS: Dangerous JS Functions [10110]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6529697Z PASS: Authentication Request Identified [10111]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6530244Z PASS: Session Management Response Identified [10112]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6530788Z PASS: Verification Request Identified [10113]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6531356Z PASS: Script Served From Malicious Domain (polyfill) [10115]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6531902Z PASS: ZAP is Out of Date [10116]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6532311Z PASS: Absence of Anti-CSRF Tokens [10202]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6532753Z PASS: Private IP Disclosure [2]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6533229Z PASS: Session ID in URL Rewrite [3]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6533667Z PASS: Script Passive Scan Rules [50001]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6534120Z PASS: Stats Passive Scan Rule [50003]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6534554Z PASS: Insecure JSF ViewState [90001]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6534989Z PASS: Java Serialization Object [90002]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6535684Z PASS: Sub Resource Integrity Attribute Missing [90003]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6536200Z PASS: Charset Mismatch [90011]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6536647Z PASS: Application Error Disclosure [90022]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6537107Z PASS: WSDL File Detection [90030]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6537603Z PASS: Loosely Scoped Cookie [90033]
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6538215Z WARN-NEW: X-Content-Type-Options Header Missing [10021] x 1 
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6538813Z 	http://127.0.0.1:8000/api/alerts (200 OK)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6539343Z WARN-NEW: Storable and Cacheable Content [10049] x 5 
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6539860Z 	http://127.0.0.1:8000/ (404 Not Found)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6540314Z 	http://127.0.0.1:8000/api (404 Not Found)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6540767Z 	http://127.0.0.1:8000/api/alerts (200 OK)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6541246Z 	http://127.0.0.1:8000/robots.txt (404 Not Found)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6541756Z 	http://127.0.0.1:8000/sitemap.xml (404 Not Found)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6542492Z WARN-NEW: Cross-Origin-Resource-Policy Header Missing or Invalid [90004] x 1 
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6543203Z 	http://127.0.0.1:8000/api/alerts (200 OK)
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6543856Z FAIL-NEW: 0	FAIL-INPROG: 0	WARN-NEW: 3	WARN-INPROG: 0	INFO: 0	IGNORE: 0	PASS: 64
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6544521Z Automation plan warnings:
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.6545195Z 	Job spider error accessing URL http://127.0.0.1:8000/ status code returned : 404 expected 200
+ZAP baseline (informativo)	ZAP baseline (pasivo, sin ataques activos)	2026-10-21T22:49:03.8300499Z ZAP exit code: 0 (0=ok, 1=FAIL, 2=WARN, 3=error)
+ZAP baseline (informativo)	Adjuntar resultados	﻿2026-10-21T22:49:03.8341128Z ##[group]Run cp uvicorn.log reports/ 2>/dev/null || true
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8341572Z ^[[36;1mcp uvicorn.log reports/ 2>/dev/null || true^[[0m
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8400702Z shell: /usr/bin/bash -e {0}
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8400958Z env:
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8401195Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8401570Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8402028Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8402655Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8403054Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8403443Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8403830Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+ZAP baseline (informativo)	Adjuntar resultados	2026-10-21T22:49:03.8404153Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	﻿2026-10-21T22:49:03.8561585Z ##[group]Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8562048Z with:
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8562242Z   name: informe-zap
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8562458Z   path: reports/
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8562670Z   if-no-files-found: warn
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8562905Z   compression-level: 6
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8563118Z   overwrite: false
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8563327Z   include-hidden-files: false
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8563557Z   archive: true
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8563743Z env:
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8563954Z   TARGET: http://127.0.0.1:8000/api/alerts
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8564330Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8564771Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib/pkgconfig
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8565195Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8565868Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8566260Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.15/x64
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8566681Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.15/x64/lib
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.8567004Z ##[endgroup]
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.9997967Z With the provided path, there will be 7 files uploaded
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:03.9999402Z Artifact name is valid!
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.0008891Z Root directory input is valid!
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.3352851Z Uploading artifact: informe-zap.zip
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.3393865Z Beginning upload of artifact content to blob storage
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.6607032Z Uploaded bytes 27775
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.7224532Z Finished uploading artifact content to blob storage!
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.7226060Z SHA256 digest of uploaded artifact is 3981300d574edc310ce2c8ac7cc21280e8dcc92a21c03bb8bf73fe5128298c33
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:04.7227415Z Finalizing artifact upload
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:05.0725150Z Artifact informe-zap successfully finalized. Artifact ID 12388805385
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:05.0726770Z Artifact informe-zap has been successfully uploaded! Final size is 27775 bytes. Artifact ID is 12388805385
+ZAP baseline (informativo)	Run actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9	2026-10-21T22:49:05.0735037Z Artifact download URL: https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI/actions/runs/39689070914/artifacts/12388805385
+ZAP baseline (informativo)	Post Run actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97	﻿2026-10-21T22:49:05.0914941Z Post job cleanup.
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:49:05.2209975Z Post job cleanup.
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3060098Z [command]/usr/bin/git version
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3124862Z git version 2.55.0
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3166717Z Temporarily overriding HOME='/home/runner/work/_temp/f675eed0-c5b3-41b7-81f5-8ec03c2893f3' before making global git config changes
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3170305Z Adding repository directory to the temporary git global config as a safe directory
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3172991Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3228793Z Removing SSH command configuration
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3230421Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3277353Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3644141Z Removing HTTP extra header
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3651269Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.3708517Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.4108032Z Removing includeIf entries pointing to credentials config files
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.4109295Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ZAP baseline (informativo)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:49:05.4157747Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ZAP baseline (informativo)	Complete job	﻿2026-10-21T22:49:05.4599637Z Cleaning up orphan processes
+ZAP baseline (informativo)	Complete job	2026-10-21T22:49:05.4956596Z Terminate orphan process: pid (2608) (uvicorn)

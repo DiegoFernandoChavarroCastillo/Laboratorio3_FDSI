@@ -1,0 +1,773 @@
+Analizar (python)	Set up job	﻿2026-10-21T22:48:00.5380067Z Current runner version: '2.338.0'
+Analizar (python)	Set up job	2026-10-21T22:48:00.5403310Z ##[group]Runner Image Provisioner
+Analizar (python)	Set up job	2026-10-21T22:48:00.5404273Z Hosted Compute Agent
+Analizar (python)	Set up job	2026-10-21T22:48:00.5404842Z Version: 20261015.610
+Analizar (python)	Set up job	2026-10-21T22:48:00.5405537Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+Analizar (python)	Set up job	2026-10-21T22:48:00.5406230Z Build Date: 2026-10-14T17:06:54Z
+Analizar (python)	Set up job	2026-10-21T22:48:00.5407085Z Worker ID: {569e74d9-e73d-450f-9435-96dfafb5bcf4}
+Analizar (python)	Set up job	2026-10-21T22:48:00.5407801Z Region: centralus
+Analizar (python)	Set up job	2026-10-21T22:48:00.5408354Z Cloud: Azure
+Analizar (python)	Set up job	2026-10-21T22:48:00.5408862Z ##[endgroup]
+Analizar (python)	Set up job	2026-10-21T22:48:00.5410128Z ##[group]Operating System
+Analizar (python)	Set up job	2026-10-21T22:48:00.5410719Z Ubuntu
+Analizar (python)	Set up job	2026-10-21T22:48:00.5411238Z 26.04.1
+Analizar (python)	Set up job	2026-10-21T22:48:00.5411732Z LTS
+Analizar (python)	Set up job	2026-10-21T22:48:00.5412291Z ##[endgroup]
+Analizar (python)	Set up job	2026-10-21T22:48:00.5412828Z ##[group]Runner Image
+Analizar (python)	Set up job	2026-10-21T22:48:00.5413397Z Image: ubuntu-26.04
+Analizar (python)	Set up job	2026-10-21T22:48:00.5413945Z Version: 20261018.168.1
+Analizar (python)	Set up job	2026-10-21T22:48:00.5414960Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261018.168/images/ubuntu/Ubuntu2604-Readme.md
+Analizar (python)	Set up job	2026-10-21T22:48:00.5416867Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261018.168
+Analizar (python)	Set up job	2026-10-21T22:48:00.5417797Z ##[endgroup]
+Analizar (python)	Set up job	2026-10-21T22:48:00.5419081Z ##[group]GITHUB_TOKEN Permissions
+Analizar (python)	Set up job	2026-10-21T22:48:00.5421458Z Actions: read
+Analizar (python)	Set up job	2026-10-21T22:48:00.5422056Z Contents: read
+Analizar (python)	Set up job	2026-10-21T22:48:00.5422582Z Metadata: read
+Analizar (python)	Set up job	2026-10-21T22:48:00.5423347Z SecurityEvents: write
+Analizar (python)	Set up job	2026-10-21T22:48:00.5424015Z ##[endgroup]
+Analizar (python)	Set up job	2026-10-21T22:48:00.5425942Z Secret source: Actions
+Analizar (python)	Set up job	2026-10-21T22:48:00.5426957Z Cache mode: write
+Analizar (python)	Set up job	2026-10-21T22:48:00.5427600Z Prepare workflow directory
+Analizar (python)	Set up job	2026-10-21T22:48:00.5771232Z Prepare all required actions
+Analizar (python)	Set up job	2026-10-21T22:48:00.5816814Z Getting action download info
+Analizar (python)	Set up job	2026-10-21T22:48:00.8251543Z Download action repository 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Analizar (python)	Set up job	2026-10-21T22:48:00.9150375Z Download action repository 'github/codeql-action@9b3254085494b55a0f7c4c2b3d2d52cc712ce370' (SHA:9b3254085494b55a0f7c4c2b3d2d52cc712ce370)
+Analizar (python)	Set up job	2026-10-21T22:48:01.5411683Z Complete job name: Analizar (python)
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:01.6053328Z ##[group]Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6054324Z with:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6054840Z   persist-credentials: false
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6055584Z   repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6059827Z   token: ***
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6060354Z   ssh-strict: true
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6060851Z   ssh-user: git
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6061340Z   clean: true
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6061862Z   sparse-checkout-cone-mode: true
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6062425Z   fetch-depth: 1
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6062929Z   fetch-tags: false
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6063432Z   show-progress: true
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6063925Z   lfs: false
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6064402Z   submodules: false
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6065074Z   set-safe-directory: true
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6065651Z   allow-unsafe-pr-checkout: false
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.6066661Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7030872Z Syncing repository: DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7033959Z ##[group]Getting Git version info
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7035416Z Working directory is '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7037746Z [command]/usr/bin/git version
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7038539Z git version 2.55.0
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7040961Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7050426Z Temporarily overriding HOME='/home/runner/work/_temp/f00a09bd-1475-45c0-a2bd-b860752c63bc' before making global git config changes
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7052578Z Adding repository directory to the temporary git global config as a safe directory
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7054372Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7077012Z Deleting the contents of '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI'
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7079973Z ##[group]Determining repository object format
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7082035Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7083303Z ##[group]Initializing the repository
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7084670Z [command]/usr/bin/git init /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7169719Z hint: Using 'master' as the name for the initial branch. This default branch name
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7171375Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7172813Z hint: to use in all of your new repositories, which will suppress this warning,
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7173894Z hint: call:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7174578Z hint:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7175433Z hint: 	git config --global init.defaultBranch <name>
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7176368Z hint:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7177535Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7178855Z hint: 'development'. The just-created branch can be renamed via this command:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7179850Z hint:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7180579Z hint: 	git branch -m <name>
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7181313Z hint:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7182255Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7183742Z Initialized empty Git repository in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7192671Z [command]/usr/bin/git remote add origin https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7229183Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7230581Z ##[group]Disabling automatic garbage collection
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7231775Z [command]/usr/bin/git config --local gc.auto 0
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7260282Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7261556Z ##[group]Setting up auth
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7262622Z Removing SSH command configuration
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7264131Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7292020Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7605547Z Removing HTTP extra header
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7611419Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7639228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7861583Z Removing includeIf entries pointing to credentials config files
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7864437Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.7891627Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8104512Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8135202Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path /home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8161774Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8189402Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8215173Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8394918Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8396018Z ##[group]Fetching the repository
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:01.8400950Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +f8bf3615adc37ee0e4f61e5d652d0e6389ede543:refs/remotes/origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7930062Z From https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7933003Z  * [new ref]         f8bf3615adc37ee0e4f61e5d652d0e6389ede543 -> origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7939002Z [command]/usr/bin/git branch --list --remote origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7962359Z   origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7969955Z [command]/usr/bin/git rev-parse refs/remotes/origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7989732Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7994414Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7996941Z ##[group]Determining the checkout info
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.7999679Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8001246Z [command]/usr/bin/git sparse-checkout disable
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8041814Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8068799Z ##[group]Checking out the ref
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8072266Z [command]/usr/bin/git checkout --progress --force -B appsec-lab5 refs/remotes/origin/appsec-lab5
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8560447Z Switched to a new branch 'appsec-lab5'
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8563112Z branch 'appsec-lab5' set up to track 'origin/appsec-lab5'.
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8569635Z ##[endgroup]
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8607332Z [command]/usr/bin/git log -1 --format=%H
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8629209Z f8bf3615adc37ee0e4f61e5d652d0e6389ede543
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8639141Z ##[group]Removing auth
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8641177Z Removing SSH command configuration
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8643948Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8671253Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8879496Z Removing HTTP extra header
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8882597Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.8909780Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9111871Z Removing includeIf entries pointing to credentials config files
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9114694Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9133751Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9137481Z includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9140327Z includeif.gitdir:/github/workspace/.git.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9142038Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9146789Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9159223Z /home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9168537Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-8f9f190b\-e0d4\-4a50\-b459\-5fa21e8c4bdf\.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9195461Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9212359Z /home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9228603Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-8f9f190b\-e0d4\-4a50\-b459\-5fa21e8c4bdf\.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9256305Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9274441Z /github/runner_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9281935Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-8f9f190b\-e0d4\-4a50\-b459\-5fa21e8c4bdf\.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9309311Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9326271Z /github/runner_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9333004Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-8f9f190b\-e0d4\-4a50\-b459\-5fa21e8c4bdf\.config
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9359920Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9559290Z Removing credentials config '/home/runner/work/_temp/git-credentials-8f9f190b-e0d4-4a50-b459-5fa21e8c4bdf.config'
+Analizar (python)	Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:02.9569028Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	﻿2026-10-21T22:48:02.9937259Z ##[group]Run github/codeql-action/init@9b3254085494b55a0f7c4c2b3d2d52cc712ce370
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9938936Z with:
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9939777Z   languages: python
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9940710Z   build-mode: none
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9941651Z   queries: security-extended
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9942849Z   analysis-kinds: code-scanning
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9952431Z   token: ***
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9953328Z   matrix: null
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9954238Z   debug: false
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9955132Z   check-run-id: 119530432620
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9956142Z   job-status: success
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:02.9957194Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:03.2644258Z Job run UUID is b63bbd23-f7fc-4535-b844-3d9a647b174c.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5144763Z ##[group]Setup CodeQL tools
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5170330Z [command]/usr/bin/tar --version
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5209991Z tar (GNU tar) 1.35
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5210699Z Copyright (C) 2023 Free Software Foundation, Inc.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5211424Z License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5212287Z This is free software: you are free to change and redistribute it.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5212866Z There is NO WARRANTY, to the extent permitted by law.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5213184Z 
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5213438Z Written by John Gilmore and Jay Fenlason.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5218850Z Found gnu tar version 1.35.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5244759Z Did not find CodeQL tools version 2.27.3 in the toolcache.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5250400Z Selected the per-language CodeQL bundle for 'python'.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:04.5252147Z Using CodeQL CLI version 2.27.3 sourced from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.27.3/codeql-bundle-python-linux64.tar.zst .
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:06.7829918Z Deleted the CodeQL tools at '/opt/hostedtoolcache/CodeQL/2.27.2' from the toolcache to free up disk space.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:06.7839348Z Downloading CodeQL tools from https://github.com/github/codeql-action/releases/download/codeql-bundle-v2.27.3/codeql-bundle-python-linux64.tar.zst . This may take a while.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:06.7841244Z Streaming the extraction of the CodeQL bundle.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:07.0304098Z [command]tar -x --zstd --ignore-zeros --warning=no-unknown-keyword --overwrite -f - -C /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:07.6332488Z Finished downloading and extracting CodeQL bundle to /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc (850ms).
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2342810Z {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2343476Z   "productName": "CodeQL",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2343930Z   "vendor": "GitHub",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2344370Z   "version": "2.27.3",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2344839Z   "sha": "d7421f46364160506f767a928cbe5297a02d0bb0",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2345820Z   "branches": [
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2346285Z     "codeql-cli-2.27.3"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2346816Z   ],
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2347296Z   "copyright": "Copyright (C) 2019-2026 GitHub, Inc.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2348014Z   "unpackedLocation": "/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2348868Z   "configFileLocation": "/home/runner/.config/codeql/config",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2349486Z   "configFileFound": false,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2349986Z   "overlayVersion": 4,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2350461Z   "features": {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2350912Z     "analysisSummaryV2Default": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2351360Z     "buildModeOption": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2351868Z     "bundleSupportsIncludeDiagnostics": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2352396Z     "bundleSupportsIncludeLogs": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2352910Z     "bundleSupportsOverlay": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2353482Z     "databaseInterpretResultsSupportsSarifRunProperty": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2354186Z     "featuresInVersionResult": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2354718Z     "indirectTracingSupportsStaticBinaries": false,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2355235Z     "informsAboutUnsupportedPathFilters": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2355717Z     "supportsPython312": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2356143Z     "mrvaPackCreate": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2356999Z     "threatModelOption": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2357369Z     "traceCommandUseBuildMode": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2357719Z     "v2ramSizing": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2358063Z     "mrvaPackCreateMultipleQueries": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2358477Z     "setsCodeqlRunnerEnvVar": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2358875Z     "sarifMergeRunsFromEqualCategory": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2359269Z     "forceOverwrite": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2359597Z     "generateSummarySymbolMap": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2359974Z     "pythonDefaultIsToNotExtractStdlib": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2360390Z     "queryServerRunQueries": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2360748Z     "queryServerTrimCacheWithMode": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2361180Z     "builtinExtractorsSpecifyDefaultQueries": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2361574Z     "bqrsDiffResultSets": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2361904Z     "bundleSupportsIncludeOption": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2362384Z     "suppressesMissingFileBaselineWarning": true,
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2362772Z     "jsonDataExtensions": true
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2363097Z   }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2363358Z }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2364396Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.2364914Z ##[group]Validating workflow
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.5467314Z Detected no issues with the code scanning workflow.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.5468387Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.5469979Z ##[group]Load language configuration
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:08.5532601Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=4 --extractor-include-aliases --filter-to-languages-with-queries
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3501714Z {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3502537Z   "aliases" : { },
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3503335Z   "extractors" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3503888Z     "python" : [
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3504423Z       {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3505282Z         "extractor_root" : "/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3505925Z         "extractor_options" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3506719Z           "logging" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3507191Z             "title" : "Options pertaining to logging.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3507800Z             "description" : "Options pertaining to logging.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3508372Z             "type" : "object",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3508813Z             "properties" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3509182Z               "verbosity" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3509546Z                 "title" : "Python extractor logging verbosity level.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3510597Z                 "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3511883Z                 "type" : "string",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3512458Z                 "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3513017Z               }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3513334Z             }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3513613Z           },
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3513916Z           "python_executable_name" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3514403Z             "title" : "Controls the name of the Python executable used by the Python extractor.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3516242Z             "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3518043Z             "type" : "string",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3518488Z             "pattern" : "^(py|python|python3)$"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3519015Z           }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3519379Z         }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3520004Z       }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3520323Z     ]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3520610Z   }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3520957Z }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3611506Z Languages from configuration: python
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3666902Z Using Git version 2.55.0
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3672807Z Using overlay database mode: none without caching.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3677389Z Not performing diff-informed analysis because we are not analyzing a pull request.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:09.3681139Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql resolve languages --format=betterjson --extractor-options-verbosity=4 --extractor-include-aliases
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1683646Z {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1684054Z   "aliases" : { },
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1684537Z   "extractors" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1684838Z     "yaml" : [
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1685120Z       {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1685677Z         "extractor_root" : "/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/yaml"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1686176Z       }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1686651Z     ],
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1687036Z     "python" : [
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1687397Z       {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1688079Z         "extractor_root" : "/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1688821Z         "extractor_options" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1689243Z           "logging" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1689685Z             "title" : "Options pertaining to logging.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1690147Z             "description" : "Options pertaining to logging.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1690577Z             "type" : "object",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1690905Z             "properties" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1691210Z               "verbosity" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1691619Z                 "title" : "Python extractor logging verbosity level.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1692676Z                 "description" : "Controls the level of verbosity of the CodeQL Python extractor.\nThe supported levels are (in order of increasing verbosity):\n\n  - off\n  - errors\n  - warnings\n  - info or progress\n  - debug or progress+\n  - trace or progress++\n  - progress+++\n",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1693723Z                 "type" : "string",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1694347Z                 "pattern" : "^(off|errors|warnings|(info|progress)|(debug|progress\\+)|(trace|progress\\+\\+)|progress\\+\\+\\+)$"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1694877Z               }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1695186Z             }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1695463Z           },
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1695782Z           "python_executable_name" : {
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1696263Z             "title" : "Controls the name of the Python executable used by the Python extractor.",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1697869Z             "description" : "The Python extractor uses platform-dependent heuristics to determine the name of the Python executable to use. Specifying a value for this option overrides the name of the Python executable used by the extractor. Accepted values are py, python and python3. Use this setting with caution, the Python extractor requires Python 3 to run.\n",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1699494Z             "type" : "string",
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1699869Z             "pattern" : "^(py|python|python3)$"
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1700224Z           }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1700510Z         }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1700778Z       }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1701060Z     ]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1701324Z   }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1701600Z }
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1786540Z python does not support TRAP caching (missing option group)
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1787354Z Found 0 languages that support TRAP caching
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1788450Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1821048Z While resolving threads, found a cgroup CPUs file with 4 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1823511Z Writing augmented user configuration file to /home/runner/work/_temp/user-config.yaml
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1824300Z ##[group]Augmented user configuration file contents
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1833898Z queries:
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1834274Z   - uses: security-extended
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1834825Z 
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1835213Z ##[endgroup]
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:10.1840981Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql database init --force-overwrite --db-cluster /home/runner/work/_temp/codeql_databases --source-root=/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI --calculate-language-specific-baseline --sublanguage-file-coverage --extractor-include-aliases --language=python --codescanning-config=/home/runner/work/_temp/user-config.yaml --build-mode=none
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:11.1858350Z Package install location: /home/runner/.codeql/packages
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:11.1871963Z Nothing downloaded.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:11.8096212Z Calculating baseline information in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:11.8517984Z Calculated baseline information for languages: python (38ms).
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:12.0731912Z Resolving extractor python.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:12.0751458Z Successfully loaded extractor Python (python) from /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python.
+Analizar (python)	Inicializar CodeQL	2026-10-21T22:48:12.1058243Z Created skeleton CodeQL database at /home/runner/work/_temp/codeql_databases/python. This in-progress database is ready to be populated by an extractor.
+Analizar (python)	Analizar	﻿2026-10-21T22:48:12.5408823Z ##[group]Run github/codeql-action/analyze@9b3254085494b55a0f7c4c2b3d2d52cc712ce370
+Analizar (python)	Analizar	2026-10-21T22:48:12.5409343Z with:
+Analizar (python)	Analizar	2026-10-21T22:48:12.5409661Z   category: /language:python
+Analizar (python)	Analizar	2026-10-21T22:48:12.5410013Z   output: ../results
+Analizar (python)	Analizar	2026-10-21T22:48:12.5410351Z   upload: always
+Analizar (python)	Analizar	2026-10-21T22:48:12.5410635Z   skip-queries: false
+Analizar (python)	Analizar	2026-10-21T22:48:12.5411102Z   checkout_path: /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Analizar	2026-10-21T22:48:12.5411546Z   upload-database: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5411929Z   wait-for-processing: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5414738Z   token: ***
+Analizar (python)	Analizar	2026-10-21T22:48:12.5415013Z   matrix: null
+Analizar (python)	Analizar	2026-10-21T22:48:12.5415342Z   expect-error: false
+Analizar (python)	Analizar	2026-10-21T22:48:12.5415688Z env:
+Analizar (python)	Analizar	2026-10-21T22:48:12.5416090Z   CODEQL_ACTION_JOB_RUN_UUID: b63bbd23-f7fc-4535-b844-3d9a647b174c
+Analizar (python)	Analizar	2026-10-21T22:48:12.5416793Z   CODEQL_ACTION_FEATURE_MULTI_LANGUAGE: false
+Analizar (python)	Analizar	2026-10-21T22:48:12.5417194Z   CODEQL_ACTION_FEATURE_SANDWICH: false
+Analizar (python)	Analizar	2026-10-21T22:48:12.5417603Z   CODEQL_ACTION_FEATURE_SARIF_COMBINE: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5418078Z   CODEQL_ACTION_FEATURE_WILL_UPLOAD: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5418489Z   CODEQL_ACTION_VERSION: 4.39.1
+Analizar (python)	Analizar	2026-10-21T22:48:12.5418828Z   CODEQL_ACTION_INIT_HAS_RUN: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5419233Z   CODEQL_ACTION_ANALYSIS_KEY: .github/workflows/codeql.yml:analyze
+Analizar (python)	Analizar	2026-10-21T22:48:12.5419699Z   CODEQL_WORKFLOW_STARTED_AT: 2026-10-21T22:48:03.263Z
+Analizar (python)	Analizar	2026-10-21T22:48:12.5420108Z   CODEQL_ACTION_HAS_SET_UP_CODEQL: true
+Analizar (python)	Analizar	2026-10-21T22:48:12.5420623Z   CODEQL_RAM: 14568
+Analizar (python)	Analizar	2026-10-21T22:48:12.5420916Z   CODEQL_THREADS: 4
+Analizar (python)	Analizar	2026-10-21T22:48:12.5421212Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:12.8033512Z Existing job run UUID is b63bbd23-f7fc-4535-b844-3d9a647b174c.
+Analizar (python)	Analizar	2026-10-21T22:48:13.3159942Z While resolving threads, found a cgroup CPUs file with 4 CPUs in /sys/fs/cgroup/cpuset.cpus.effective.
+Analizar (python)	Analizar	2026-10-21T22:48:13.3278920Z ##[group]Generating diff range extension pack
+Analizar (python)	Analizar	2026-10-21T22:48:13.3280070Z No precomputed diff ranges found; skipping diff-informed analysis stage.
+Analizar (python)	Analizar	2026-10-21T22:48:13.3281056Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:13.3337311Z ##[group]Extracting python
+Analizar (python)	Analizar	2026-10-21T22:48:13.3342304Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql database trace-command --use-build-mode --working-dir /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI /home/runner/work/_temp/codeql_databases/python
+Analizar (python)	Analizar	2026-10-21T22:48:14.1170734Z Running command in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI: [/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools/autobuild.sh]
+Analizar (python)	Analizar	2026-10-21T22:48:14.1993933Z [2026-10-21 22:48:14] [build-stderr] /bin/sh: 1: python2: not found
+Analizar (python)	Analizar	2026-10-21T22:48:14.2244438Z [2026-10-21 22:48:14] [build-stdout] Source root appears to be the real root.
+Analizar (python)	Analizar	2026-10-21T22:48:14.2248739Z [2026-10-21 22:48:14] [build-stdout] Will try to guess Python version, as it was not specified in `lgtm.yml`
+Analizar (python)	Analizar	2026-10-21T22:48:14.2249917Z [2026-10-21 22:48:14] [build-stdout] Trying to guess Python version based on Trove classifiers in setup.py
+Analizar (python)	Analizar	2026-10-21T22:48:14.2251777Z [2026-10-21 22:48:14] [build-stdout] Did not find setup.py (expected it to be at /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/setup.py)
+Analizar (python)	Analizar	2026-10-21T22:48:14.2252578Z [2026-10-21 22:48:14] [build-stdout] Trying to guess Python version based on travis file
+Analizar (python)	Analizar	2026-10-21T22:48:14.2254542Z [2026-10-21 22:48:14] [build-stdout] Did not find any travis files (expected them at either ['/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/.travis.yml', '/home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/travis.yml'])
+Analizar (python)	Analizar	2026-10-21T22:48:14.2256674Z [2026-10-21 22:48:14] [build-stdout] Trying to guess Python version based on installed versions
+Analizar (python)	Analizar	2026-10-21T22:48:14.2257700Z [2026-10-21 22:48:14] [build-stdout] Wanted to run Python 2, but it is not available. Using Python 3 instead
+Analizar (python)	Analizar	2026-10-21T22:48:14.2258808Z [2026-10-21 22:48:14] [build-stdout] This script is running Python 3, but Python 2 is also available (as 'python3')
+Analizar (python)	Analizar	2026-10-21T22:48:14.2259867Z [2026-10-21 22:48:14] [build-stdout] Could not guess Python version, will use default: Python 3
+Analizar (python)	Analizar	2026-10-21T22:48:14.2262143Z [2026-10-21 22:48:14] [build-stdout] Calling python3 -S /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools/python_tracer.py --verbosity 3 -z all -c /home/runner/work/_temp/codeql_databases/python/working/trap_cache -R /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Analizar	2026-10-21T22:48:14.5410793Z [2026-10-21 22:48:14] [build-stdout] INFO: The Python extractor has recently stopped extracting the standard library by default. If you encounter problems, please let us know by submitting an issue to https://github.com/github/codeql. It is possible to re-enable extraction of the standard library by setting the environment variable CODEQL_EXTRACTOR_PYTHON_EXTRACT_STDLIB.
+Analizar (python)	Analizar	2026-10-21T22:48:14.6708362Z [2026-10-21 22:48:14] [build-stdout] [INFO] Extraction will use the Python 3 standard library.
+Analizar (python)	Analizar	2026-10-21T22:48:14.6710548Z [2026-10-21 22:48:14] [build-stdout] [INFO] sys_path is: ['/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools', '/usr/lib/python314.zip', '/usr/lib/python3.14', '/usr/lib/python3.14/lib-dynload']
+Analizar (python)	Analizar	2026-10-21T22:48:14.6737947Z [2026-10-21 22:48:14] [build-stdout] [WARN] Failed to find dynload path
+Analizar (python)	Analizar	2026-10-21T22:48:14.6767589Z [2026-10-21 22:48:14] [build-stdout] [INFO] Python version 3.14.4
+Analizar (python)	Analizar	2026-10-21T22:48:14.6797477Z [2026-10-21 22:48:14] [build-stdout] [INFO] Python extractor version 7.2.1
+Analizar (python)	Analizar	2026-10-21T22:48:15.0708686Z [2026-10-21 22:48:15] [build-stdout] [WARN] [2] Failed to find dynload path
+Analizar (python)	Analizar	2026-10-21T22:48:15.0737556Z [2026-10-21 22:48:15] [build-stdout] [WARN] [3] Failed to find dynload path
+Analizar (python)	Analizar	2026-10-21T22:48:15.0767659Z [2026-10-21 22:48:15] [build-stdout] [INFO] [3] Extracted folder /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/evidence/mejoras in 1ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.0808956Z [2026-10-21 22:48:15] [build-stdout] [WARN] [1] Failed to find dynload path
+Analizar (python)	Analizar	2026-10-21T22:48:15.0857490Z [2026-10-21 22:48:15] [build-stdout] [INFO] [3] Extracted folder /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/evidence in 1ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.1168609Z [2026-10-21 22:48:15] [build-stdout] [WARN] [4] Failed to find dynload path
+Analizar (python)	Analizar	2026-10-21T22:48:15.1172845Z [2026-10-21 22:48:15] [build-stdout] [INFO] [2] Extracted file /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/main_reducir_exp_a_API.py in 47ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.1176077Z [2026-10-21 22:48:15] [build-stdout] [INFO] [2] Skipped built-in file /usr/lib/python3.14/typing.py
+Analizar (python)	Analizar	2026-10-21T22:48:15.1619453Z [2026-10-21 22:48:15] [build-stdout] [INFO] [1] Extracted file /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/evidence/mejoras/main-antes.py in 92ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.1632369Z [2026-10-21 22:48:15] [build-stdout] [INFO] [1] Skipped built-in file /usr/lib/python3.14/uuid.py
+Analizar (python)	Analizar	2026-10-21T22:48:15.1637896Z [2026-10-21 22:48:15] [build-stdout] [INFO] [2] Skipped built-in file /usr/lib/python3.14/logging/__init__.py
+Analizar (python)	Analizar	2026-10-21T22:48:15.1657282Z [2026-10-21 22:48:15] [build-stdout] [INFO] [4] Skipped built-in file /usr/lib/python3.14/datetime.py
+Analizar (python)	Analizar	2026-10-21T22:48:15.1658437Z [2026-10-21 22:48:15] [build-stdout] [INFO] [2] Extracted folder /usr/lib/python3.14/logging in 1ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.1659404Z [2026-10-21 22:48:15] [build-stdout] [INFO] [1] Skipped built-in file /usr/lib/python3.14/enum.py
+Analizar (python)	Analizar	2026-10-21T22:48:15.1660497Z [2026-10-21 22:48:15] [build-stdout] [INFO] [3] Extracted file /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI/main.py in 91ms
+Analizar (python)	Analizar	2026-10-21T22:48:15.1948612Z [2026-10-21 22:48:15] [build-stdout] [INFO] Processed 11 modules in 0.61s
+Analizar (python)	Analizar	2026-10-21T22:48:15.2449480Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:15.2465432Z ##[group]Finalizing python
+Analizar (python)	Analizar	2026-10-21T22:48:15.2467202Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql database finalize --finalize-dataset --threads=4 --ram=14568 /home/runner/work/_temp/codeql_databases/python
+Analizar (python)	Analizar	2026-10-21T22:48:15.9886327Z Running pre-finalize script /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools/pre-finalize.sh in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI.
+Analizar (python)	Analizar	2026-10-21T22:48:16.0543210Z Running command in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI: [/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools/pre-finalize.sh]
+Analizar (python)	Analizar	2026-10-21T22:48:16.7915336Z [2026-10-21 22:48:16] [build-stderr] Scanning for files in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI...
+Analizar (python)	Analizar	2026-10-21T22:48:16.8638471Z [2026-10-21 22:48:16] [build-stderr] /home/runner/work/_temp/codeql_databases/python: Indexing files in in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI...
+Analizar (python)	Analizar	2026-10-21T22:48:16.8932092Z [2026-10-21 22:48:16] [build-stderr] Running command in /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI: [/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/yaml/tools/index-files.sh, /home/runner/work/_temp/codeql_databases/python/working/files-to-index8131410594472272052.list]
+Analizar (python)	Analizar	2026-10-21T22:48:17.2045223Z Pre-finalize script /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/python/tools/pre-finalize.sh completed in 1215 ms.
+Analizar (python)	Analizar	2026-10-21T22:48:17.2080898Z Running TRAP import for CodeQL database at /home/runner/work/_temp/codeql_databases/python...
+Analizar (python)	Analizar	2026-10-21T22:48:17.9644786Z Importing TRAP files
+Analizar (python)	Analizar	2026-10-21T22:48:18.3147863Z Merging relations
+Analizar (python)	Analizar	2026-10-21T22:48:18.5553726Z Finished writing database (relations: 97.63 KiB; string pool: 2.08 MiB).
+Analizar (python)	Analizar	2026-10-21T22:48:18.5794426Z TRAP import complete (1.4s).
+Analizar (python)	Analizar	2026-10-21T22:48:18.7495564Z Finished zipping source archive (12.85 KiB).
+Analizar (python)	Analizar	2026-10-21T22:48:18.7595607Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:18.7601605Z ##[group]Running queries for python
+Analizar (python)	Analizar	2026-10-21T22:48:18.7603132Z [command]/home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/codeql database run-queries --ram=14568 --threads=4 --expect-discarded-cache /home/runner/work/_temp/codeql_databases/python --min-disk-free=1024 -v
+Analizar (python)	Analizar	2026-10-21T22:48:19.4571438Z Writing logs to /home/runner/work/_temp/codeql_databases/python/log/database-run-queries-20261021.224819.454.log.
+Analizar (python)	Analizar	2026-10-21T22:48:20.0427576Z Writing logs to /home/runner/work/_temp/codeql_databases/python/log/execute-queries-20261021.224820.039.log.
+Analizar (python)	Analizar	2026-10-21T22:48:20.3599958Z Recording pack reference codeql/python-queries at /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13.
+Analizar (python)	Analizar	2026-10-21T22:48:20.5518037Z Resolving data extensions.
+Analizar (python)	Analizar	2026-10-21T22:48:21.4390465Z Finished resolving data extensions.
+Analizar (python)	Analizar	2026-10-21T22:48:21.4870176Z Merging data extensions.
+Analizar (python)	Analizar	2026-10-21T22:48:21.5949761Z Finished merging data extensions.
+Analizar (python)	Analizar	2026-10-21T22:48:22.7138496Z [1/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-116/BadTagFilter.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:22.7259719Z [2/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/ReDoS.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:22.8594962Z [3/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CVE-2018-1281/BindToAllInterfaces.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:22.9788354Z [4/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/IncompleteHostnameRegExp.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:22.9943503Z [5/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/IncompleteUrlSubstringSanitization.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.0154329Z [6/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-601/UrlRedirect.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.0227976Z [7/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/RegexInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.0778184Z [8/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/PolynomialReDoS.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.1137347Z [9/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/OverlyLargeRange.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.1428171Z [10/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-1275/SameSiteNoneCookie.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.1507225Z [11/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/CookieInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.1968323Z [12/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-1004/NonHttpOnlyCookie.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.2387869Z [13/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-614/InsecureCookie.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.2598245Z [14/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-352/CSRFProtectionDisabled.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.3018255Z [15/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-022/PathInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.3609516Z [16/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-209/StackTraceExposure.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.3625460Z [17/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-215/FlaskDebug.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.4120847Z [18/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-611/Xxe.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.4485159Z [19/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-285/PamAuthorization.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.4541485Z [20/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-377/InsecureTemporaryFile.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.5038174Z [21/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-079/ReflectedXss.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.5080898Z [22/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-089/SqlInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.6358491Z [23/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-113/HeaderInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.6678314Z [24/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-776/XmlBomb.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.7100880Z [25/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-312/CleartextStorage.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.7168605Z [26/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-312/CleartextLogging.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.7598358Z [27/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-326/WeakCryptoKey.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.8878866Z [28/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-643/XpathInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9088469Z [29/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-295/MissingHostKeyValidation.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9478592Z [30/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-090/LdapInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9638910Z [31/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-094/CodeInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9768054Z [32/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-943/NoSqlInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9818530Z [33/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/InsecureProtocol.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9877985Z [34/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/BrokenCryptoAlgorithm.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:23.9998089Z [35/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/InsecureDefaultProtocol.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.1731438Z [36/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-074/TemplateInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2111054Z [37/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/WeakSensitiveDataHashing.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2228366Z [38/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-078/CommandInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2268805Z [39/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-918/FullServerSideRequestForgery.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2630111Z [40/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Expressions/UseofInput.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2748286Z [41/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-502/UnsafeDeserialization.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.2757993Z [42/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-732/WeakFilePermissions.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3177791Z [43/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-079/Jinja2WithoutEscaping.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3328214Z [44/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-295/RequestWithoutValidation.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3498145Z [45/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-022/TarSlip.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3561072Z [46/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Diagnostics/ExtractionWarnings.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3617865Z [47/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Diagnostics/ExtractedFiles.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3717680Z [48/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Summary/LinesOfCode.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3827685Z [49/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Summary/LinesOfUserCode.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.3951905Z [50/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-117/LogInjection.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.4568639Z [51/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-078/UnsafeShellCommandConstruction.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.4702331Z [52/52] Loaded /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-918/PartialServerSideRequestForgery.qlx.
+Analizar (python)	Analizar	2026-10-21T22:48:24.7899683Z Starting evaluation of codeql/python-queries/Diagnostics/ExtractedFiles.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.7902533Z Starting evaluation of codeql/python-queries/Diagnostics/ExtractionWarnings.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.7915530Z Starting evaluation of codeql/python-queries/Expressions/UseofInput.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.7990952Z Starting evaluation of codeql/python-queries/Security/CVE-2018-1281/BindToAllInterfaces.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8017607Z Starting evaluation of codeql/python-queries/Security/CWE-020/CookieInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8047826Z Starting evaluation of codeql/python-queries/Security/CWE-020/IncompleteHostnameRegExp.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8062642Z Starting evaluation of codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8077807Z Starting evaluation of codeql/python-queries/Security/CWE-020/OverlyLargeRange.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8079069Z Starting evaluation of codeql/python-queries/Security/CWE-022/PathInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8080403Z Starting evaluation of codeql/python-queries/Security/CWE-022/TarSlip.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8081470Z Starting evaluation of codeql/python-queries/Security/CWE-074/TemplateInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.8082548Z Starting evaluation of codeql/python-queries/Security/CWE-078/CommandInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:24.9797593Z [1/52 eval 186ms] Evaluation done; writing results to codeql/python-queries/Diagnostics/ExtractionWarnings.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:25.1278621Z [2/52 eval 339ms] Evaluation done; writing results to codeql/python-queries/Diagnostics/ExtractedFiles.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:25.1766429Z [3/52 eval 375ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:25.3413553Z [4/52 eval 543ms] Evaluation done; writing results to codeql/python-queries/Security/CVE-2018-1281/BindToAllInterfaces.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0168241Z Starting evaluation of codeql/python-queries/Security/CWE-078/UnsafeShellCommandConstruction.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0197805Z Starting evaluation of codeql/python-queries/Security/CWE-079/Jinja2WithoutEscaping.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0199339Z Starting evaluation of codeql/python-queries/Security/CWE-079/ReflectedXss.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0607993Z Starting evaluation of codeql/python-queries/Security/CWE-089/SqlInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0750048Z Starting evaluation of codeql/python-queries/Security/CWE-090/LdapInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0947792Z Starting evaluation of codeql/python-queries/Security/CWE-094/CodeInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.0977784Z Starting evaluation of codeql/python-queries/Security/CWE-1004/NonHttpOnlyCookie.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1497919Z Starting evaluation of codeql/python-queries/Security/CWE-113/HeaderInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1637891Z Starting evaluation of codeql/python-queries/Security/CWE-116/BadTagFilter.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1667190Z Starting evaluation of codeql/python-queries/Security/CWE-117/LogInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1807801Z Starting evaluation of codeql/python-queries/Security/CWE-1275/SameSiteNoneCookie.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1817504Z Starting evaluation of codeql/python-queries/Security/CWE-209/StackTraceExposure.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1830014Z Starting evaluation of codeql/python-queries/Security/CWE-215/FlaskDebug.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.1927965Z Starting evaluation of codeql/python-queries/Security/CWE-285/PamAuthorization.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.2021670Z Starting evaluation of codeql/python-queries/Security/CWE-295/MissingHostKeyValidation.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.2030848Z Starting evaluation of codeql/python-queries/Security/CWE-295/RequestWithoutValidation.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.2048387Z Starting evaluation of codeql/python-queries/Security/CWE-312/CleartextLogging.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.2188296Z Starting evaluation of codeql/python-queries/Security/CWE-312/CleartextStorage.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4728807Z Starting evaluation of codeql/python-queries/Security/CWE-326/WeakCryptoKey.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4755885Z Starting evaluation of codeql/python-queries/Security/CWE-327/InsecureDefaultProtocol.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4777496Z Starting evaluation of codeql/python-queries/Security/CWE-327/WeakSensitiveDataHashing.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4781153Z Starting evaluation of codeql/python-queries/Security/CWE-327/InsecureProtocol.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4797668Z Starting evaluation of codeql/python-queries/Security/CWE-327/BrokenCryptoAlgorithm.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4837695Z Starting evaluation of codeql/python-queries/Security/CWE-352/CSRFProtectionDisabled.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4912151Z Starting evaluation of codeql/python-queries/Security/CWE-377/InsecureTemporaryFile.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4943724Z [5/52 eval 9ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-352/CSRFProtectionDisabled.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.4955847Z Starting evaluation of codeql/python-queries/Security/CWE-502/UnsafeDeserialization.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.5336689Z Starting evaluation of codeql/python-queries/Security/CWE-601/UrlRedirect.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.6517942Z Starting evaluation of codeql/python-queries/Security/CWE-611/Xxe.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.6768431Z Starting evaluation of codeql/python-queries/Security/CWE-614/InsecureCookie.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.6788839Z Starting evaluation of codeql/python-queries/Security/CWE-643/XpathInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.7192521Z Starting evaluation of codeql/python-queries/Security/CWE-730/PolynomialReDoS.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.7349836Z Starting evaluation of codeql/python-queries/Security/CWE-730/ReDoS.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.7419588Z Starting evaluation of codeql/python-queries/Security/CWE-730/RegexInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.7619241Z Starting evaluation of codeql/python-queries/Security/CWE-732/WeakFilePermissions.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.7657608Z Starting evaluation of codeql/python-queries/Security/CWE-776/XmlBomb.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:26.8018254Z [6/52 eval 40ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-732/WeakFilePermissions.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.8057261Z [7/52 eval 328ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-327/InsecureDefaultProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.8058855Z [8/52 eval 621ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-215/FlaskDebug.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.8070591Z [9/52 eval 2s] Evaluation done; writing results to codeql/python-queries/Expressions/UseofInput.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.8097915Z [10/52 eval 794ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-079/Jinja2WithoutEscaping.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:26.9886235Z [11/52 eval 2.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-022/TarSlip.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.0838433Z [12/52 eval 608ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-326/WeakCryptoKey.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.1340629Z [13/52 eval 656ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-327/WeakSensitiveDataHashing.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.1708620Z Starting evaluation of codeql/python-queries/Security/CWE-918/FullServerSideRequestForgery.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:27.1814847Z Starting evaluation of codeql/python-queries/Security/CWE-918/PartialServerSideRequestForgery.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:27.1967825Z Starting evaluation of codeql/python-queries/Security/CWE-943/NoSqlInjection.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:27.2340077Z Starting evaluation of codeql/python-queries/Summary/LinesOfCode.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:27.2370093Z Starting evaluation of codeql/python-queries/Summary/LinesOfUserCode.ql.
+Analizar (python)	Analizar	2026-10-21T22:48:27.2387590Z [14/52 eval 4ms] Evaluation done; writing results to codeql/python-queries/Summary/LinesOfCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.2579540Z [15/52 eval 23ms] Evaluation done; writing results to codeql/python-queries/Summary/LinesOfUserCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.4338663Z [16/52 eval 1.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-295/MissingHostKeyValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.5131447Z [17/52 eval 1.3s] Evaluation done; writing results to codeql/python-queries/Security/CWE-285/PamAuthorization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.5722079Z [18/52 eval 376ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-943/NoSqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.6418284Z [19/52 eval 2.8s] Evaluation done; writing results to codeql/python-queries/Security/CWE-020/IncompleteHostnameRegExp.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.6419946Z [20/52 eval 2.8s] Evaluation done; writing results to codeql/python-queries/Security/CWE-020/OverlyLargeRange.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.6437775Z [21/52 eval 907ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-730/ReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.6464043Z [22/52 eval 1.5s] Evaluation done; writing results to codeql/python-queries/Security/CWE-116/BadTagFilter.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.6539049Z [23/52 eval 935ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-730/PolynomialReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.7053958Z [24/52 eval 2.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-074/TemplateInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.7368044Z [25/52 eval 1.6s] Evaluation done; writing results to codeql/python-queries/Security/CWE-094/CodeInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.7600179Z [26/52 eval 1.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-643/XpathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.7880851Z [27/52 eval 1.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-611/Xxe.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.8051723Z [28/52 eval 1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-776/XmlBomb.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.8998454Z [29/52 eval 1.4s] Evaluation done; writing results to codeql/python-queries/Security/CWE-502/UnsafeDeserialization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9027715Z [30/52 eval 1.7s] Evaluation done; writing results to codeql/python-queries/Security/CWE-113/HeaderInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9219356Z [31/52 eval 3.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-022/PathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9291238Z [32/52 eval 3.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-020/CookieInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9552517Z [33/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-078/UnsafeShellCommandConstruction.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9750297Z [34/52 eval 3.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-078/CommandInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:27.9816074Z [35/52 eval 1.4s] Evaluation done; writing results to codeql/python-queries/Security/CWE-601/UrlRedirect.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.0000633Z [36/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-089/SqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.0072055Z [37/52 eval 2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-079/ReflectedXss.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.0184544Z [38/52 eval 1.3s] Evaluation done; writing results to codeql/python-queries/Security/CWE-614/InsecureCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.0225716Z [39/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-1004/NonHttpOnlyCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.0723228Z [40/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-1275/SameSiteNoneCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.1036108Z [41/52 eval 922ms] Evaluation done; writing results to codeql/python-queries/Security/CWE-918/PartialServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.2601420Z [42/52 eval 2.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-090/LdapInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.2752083Z [43/52 eval 2.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-209/StackTraceExposure.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.2775467Z [44/52 eval 2.1s] Evaluation done; writing results to codeql/python-queries/Security/CWE-295/RequestWithoutValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.3551625Z [45/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-327/BrokenCryptoAlgorithm.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.3688130Z [46/52 eval 2.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-312/CleartextLogging.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.3750594Z [47/52 eval 2.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-312/CleartextStorage.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.3807710Z [48/52 eval 1.9s] Evaluation done; writing results to codeql/python-queries/Security/CWE-377/InsecureTemporaryFile.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.3852696Z [49/52 eval 1.6s] Evaluation done; writing results to codeql/python-queries/Security/CWE-730/RegexInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.4051218Z [50/52 eval 1.2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-918/FullServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.4336924Z [51/52 eval 2s] Evaluation done; writing results to codeql/python-queries/Security/CWE-327/InsecureProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.6197223Z [52/52 eval 2.5s] Evaluation done; writing results to codeql/python-queries/Security/CWE-117/LogInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:28.6198484Z Shutting down query evaluator.
+Analizar (python)	Analizar	2026-10-21T22:48:28.7236302Z Interpreting code scanning results for python
+Analizar (python)	Analizar	2026-10-21T22:48:29.4140969Z Writing logs to /home/runner/work/_temp/codeql_databases/python/log/database-interpret-results-20261021.224829.411.log.
+Analizar (python)	Analizar	2026-10-21T22:48:29.5505819Z Recording pack reference codeql/python-queries at /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13.
+Analizar (python)	Analizar	2026-10-21T22:48:29.5772151Z Resolving extensions
+Analizar (python)	Analizar	2026-10-21T22:48:30.5124254Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CVE-2018-1281/BindToAllInterfaces.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5352662Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CVE-2018-1281/BindToAllInterfaces.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5508606Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-601/UrlRedirect.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5589265Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-601/UrlRedirect.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5604457Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-116/BadTagFilter.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5698089Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-116/BadTagFilter.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5724038Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/ReDoS.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5770098Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/ReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5788070Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/RegexInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5860167Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/RegexInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5874611Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-730/PolynomialReDoS.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.5944234Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/PolynomialReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.5975975Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/IncompleteHostnameRegExp.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6021987Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/IncompleteHostnameRegExp.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6039302Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/IncompleteUrlSubstringSanitization.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6107859Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6137932Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/CookieInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6178151Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/CookieInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6207918Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-020/OverlyLargeRange.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6269577Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/OverlyLargeRange.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6278576Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-1275/SameSiteNoneCookie.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6334729Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-1275/SameSiteNoneCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6377943Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-1004/NonHttpOnlyCookie.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6407713Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-1004/NonHttpOnlyCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6434892Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-022/PathInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6467340Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-022/PathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6497969Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-614/InsecureCookie.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6556979Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-614/InsecureCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6578015Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-209/StackTraceExposure.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6609781Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-209/StackTraceExposure.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6625671Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-352/CSRFProtectionDisabled.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6677841Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-352/CSRFProtectionDisabled.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6707904Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-611/Xxe.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6746278Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-611/Xxe.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6748231Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-215/FlaskDebug.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6787596Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-215/FlaskDebug.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6809598Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-285/PamAuthorization.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6866849Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-285/PamAuthorization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6868825Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-079/ReflectedXss.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6904328Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-079/ReflectedXss.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6927995Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-089/SqlInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.6968255Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-089/SqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.6998539Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-377/InsecureTemporaryFile.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7028027Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-377/InsecureTemporaryFile.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7029717Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-943/NoSqlInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7087759Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-943/NoSqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7089478Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-113/HeaderInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7128910Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-113/HeaderInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7132794Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-776/XmlBomb.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7187964Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-776/XmlBomb.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7190758Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-312/CleartextStorage.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7249129Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-312/CleartextStorage.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7268984Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-312/CleartextLogging.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7315431Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-312/CleartextLogging.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7327121Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-090/LdapInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7355565Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-090/LdapInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7359422Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-643/XpathInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7410351Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-643/XpathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7427238Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-326/WeakCryptoKey.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7468981Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-326/WeakCryptoKey.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7478377Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-094/CodeInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7523675Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-094/CodeInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7537329Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-295/MissingHostKeyValidation.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7600373Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-295/MissingHostKeyValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7602369Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/InsecureProtocol.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7657996Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/InsecureProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7679733Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/BrokenCryptoAlgorithm.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7704205Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/BrokenCryptoAlgorithm.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7729267Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/WeakSensitiveDataHashing.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7755977Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/WeakSensitiveDataHashing.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7759629Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-327/InsecureDefaultProtocol.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7817555Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/InsecureDefaultProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7838222Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-918/FullServerSideRequestForgery.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7869042Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-918/FullServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7871112Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-074/TemplateInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.7937815Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-074/TemplateInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.7941563Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-078/CommandInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8068808Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-078/CommandInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8087808Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-502/UnsafeDeserialization.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8169360Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-502/UnsafeDeserialization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8171156Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Expressions/UseofInput.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8197934Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Expressions/UseofInput.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8199678Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-022/TarSlip.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8242266Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-022/TarSlip.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8249734Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-732/WeakFilePermissions.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8311198Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-732/WeakFilePermissions.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8318716Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-079/Jinja2WithoutEscaping.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8368900Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-079/Jinja2WithoutEscaping.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8378734Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-117/LogInjection.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8426676Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-117/LogInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8467828Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-295/RequestWithoutValidation.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8487640Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-295/RequestWithoutValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8497993Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-918/PartialServerSideRequestForgery.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8546343Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-918/PartialServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8562589Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Security/CWE-078/UnsafeShellCommandConstruction.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8599141Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-078/UnsafeShellCommandConstruction.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8619220Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Diagnostics/ExtractionWarnings.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8654167Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Diagnostics/ExtractionWarnings.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8659667Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Diagnostics/ExtractedFiles.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8709128Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Diagnostics/ExtractedFiles.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8720863Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Summary/LinesOfCode.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8767971Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Summary/LinesOfCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.8799748Z Interpreting /home/runner/work/_temp/655ab507-75b2-4ded-82ce-924d9df48dfc/codeql/qlpacks/codeql/python-queries/1.8.13/Summary/LinesOfUserCode.ql...
+Analizar (python)	Analizar	2026-10-21T22:48:30.8818234Z  ... found results file at /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Summary/LinesOfUserCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9422898Z Interpreted pathproblem query "Binding a socket to all network interfaces" (py/bind-socket-all-network-interfaces) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CVE-2018-1281/BindToAllInterfaces.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9459630Z Interpreted pathproblem query "URL redirection from remote source" (py/url-redirection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-601/UrlRedirect.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9489506Z Interpreted problem query "Bad HTML filtering regexp" (py/bad-tag-filter) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-116/BadTagFilter.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9492712Z Interpreted problem query "Inefficient regular expression" (py/redos) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/ReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9519609Z Interpreted pathproblem query "Regular expression injection" (py/regex-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/RegexInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9549640Z Interpreted pathproblem query "Polynomial regular expression used on uncontrolled data" (py/polynomial-redos) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-730/PolynomialReDoS.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9579635Z Interpreted problem query "Incomplete regular expression for hostnames" (py/incomplete-hostname-regexp) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/IncompleteHostnameRegExp.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9615488Z Interpreted problem query "Incomplete URL substring sanitization" (py/incomplete-url-substring-sanitization) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/IncompleteUrlSubstringSanitization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9625403Z Interpreted pathproblem query "Construction of a cookie using user-supplied input" (py/cookie-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/CookieInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9633244Z Interpreted problem query "Overly permissive regular expression range" (py/overly-large-range) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-020/OverlyLargeRange.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9637921Z Interpreted problem query "Sensitive cookie with `SameSite` attribute set to `None`" (py/samesite-none-cookie) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-1275/SameSiteNoneCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9640751Z Interpreted problem query "Sensitive cookie missing `HttpOnly` attribute" (py/client-exposed-cookie) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-1004/NonHttpOnlyCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9655473Z Interpreted pathproblem query "Uncontrolled data used in path expression" (py/path-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-022/PathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9659821Z Interpreted problem query "Failure to use secure cookies" (py/insecure-cookie) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-614/InsecureCookie.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9662376Z Interpreted pathproblem query "Information exposure through an exception" (py/stack-trace-exposure) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-209/StackTraceExposure.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9664859Z Interpreted problem query "CSRF protection weakened or disabled" (py/csrf-protection-disabled) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-352/CSRFProtectionDisabled.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9667399Z Interpreted pathproblem query "XML external entity expansion" (py/xxe) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-611/Xxe.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9669705Z Interpreted problem query "Flask app is run in debug mode" (py/flask-debug) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-215/FlaskDebug.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9671942Z Interpreted pathproblem query "PAM authorization bypass due to incorrect usage" (py/pam-auth-bypass) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-285/PamAuthorization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9674391Z Interpreted pathproblem query "Reflected server-side cross-site scripting" (py/reflective-xss) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-079/ReflectedXss.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9676965Z Interpreted pathproblem query "SQL query built from user-controlled sources" (py/sql-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-089/SqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9679415Z Interpreted problem query "Insecure temporary file" (py/insecure-temporary-file) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-377/InsecureTemporaryFile.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9698117Z Interpreted pathproblem query "NoSQL Injection" (py/nosql-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-943/NoSqlInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9701161Z Interpreted pathproblem query "HTTP Response Splitting" (py/http-response-splitting) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-113/HeaderInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9703481Z Interpreted pathproblem query "XML internal entity expansion" (py/xml-bomb) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-776/XmlBomb.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9705809Z Interpreted pathproblem query "Clear-text storage of sensitive information" (py/clear-text-storage-sensitive-data) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-312/CleartextStorage.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9708737Z Interpreted pathproblem query "Clear-text logging of sensitive information" (py/clear-text-logging-sensitive-data) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-312/CleartextLogging.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9711377Z Interpreted pathproblem query "LDAP query built from user-controlled sources" (py/ldap-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-090/LdapInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9713892Z Interpreted pathproblem query "XPath query built from user-controlled sources" (py/xpath-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-643/XpathInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9716277Z Interpreted problem query "Use of weak cryptographic key" (py/weak-crypto-key) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-326/WeakCryptoKey.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9718708Z Interpreted pathproblem query "Code injection" (py/code-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-094/CodeInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9721304Z Interpreted problem query "Accepting unknown SSH host keys when using Paramiko" (py/paramiko-missing-host-key-validation) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-295/MissingHostKeyValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9723997Z Interpreted problem query "Use of insecure SSL/TLS version" (py/insecure-protocol) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/InsecureProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9726885Z Interpreted problem query "Use of a broken or weak cryptographic algorithm" (py/weak-cryptographic-algorithm) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/BrokenCryptoAlgorithm.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9729607Z Interpreted pathproblem query "Use of a broken or weak cryptographic hashing algorithm on sensitive data" (py/weak-sensitive-data-hashing) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/WeakSensitiveDataHashing.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9732325Z Interpreted problem query "Default version of SSL/TLS may be insecure" (py/insecure-default-protocol) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-327/InsecureDefaultProtocol.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9734900Z Interpreted pathproblem query "Full server-side request forgery" (py/full-ssrf) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-918/FullServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9737435Z Interpreted pathproblem query "Server Side Template Injection" (py/template-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-074/TemplateInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9739890Z Interpreted pathproblem query "Uncontrolled command line" (py/command-line-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-078/CommandInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9742731Z Interpreted pathproblem query "Deserialization of user-controlled data" (py/unsafe-deserialization) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-502/UnsafeDeserialization.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9745304Z Interpreted problem query "'input' function used in Python 2" (py/use-of-input) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Expressions/UseofInput.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9747717Z Interpreted pathproblem query "Arbitrary file write during tarfile extraction" (py/tarslip) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-022/TarSlip.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9750197Z Interpreted problem query "Overly permissive file permissions" (py/overly-permissive-file) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-732/WeakFilePermissions.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9752791Z Interpreted problem query "Jinja2 templating with autoescape=False" (py/jinja2/autoescape-false) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-079/Jinja2WithoutEscaping.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9755273Z Interpreted pathproblem query "Log Injection" (py/log-injection) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-117/LogInjection.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9758808Z Interpreted problem query "Request without certificate validation" (py/request-without-cert-validation) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-295/RequestWithoutValidation.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9761387Z Interpreted pathproblem query "Partial server-side request forgery" (py/partial-ssrf) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-918/PartialServerSideRequestForgery.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9764409Z Interpreted pathproblem query "Unsafe shell command constructed from library input" (py/shell-command-constructed-from-input) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Security/CWE-078/UnsafeShellCommandConstruction.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9767296Z Interpreted diagnostic query "Python extraction warnings" (py/diagnostics/extraction-warnings) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Diagnostics/ExtractionWarnings.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9769854Z Interpreted diagnostic query "Extracted Python files" (py/diagnostics/successfully-extracted-files) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Diagnostics/ExtractedFiles.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9772641Z Interpreted metric query "Total lines of Python code in the database" (py/summary/lines-of-code) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Summary/LinesOfCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9775208Z Interpreted metric query "Total lines of user written Python code in the database" (py/summary/lines-of-user-code) at path /home/runner/work/_temp/codeql_databases/python/results/codeql/python-queries/Summary/LinesOfUserCode.bqrs.
+Analizar (python)	Analizar	2026-10-21T22:48:30.9777326Z Reading source archive /home/runner/work/_temp/codeql_databases/python/src.zip
+Analizar (python)	Analizar	2026-10-21T22:48:31.0278274Z Loaded file baseline information.
+Analizar (python)	Analizar	2026-10-21T22:48:31.0374121Z Interpreting file coverage baseline information
+Analizar (python)	Analizar	2026-10-21T22:48:31.0381424Z Finished interpreting file coverage baseline information.
+Analizar (python)	Analizar	2026-10-21T22:48:31.0393019Z Interpreting diagnostic messages...
+Analizar (python)	Analizar	2026-10-21T22:48:31.0729061Z Found 6 raw diagnostic messages.
+Analizar (python)	Analizar	2026-10-21T22:48:31.0831620Z Processed diagnostic messages (removed 0 due to limits, created 0 summary diagnostics for status page).
+Analizar (python)	Analizar	2026-10-21T22:48:31.0850913Z Interpreted diagnostic messages (43ms).
+Analizar (python)	Analizar	2026-10-21T22:48:31.1658901Z Exporting results to SARIF...
+Analizar (python)	Analizar	2026-10-21T22:48:31.3470661Z Exported results to SARIF (181ms).
+Analizar (python)	Analizar	2026-10-21T22:48:31.3937536Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:31.3938617Z CodeQL scanned 3 out of 3 Python files in this invocation. Check the status page for overall coverage information: https://github.com/DiegoFernandoChavarroCastillo/Laboratorio3_FDSI/security/code-scanning/tools/CodeQL/status/
+Analizar (python)	Analizar	2026-10-21T22:48:31.3939514Z 
+Analizar (python)	Analizar	2026-10-21T22:48:31.3947743Z Post-processing sarif files: ["/home/runner/work/Laboratorio3_FDSI/results/python.sarif"]
+Analizar (python)	Analizar	2026-10-21T22:48:31.3973364Z Adding fingerprints to SARIF file. See https://docs.github.com/en/code-security/reference/code-scanning/sarif-support-for-code-scanning#data-for-preventing-duplicated-alerts for more information.
+Analizar (python)	Analizar	2026-10-21T22:48:31.4267101Z ##[group]Uploading code scanning results
+Analizar (python)	Analizar	2026-10-21T22:48:31.4404778Z Uploading results
+Analizar (python)	Analizar	2026-10-21T22:48:31.9340803Z Successfully uploaded results
+Analizar (python)	Analizar	2026-10-21T22:48:31.9341695Z ##[endgroup]
+Analizar (python)	Analizar	2026-10-21T22:48:31.9354922Z ##[group]Waiting for processing to finish
+Analizar (python)	Analizar	2026-10-21T22:48:37.1878300Z Analysis upload status is complete.
+Analizar (python)	Analizar	2026-10-21T22:48:37.1879620Z ##[endgroup]
+Analizar (python)	Post Analizar	﻿2026-10-21T22:48:37.5585357Z Post job cleanup.
+Analizar (python)	Post Inicializar CodeQL	﻿2026-10-21T22:48:37.8411123Z Post job cleanup.
+Analizar (python)	Post Inicializar CodeQL	2026-10-21T22:48:38.1052113Z Existing job run UUID is b63bbd23-f7fc-4535-b844-3d9a647b174c.
+Analizar (python)	Post Inicializar CodeQL	2026-10-21T22:48:38.1077699Z CodeQL job status was success.
+Analizar (python)	Post Inicializar CodeQL	2026-10-21T22:48:38.1090157Z Sending status report for init-post step.
+Analizar (python)	Post Inicializar CodeQL	2026-10-21T22:48:38.6141870Z Status report sent for init-post step.
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	﻿2026-10-21T22:48:38.6601246Z Post job cleanup.
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7381354Z [command]/usr/bin/git version
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7461661Z git version 2.55.0
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7492190Z Temporarily overriding HOME='/home/runner/work/_temp/80c3f725-62c2-494c-b9b4-2ff64bf1af4a' before making global git config changes
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7493667Z Adding repository directory to the temporary git global config as a safe directory
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7496965Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Laboratorio3_FDSI/Laboratorio3_FDSI
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7527307Z Removing SSH command configuration
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7533072Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7562902Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7781513Z Removing HTTP extra header
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7785463Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.7812654Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.8027073Z Removing includeIf entries pointing to credentials config files
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.8032747Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Analizar (python)	Post Run actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1	2026-10-21T22:48:38.8060694Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Analizar (python)	Complete job	﻿2026-10-21T22:48:38.8391085Z Cleaning up orphan processes

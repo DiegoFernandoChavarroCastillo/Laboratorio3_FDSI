@@ -63,22 +63,22 @@ jobs:
         # pipeline. Un baseline pasivo produce muchos avisos de cabeceras que
         # requieren triage humano antes de convertirse en un control bloqueante.
         run: |
-          mkdir -p reports && chmod 777 reports
+          mkdir -p zap-out && chmod 777 zap-out
           set +e
-          docker run --rm --network host -v "$PWD/reports:/zap/wrk:rw" \
+          docker run --rm --network host -v "$PWD/zap-out:/zap/wrk:rw" \
             ghcr.io/zaproxy/zaproxy:2.17.0 \
             zap-baseline.py -t "$TARGET" -m 1 -I \
               -r zap-report.html -J zap-report.json -w zap-report.md
-          echo "ZAP exit code: $? (0=ok, 1=FAIL, 2=WARN, 3=error)" | tee reports/zap-exit-code.txt
+          echo "ZAP exit code: $? (0=ok, 1=FAIL, 2=WARN, 3=error)" | tee zap-out/zap-exit-code.txt
           exit 0
 
       - name: Adjuntar resultados
         if: always()
-        run: cp uvicorn.log reports/ 2>/dev/null || true
+        run: cp uvicorn.log zap-out/ 2>/dev/null || true
 
       - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         if: always()
         with:
           name: informe-zap
-          path: reports/
+          path: zap-out/
           if-no-files-found: warn

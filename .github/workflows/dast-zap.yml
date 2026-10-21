@@ -1,0 +1,84 @@
+# Lab 5 FDSI - DAST pasivo con OWASP ZAP Baseline.
+# Alternativa local documentada del PDF: no hay staging HTTPS propio, asi que
+# la app se levanta DENTRO del runner y ZAP solo analiza 127.0.0.1.
+name: DAST pasivo - ZAP baseline (localhost)
+
+on:
+  push:
+    branches: [appsec-lab5]
+  pull_request:
+    branches: [main, lab04]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  TARGET: http://127.0.0.1:8000/api/alerts
+
+jobs:
+  zap:
+    name: ZAP baseline (informativo)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Validar destino autorizado (solo loopback)
+        run: |
+          python3 - <<'PYV'
+          import os, sys, urllib.parse
+          u = urllib.parse.urlparse(os.environ["TARGET"])
+          if u.hostname not in ("127.0.0.1", "localhost", "::1"):
+              sys.exit(f"Destino no permitido: {u.hostname}. Solo loopback.")
+          print("Destino autorizado (app propia en el runner):", u.hostname)
+          PYV
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Instalar dependencias de la app
+        run: python -m pip install -r requirements.txt
+
+      - name: Levantar la app (uvicorn main:app)
+        run: |
+          nohup uvicorn main:app --host 127.0.0.1 --port 8000 > uvicorn.log 2>&1 &
+          for i in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8000/api/health; then echo; echo "App arriba"; exit 0; fi
+            sleep 1
+          done
+          echo "La app no respondio en /api/health"; cat uvicorn.log; exit 1
+
+      - name: ZAP baseline (pasivo, sin ataques activos)
+        # Modo informativo: el exit code de ZAP se registra pero no rompe el
+        # pipeline. Un baseline pasivo produce muchos avisos de cabeceras que
+        # requieren triage humano antes de convertirse en un control bloqueante.
+        run: |
+          mkdir -p reports && chmod 777 reports
+          set +e
+          docker run --rm --network host -v "$PWD/reports:/zap/wrk:rw" \
+            ghcr.io/zaproxy/zaproxy:2.17.0 \
+            zap-baseline.py -t "$TARGET" -m 1 -I \
+              -r zap-report.html -J zap-report.json -w zap-report.md
+          echo "ZAP exit code: $? (0=ok, 1=FAIL, 2=WARN, 3=error)" | tee reports/zap-exit-code.txt
+          exit 0
+
+      - name: Adjuntar resultados
+        if: always()
+        run: cp uvicorn.log reports/ 2>/dev/null || true
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        if: always()
+        with:
+          name: informe-zap
+          path: reports/
+          if-no-files-found: warn

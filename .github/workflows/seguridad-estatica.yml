@@ -1,0 +1,112 @@
+# Lab 5 FDSI - SAST (Semgrep) + deteccion de secretos (Gitleaks)
+# Adaptado del kit Kit_Integracion_AppSec_GitHub_FSI para un proyecto Python/FastAPI.
+name: Seguridad estatica - SAST y secretos
+
+on:
+  push:
+    branches: [appsec-lab5]
+  pull_request:
+    branches: [main, lab04]
+  workflow_dispatch:
+
+# Minimo privilegio por defecto; cada job amplia solo lo que necesita.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  sast:
+    name: Semgrep (SAST)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      security-events: write   # subir SARIF a Security > Code scanning
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+
+      - name: Instalar Semgrep (version fijada)
+        run: python -m pip install semgrep==1.182.0
+
+      - name: Analisis con reglas comunitarias
+        # Sin --error: Semgrep reporta pero no rompe el pipeline (modo informativo
+        # hasta que exista triage). El estado verde NO significa codigo seguro.
+        run: |
+          semgrep scan \
+            --config p/python \
+            --config p/owasp-top-ten \
+            --config p/security-audit \
+            --config p/secrets \
+            --metrics=off \
+            --exclude Kit_Integracion_AppSec_GitHub_FSI \
+            --sarif-output=semgrep.sarif \
+            --json-output=semgrep.json
+
+      - name: Subir SARIF a Code scanning
+        if: always() && hashFiles('semgrep.sarif') != ''
+        uses: github/codeql-action/upload-sarif@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # v4.39.1
+        with:
+          sarif_file: semgrep.sarif
+          category: semgrep
+
+      - name: Publicar evidencia
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: resultado-semgrep
+          path: |
+            semgrep.sarif
+            semgrep.json
+          if-no-files-found: warn
+
+  secretos:
+    name: Gitleaks (secret scanning)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pull-requests: read   # gitleaks-action lista los commits del PR
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0          # historial completo, no solo el ultimo commit
+          persist-credentials: false
+
+      - name: Deteccion de secretos (accion oficial, commits del evento)
+        uses: gitleaks/gitleaks-action@e0c47f4f8be36e29cdc102c57e68cb5cbf0e8d1e # v3.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Repo de cuenta personal: no requiere GITLEAKS_LICENSE.
+          # Comentarios en PR desactivados para no pedir pull-requests: write.
+          GITLEAKS_ENABLE_COMMENTS: false
+
+      - name: Escaneo de TODO el historial (CLI, salida redactada)
+        # La accion en push/PR solo revisa el rango de commits del evento;
+        # este paso recorre el historial completo de la rama.
+        if: always()
+        run: |
+          mkdir -p gitleaks
+          set +e
+          docker run --rm --user "$(id -u):$(id -g)" -v "$PWD:/repo" ghcr.io/gitleaks/gitleaks:v8.30.1 \
+            git /repo --redact --no-banner --verbose \
+            --report-format json --report-path /repo/gitleaks/gitleaks-historial.json
+          code=$?
+          echo "gitleaks exit code: $code (1 = se encontraron secretos)"
+          exit $code
+
+      - name: Publicar evidencia
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: resultado-gitleaks
+          path: gitleaks/
+          if-no-files-found: warn

@@ -1,0 +1,16 @@
+# Lab 5 FDSI - SCA. Dependabot opera sobre la rama por defecto (main).
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+
+  # Las acciones estan fijadas por SHA; Dependabot propone la actualizacion
+  # del SHA y del comentario de version.
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
